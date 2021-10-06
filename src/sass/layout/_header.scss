@@ -1,31 +1,33 @@
-.header__top-bar {
-    background-color: $top-bar-color;
-    display: flex;
-    padding: 0.7rem 1.5rem 0.7rem 0.7rem;
-    &__burger-menu {
-        width: 2rem;
+.header {
+    &__top-bar {
+        background-color: $top-bar-color;
         display: flex;
-        flex-direction: column;
-        &__line {
-            background-color: $top-bar-txt-color;
-            height: 2px;
-            margin: auto 0;
+        padding: 0.7rem 1.5rem 0.7rem 0.7rem;
+        &__burger-menu {
+            width: 2rem;
+            display: flex;
+            flex-direction: column;
+            &__line {
+                background-color: $top-bar-txt-color;
+                height: 2px;
+                margin: auto 0;
+            }
         }
-    }
-    &__dj-angerone-logo {
-        width: 10rem;
-        margin-left: 0.7rem;
-    }
-    &__more-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-left: auto;
-        &__point {
-            border-radius: 50%;
-            background-color: $top-bar-txt-color;
-            width: 0.39rem;
-            height: 0.39rem;
+        &__dj-angerone-logo {
+            width: 10rem;
+            margin-left: 0.7rem;
+        }
+        &__more-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left: auto;
+            &__point {
+                border-radius: 50%;
+                background-color: $top-bar-txt-color;
+                width: 0.36rem;
+                height: 0.36rem;
+            }
         }
     }
 }
