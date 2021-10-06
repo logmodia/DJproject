@@ -1,0 +1,1 @@
+body main{width:980px;display:grid;grid-template-columns:repeat(3, 1fr);grid-template-rows:repeat(4, 1fr);gap:10px}body main img{aspect-ratio:1/1;object-fit:cover}
