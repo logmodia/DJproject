@@ -5,6 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="public/css/main.min.css" type="text/css" rel="stylesheet" />
+        <script
+            src="https://kit.fontawesome.com/278099ab94.js"
+            crossorigin="anonymous"
+        ></script>
         <title>DJproject</title>
     </head>
     <body>
@@ -30,12 +34,69 @@
             </nav>
 
             <section class="header__new-single">
-                <h1 class="new-single__heading">new single</h1>
-                <h2 class="new-single__song-title"><strong>Feel the Rhythm</strong></h2>
-                <audio class="new-single__audio-player" controls>
-                    <source src="feel_the_rhythm.mp3" type="audio/mpeg">
+                <h1 class="header__new-single__heading">new single</h1>
+                <h2 class="header__new-single__song-title">
+                    <strong>Feel the Rhythm</strong>
+                </h2>
+                <audio class="header__new-single__audio-player" controls>
+                    <source src="feel_the_rhythm.mp3" type="audio/mpeg" />
                 </audio>
             </section>
         </header>
+
+        <footer class="footer">
+            <img
+                class="footer__dj-angerone-logo"
+                src="public/img/logo.png"
+                alt="DJ Angerone logo"
+            />
+
+            <nav class="footer__navlinks">
+                <ul class="footer__navlinks__links-list">
+                    <li class="footer__navlinks__links-list__element">
+                        <a class="footer__navlinks__links-list__element__link">about</a>
+                    </li>
+                    <li class="footer__navlinks__links-list__element">
+                        <a class="footer__navlinks__links-list__element__link">discography</a>
+                    </li>
+                    <li class="footer__navlinks__links-list__element">
+                        <a class="footer__navlinks__links-list__element__link">tours</a>
+                    </li>
+                    <li class="footer__navlinks__links-list__element">
+                        <a class="footer__navlinks__links-list__element__link">photos</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="footer__social-networks">
+                <li class="footer__social-networks__button">
+                    <a class="footer__social-networks__button__link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="footer__social-networks__button">
+                    <a class="footer__social-networks__button__link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="footer__social-networks__button">
+                    <a class="footer__social-networks__button__link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="footer__social-networks__button">
+                    <a class="footer__social-networks__button__link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="footer__social-networks__button">
+                    <a class="footer__social-networks__button__link">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <p>© 2021 DJ Angerone. Privacy Policy</p>
+        </footer>
     </body>
 </html>
