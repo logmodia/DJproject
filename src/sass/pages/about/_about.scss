@@ -1,0 +1,39 @@
+main {
+    .main_divToCenter{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @import "_section1.scss";
+
+    .about-section2-discovemusic_containGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 5px;
+        row-gap: 5px;
+
+        background-color: yellow;
+        &__musicList{
+            display: inline-block;
+            padding: 10px;
+        }
+
+        div{
+            background-color: burlywood;
+            border: solid white;
+            //width: ;
+        }
+
+    }
+
+    .about-section3-latestRelease_grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        p,figcaption{
+            text-align: center;
+        }
+
+    }
+}
