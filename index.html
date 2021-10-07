@@ -46,111 +46,171 @@
 
         <main>
             <section class="next-gig">
-                <h2 class="next-gig__heading">
-                    <strong>next gig</strong>
-                </h2>
-                <p class="next-gig__availability">
-                    Tickets for my next event are already available.
-                </p>
-                <time class="next-gig__time" datetime="2022-01-07T20:00:00">
-                    <div class="next-gig__time__days">
-                        <output>41</output>
-                        <p>days</p>
-                    </div>
-                    <div class="next-gig__time__hours">
-                        <output>23</output>
-                        <p>hours</p>
-                    </div>
-                    <div class="next-gig__time__minutes">
-                        <output>58</output>
-                        <p>minutes</p>
-                    </div>
-                </time>
-                <a class="next-gig__button" href="#">
-                    <p>buy tickets</p>
-                </a>
+                <div class="contents">
+                    <h2 class="next-gig__heading">
+                        <strong>next gig</strong>
+                    </h2>
+                    <p class="next-gig__availability">
+                        Tickets for my next event are already available.
+                    </p>
+                    <time class="next-gig__time" datetime="2022-01-07T20:00:00">
+                        <div class="next-gig__time__days">
+                            <output>41</output>
+                            <p>days</p>
+                        </div>
+                        <div class="next-gig__time__hours">
+                            <output>23</output>
+                            <p>hours</p>
+                        </div>
+                        <div class="next-gig__time__minutes">
+                            <output>58</output>
+                            <p>minutes</p>
+                        </div>
+                    </time>
+                    <a class="next-gig__button" href="#">
+                        <p>buy tickets</p>
+                    </a>
+                </div>
             </section>
 
-            <section class="about-dj">
-                <img src="public/img/home-dj.jpg" alt="DJ Angerone during a live set">
-                <h2 class="about-dj__heading">About DJ Angerone</h2>
-                <p>
-                    Mike Myers, professionally known as DJ Angerone, is
-                    internationally acclaimed Progressive House & Trance DJ
-                    musician.
-                    <q>
-                        I try to experiment with various music genres in every
-                        track I make.
-                    </q>
-                    Since the beginning of his career in 2010, he has already
-                    released 5 EPs on a range of worldwide known labels (Booster
-                    Records, DSTRCT Recording etc.) and received a number of
-                    music awards.
-                </p>
+            <article class="about-dj">
+                    <figure class="about-dj__">
+                        <img
+                            src="public/img/home-dj.jpg"
+                            alt="DJ Angerone during a live set"
+                        />
+                    </figure>
+                    <h2 class="about-dj__heading">About DJ Angerone</h2>
+                    <p class="about-dj__text">
+                        Mike Myers, professionally known as DJ Angerone, is
+                        internationally acclaimed Progressive House & Trance DJ
+                        musician.
+                        <q class="about-dj__text__dj-quote">
+                            I try to experiment with various music genres in
+                            every track I make.
+                        </q>
+                        Since the beginning of his career in 2010, he has
+                        already released 5 EPs on a range of worldwide known
+                        labels (Booster Records, DSTRCT Recording etc.) and
+                        received a number of music awards.
+                    </p>
+            </article>
+
+            <section class="latest-releases">
+                    <header class="latest-releases__view-discography">
+                        <h2 class="latest-releases__view-discography__heading">
+                            Listen to the latest Releases by DJ Angerone
+                        </h2>
+                        <a
+                            class="latest-releases__view-discography__button"
+                            href="#"
+                            ><p>view discography</p></a
+                        >
+                    </header>
+
+                    <h2 class="latest-releases__heading">latest releases</h2>
+                    <p class="latest-releases__info">
+                        Here are the most recent singles, EPs, and other
+                        releases that DJ Angerone has worked on. You can stream
+                        and buy them on our website and a variety of digital
+                        stores.
+                    </p>
+
+                    <ul class="lastest-releases__covers">
+                        <li>
+                            <img src="" alt="">
+                            <h3></h3>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <h3></h3>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <h3></h3>
+                            <p></p>
+                        </li>
+                    </ul>
             </section>
         </main>
 
         <footer class="footer">
-            <img
-                class="footer__dj-angerone-logo"
-                src="public/img/logo.png"
-                alt="DJ Angerone logo"
-            />
+            <div class="contents">
+                <img
+                    class="footer__dj-angerone-logo"
+                    src="public/img/logo.png"
+                    alt="DJ Angerone logo"
+                />
 
-            <nav class="footer__navlinks">
-                <ul class="footer__navlinks__links-list">
-                    <li class="footer__navlinks__links-list__element">
-                        <a class="footer__navlinks__links-list__element__link"
-                            >about</a
-                        >
+                <nav class="footer__navlinks">
+                    <ul class="footer__navlinks__links-list">
+                        <li class="footer__navlinks__links-list__element">
+                            <a
+                                class="
+                                    footer__navlinks__links-list__element__link
+                                "
+                                >about</a
+                            >
+                        </li>
+                        <li class="footer__navlinks__links-list__element">
+                            <a
+                                class="
+                                    footer__navlinks__links-list__element__link
+                                "
+                                >discography</a
+                            >
+                        </li>
+                        <li class="footer__navlinks__links-list__element">
+                            <a
+                                class="
+                                    footer__navlinks__links-list__element__link
+                                "
+                                >tours</a
+                            >
+                        </li>
+                        <li class="footer__navlinks__links-list__element">
+                            <a
+                                class="
+                                    footer__navlinks__links-list__element__link
+                                "
+                                >photos</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="footer__social-networks">
+                    <li class="footer__social-networks__button">
+                        <a class="footer__social-networks__button__link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
                     </li>
-                    <li class="footer__navlinks__links-list__element">
-                        <a class="footer__navlinks__links-list__element__link"
-                            >discography</a
-                        >
+                    <li class="footer__social-networks__button">
+                        <a class="footer__social-networks__button__link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </li>
-                    <li class="footer__navlinks__links-list__element">
-                        <a class="footer__navlinks__links-list__element__link"
-                            >tours</a
-                        >
+                    <li class="footer__social-networks__button">
+                        <a class="footer__social-networks__button__link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
                     </li>
-                    <li class="footer__navlinks__links-list__element">
-                        <a class="footer__navlinks__links-list__element__link"
-                            >photos</a
-                        >
+                    <li class="footer__social-networks__button">
+                        <a class="footer__social-networks__button__link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social-networks__button">
+                        <a class="footer__social-networks__button__link">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
                     </li>
                 </ul>
-            </nav>
 
-            <ul class="footer__social-networks">
-                <li class="footer__social-networks__button">
-                    <a class="footer__social-networks__button__link">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li class="footer__social-networks__button">
-                    <a class="footer__social-networks__button__link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="footer__social-networks__button">
-                    <a class="footer__social-networks__button__link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="footer__social-networks__button">
-                    <a class="footer__social-networks__button__link">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </li>
-                <li class="footer__social-networks__button">
-                    <a class="footer__social-networks__button__link">
-                        <i class="fab fa-pinterest-p"></i>
-                    </a>
-                </li>
-            </ul>
-
-            <p>© 2021 DJ Angerone. Privacy Policy</p>
+                <p>© 2021 DJ Angerone. Privacy Policy</p>
+            </div>
         </footer>
     </body>
 </html>
