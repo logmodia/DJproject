@@ -1,8 +1,19 @@
 .header {
     &__new-single {
         background-image: url("../img/homapage-banner-img.jpg");
-        &__heading {
+        background-size: cover;
+        height: 19rem;
+        display: flex;
+        flex-direction: column;
+        &__contents {
+            margin: auto;
+            width: 17rem;
+        }
+        &__heading, &__song-title {
             color: $white-text;
+        }
+        &__audio-player {
+            width: 100%;
         }
     }
 }

@@ -18,6 +18,11 @@
                 font-weight: 500;
                 color: $white-text;
                 padding-bottom: 1.1rem;
+                &__link {
+                    &:visited, &:active {
+                        color: $white-text;
+                    }
+                }
             }
         }
     }
