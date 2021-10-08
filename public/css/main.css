@@ -53,6 +53,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 a {
   text-decoration: none;
 }
@@ -122,6 +126,109 @@ html body {
   background-color: #fff;
   width: 0.37rem;
   height: 0.37rem;
+}
+
+.footer {
+  background-color: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem 0;
+}
+
+.footer__dj-angerone-logo {
+  margin: 0 auto;
+  width: 16rem;
+  padding-bottom: 1.8rem;
+}
+
+.footer__navlinks {
+  margin: 0 auto;
+  padding-bottom: 1.6rem;
+}
+
+.footer__navlinks__links-list__element {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 1.1rem;
+}
+
+.footer__social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 18rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 2.8rem;
+}
+
+.footer__social-networks__button__link {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #353535;
+  padding: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social-networks__button__link .fab {
+  margin: auto;
+  font-size: 1.35rem;
+  color: #fff;
+}
+
+.footer__attribution {
+  margin: 0 auto;
+  color: #919191;
+  font-size: 0.9rem;
+}
+
+@media all and (min-width: 768px) {
+  .footer__dj-angerone-logo {
+    padding-bottom: 2.3rem;
+  }
+  .footer__navlinks__links-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 27rem;
+  }
+  .footer__navlinks__links-list__element {
+    padding-bottom: 0.7rem;
+  }
+  .footer__social-networks {
+    width: 20rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .footer {
+    padding: 7rem 0 8.1rem 0;
+  }
+  .footer__dj-angerone-logo {
+    padding-bottom: 3.7rem;
+  }
+  .footer__navlinks {
+    padding-bottom: 3.5rem;
+  }
+  .footer__social-networks {
+    padding-bottom: 6.8rem;
+    width: 23rem;
+  }
 }
 
 .header__new-single {
@@ -237,7 +344,7 @@ body .globalMain .main__DiscoverMusic__containGrid__allDiv {
   background-color: red;
 }
 
-/*     
+/*
     .about-section2-discovemusic_containGrid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -262,112 +369,111 @@ body .globalMain .main__DiscoverMusic__containGrid__allDiv {
     .about-section3-latestRelease_grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        
+
         p,figcaption{
             text-align: center;
         }
 
     }
 } */
-.footer {
-  background-color: #282828;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 4rem 0;
+body .gallery {
+  padding: 55px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  gap: 30px;
 }
 
-.footer__dj-angerone-logo {
-  margin: 0 auto;
-  width: 16rem;
-  padding-bottom: 1.8rem;
+body .gallery-element {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.footer__navlinks {
-  margin: 0 auto;
-  padding-bottom: 1.6rem;
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .gallery {
+    padding: 80px 0;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
 }
 
-.footer__navlinks__links-list__element {
+@media (min-width: 1025px) {
+  body .gallery {
+    padding: 150px 0;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+body .discography__album__grid__container {
+  padding: 40px 0 45px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  row-gap: 5px;
+}
+
+body .discography__album__grid__container .discography__album__container {
   text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #fff;
-  padding-bottom: 1.1rem;
+  padding: 15px;
 }
 
-.footer__social-networks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 18rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 auto;
-  padding-bottom: 2.8rem;
+body .discography__album__grid__container .discography__album__cover {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.footer__social-networks__button__link {
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 50%;
-  background-color: #353535;
-  padding: 0.7rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+body .discography__album__grid__container .discography__album__heading {
+  font-size: 1.25em;
+  margin: 24px auto 1em;
 }
 
-.footer__social-networks__button__link .fab {
-  margin: auto;
-  font-size: 1.35rem;
-  color: #fff;
+body .discography__album__grid__container .discography__album__release-year {
+  color: #444444;
+  font-weight: 200;
+  letter-spacing: 0.06em;
 }
 
-.footer__attribution {
-  margin: 0 auto;
-  color: #919191;
-  font-size: 0.9rem;
-}
-
-@media all and (min-width: 768px) {
-  .footer__dj-angerone-logo {
-    padding-bottom: 2.3rem;
-  }
-  .footer__navlinks__links-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 27rem;
-  }
-  .footer__navlinks__links-list__element {
-    padding-bottom: 0.7rem;
-  }
-  .footer__social-networks {
-    width: 20rem;
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .discography__album__grid__container {
+    padding: 55px 25px 60px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
   }
 }
 
-@media all and (min-width: 1024px) {
-  .footer {
-    padding: 7rem 0 8.1rem 0;
+@media (min-width: 1025px) and (max-width: 1270px) {
+  body .discography__album__grid__container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
   }
-  .footer__dj-angerone-logo {
-    padding-bottom: 3.7rem;
-  }
-  .footer__navlinks {
-    padding-bottom: 3.5rem;
-  }
-  .footer__social-networks {
-    padding-bottom: 6.8rem;
-    width: 23rem;
+}
+
+@media (min-width: 1270px) {
+  body .discography__album__grid__container {
+    width: 1270px;
+    margin: auto;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
   }
 }
