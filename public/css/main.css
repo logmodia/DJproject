@@ -61,6 +61,7 @@ a {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 a:visited, a:active {
   color: black;
 }
@@ -250,12 +251,15 @@ body {
 }
 
 body .globalMain {
+=======
+.globalMain {
+>>>>>>> rené
   margin: 0px auto;
   width: 1441px;
   border: 5px solid blue;
 }
 
-body .globalMain .main__sectDJ {
+.globalMain .main__sectDJ {
   margin: 20px auto;
   width: 65%;
   display: -ms-grid;
@@ -266,49 +270,49 @@ body .globalMain .main__sectDJ {
           column-gap: 55px;
 }
 
-body .globalMain .main__sectDJ__div {
+.globalMain .main__sectDJ__div {
   width: 100%;
 }
 
-body .globalMain .main__sectDJ .about__h1 {
+.globalMain .main__sectDJ .about__h1 {
   font-weight: bolder;
   font-size: 20px;
   padding-bottom: 20px;
 }
 
-body .globalMain .main__sectDJ__TextSignaturButton {
+.globalMain .main__sectDJ__TextSignaturButton {
   text-align: left;
 }
 
-body .globalMain .main__sectDJ__TextSignaturButton__hr {
+.globalMain .main__sectDJ__TextSignaturButton__hr {
   width: 118px;
 }
 
-body .globalMain .main__sectDJ__TextSignaturButton__list-reseausociaux, body .globalMain .main__sectDJ__TextSignaturButton__list-mailgsm {
+.globalMain .main__sectDJ__TextSignaturButton__list-reseausociaux, .globalMain .main__sectDJ__TextSignaturButton__list-mailgsm {
   display: inline-block;
   padding-right: 20px;
   padding-top: 20px;
 }
 
-body .globalMain .main__sectDJ__TextSignaturButton__list-reseausociaux {
+.globalMain .main__sectDJ__TextSignaturButton__list-reseausociaux {
   display: inline-block;
   padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-body .globalMain .main__sectDJ__TextSignaturButton__paragraph {
+.globalMain .main__sectDJ__TextSignaturButton__paragraph {
   padding-bottom: 20px;
   color: #444444;
   text-align: justify;
 }
 
-body .globalMain .main__sectDJ__TextSignaturButton__FigSignature {
+.globalMain .main__sectDJ__TextSignaturButton__FigSignature {
   text-align: right;
   padding: 20px;
 }
 
-body .globalMain .main__sectDJ__TextSignaturButton__GetInTouch {
+.globalMain .main__sectDJ__TextSignaturButton__GetInTouch {
   width: 130px;
   height: 50px;
   text-align: center;
@@ -316,20 +320,20 @@ body .globalMain .main__sectDJ__TextSignaturButton__GetInTouch {
   border-radius: 5px;
 }
 
-body .globalMain .main__sectDJ__TextSignaturButton__GetInTouch p {
+.globalMain .main__sectDJ__TextSignaturButton__GetInTouch p {
   padding-top: 18px;
   font-size: 15px;
   color: white;
   font-weight: bold;
 }
 
-body .globalMain .main__DiscoverMusic {
+.globalMain .main__DiscoverMusic {
   margin: 0px auto;
   border: 5px solid greenyellow;
   height: 500px;
 }
 
-body .globalMain .main__DiscoverMusic__containGrid {
+.globalMain .main__DiscoverMusic .main__containerGrid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -338,8 +342,8 @@ body .globalMain .main__DiscoverMusic__containGrid {
           column-gap: 20px;
 }
 
-body .globalMain .main__DiscoverMusic__containGrid__allDiv {
-  width: 50% 50%;
+.globalMain .main__DiscoverMusic__containerGrid__allDiv {
+  width: 50%;
   border: red;
   background-color: red;
 }
