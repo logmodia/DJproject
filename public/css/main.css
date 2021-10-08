@@ -63,31 +63,84 @@ body {
   height: 3503px;
 }
 
-body main {
+body .globalMain {
   margin: 0px auto;
   width: 1441px;
   border: 5px solid blue;
+  /* .about-section1{
+    display: flex;
+    width: 880px;
+
+    &__articleContact{
+        width: 440px; 
+
+        &__list-mailgsm{
+            li{
+                display: inline-block;
+                padding: 5px;
+            }
+        }
+    
+        &__list-reseausociaux{
+            li{
+                display: inline-block;
+                padding: 10px;
+            }
+        }
+
+        &__paragraph1{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__paragraph2{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__imgSignatureDiv{
+            text-align: right;
+            padding: 10px;
+        }
+
+        &__getintaouch{
+            width: 130px;
+            height: 50px;
+            text-align: center;
+            background-color:#8121e0;
+            border-radius: 5px;
+            p{
+                padding-top: 18px;
+                font-size: 15px;
+                color: white;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+} */
 }
 
-body main .main__sectDJ {
+body .globalMain .main__sectDJ {
   margin: 20px auto;
   width: 90%;
   border: 5px solid greenyellow;
-}
-
-body main .main__sectDJ__articleContact {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
 
-body main .main__sectDJ__articleContact div {
-  border: 5px solid #9c0d61;
+body .globalMain .main__sectDJ div {
+  border: 2px solid yellow;
 }
 
-/*     @import "_section1.scss";
+body .globalMain .main__sectDJ div h1 {
+  font-weight: bolder;
+}
 
+/*     
     .about-section2-discovemusic_containGrid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);

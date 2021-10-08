@@ -1,4 +1,24 @@
-.about-section1{
+.main__sectDJ {
+    margin: 20px auto;
+    width: 90%;
+    border: 5px solid greenyellow;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    div{
+        border : 2px solid yellow;
+        
+        h1 {
+            font-weight: bolder;
+            
+        }
+    }
+
+    
+
+}
+
+/* .about-section1{
     display: flex;
     width: 880px;
 
@@ -50,4 +70,4 @@
 
     }
 
-}
+} */
