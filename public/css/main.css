@@ -58,7 +58,7 @@ a {
 }
 
 a:visited, a:active {
-  color: #fff;
+  color: black;
 }
 
 time, a {
@@ -122,6 +122,14 @@ html body {
   background-color: #fff;
   width: 0.37rem;
   height: 0.37rem;
+}
+
+.header__new-single {
+  background-image: url("../img/homapage-banner-img.jpg");
+}
+
+.header__new-single__heading {
+  color: #fff;
 }
 
 .index-main {

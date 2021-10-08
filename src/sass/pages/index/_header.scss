@@ -1,0 +1,8 @@
+.header {
+    &__new-single {
+        background-image: url("../img/homapage-banner-img.jpg");
+        &__heading {
+            color: $white-text;
+        }
+    }
+}
