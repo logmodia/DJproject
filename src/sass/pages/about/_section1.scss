@@ -1,0 +1,66 @@
+.main__sectDJ {
+    margin: 20px auto;
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 55px;
+
+    &__div{
+        width: 100%;
+        
+    }
+    .about__h1 {
+        font-weight: bolder;
+        font-size: 20px;
+        padding-bottom: 20px;
+        
+    }
+
+    &__TextSignaturButton{
+
+        text-align: left;
+
+        &__hr{
+            width: 118px;
+        }
+        &__list-reseausociaux, &__list-mailgsm{
+            display: inline-block;
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+
+        &__list-reseausociaux{
+            display: inline-block;
+            padding-right: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__paragraph{
+            padding-bottom: 20px;
+            color: #444444;
+            text-align: justify;
+        }
+        &__FigSignature{
+            text-align: right;
+            padding: 20px;
+        }
+       &__GetInTouch{
+            width: 130px;
+            height: 50px;
+            text-align: center;
+            background-color:#8121e0;
+            border-radius: 5px;
+
+            p{
+                padding-top: 18px;
+                font-size: 15px;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+
+    
+
+}
