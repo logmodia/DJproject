@@ -77,6 +77,12 @@ html body {
   font-family: "Poppins", sans-serif;
 }
 
+.hidden {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
 .header__top-bar {
   background-color: #282828;
   display: -webkit-box;
@@ -290,7 +296,20 @@ html body {
   margin-top: auto;
 }
 
-.index-main {
+.next-gig {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.next-gig__contents {
+  margin: auto;
+  background-color: #282828;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.about-dj, .latest-releases {
   display: none;
 }
 
