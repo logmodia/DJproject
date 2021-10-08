@@ -2,10 +2,19 @@ html{
   font-size: 16px;
 }
 a {
-  display: inline-block;
-  text-decoration: none;
+    text-decoration: none;
+    &:visited, &:active {
+        color: $white-text;
+    }
 }
 
 time, a {
     display: inline-block;
+}
+
+html {
+    font-size: 16px;
+    body {
+        font-family: $font;
+    }
 }
