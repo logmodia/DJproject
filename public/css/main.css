@@ -128,48 +128,72 @@ html body {
   display: none;
 }
 
-main .main_divToCenter {
-  padding-left: 10px;
-  padding-right: 10px;
+body {
+  margin: 0px auto;
+  width: 100%;
+  height: 3503px;
 }
 
-main .about-section1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 880px;
+body .globalMain {
+  margin: 0px auto;
+  width: 1441px;
+  border: 5px solid blue;
 }
 
-main .about-section1__articleContact {
-  width: 440px;
+body .globalMain .main__sectDJ {
+  margin: 20px auto;
+  width: 65%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 55px;
+          column-gap: 55px;
 }
 
-main .about-section1__articleContact__list-mailgsm li {
+body .globalMain .main__sectDJ__div {
+  width: 100%;
+}
+
+body .globalMain .main__sectDJ .about__h1 {
+  font-weight: bolder;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+body .globalMain .main__sectDJ__TextSignaturButton {
+  text-align: left;
+}
+
+body .globalMain .main__sectDJ__TextSignaturButton__hr {
+  width: 118px;
+}
+
+body .globalMain .main__sectDJ__TextSignaturButton__list-reseausociaux, body .globalMain .main__sectDJ__TextSignaturButton__list-mailgsm {
   display: inline-block;
-  padding: 5px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
-main .about-section1__articleContact__list-reseausociaux li {
+body .globalMain .main__sectDJ__TextSignaturButton__list-reseausociaux {
   display: inline-block;
-  padding: 10px;
-}
-
-main .about-section1__articleContact__paragraph1 {
+  padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-main .about-section1__articleContact__paragraph2 {
-  padding-top: 20px;
+body .globalMain .main__sectDJ__TextSignaturButton__paragraph {
   padding-bottom: 20px;
+  color: #444444;
+  text-align: justify;
 }
 
-main .about-section1__articleContact__imgSignatureDiv {
+body .globalMain .main__sectDJ__TextSignaturButton__FigSignature {
   text-align: right;
-  padding: 10px;
+  padding: 20px;
 }
 
-main .about-section1__articleContact__getintaouch {
+body .globalMain .main__sectDJ__TextSignaturButton__GetInTouch {
   width: 130px;
   height: 50px;
   text-align: center;
@@ -177,47 +201,66 @@ main .about-section1__articleContact__getintaouch {
   border-radius: 5px;
 }
 
-main .about-section1__articleContact__getintaouch p {
+body .globalMain .main__sectDJ__TextSignaturButton__GetInTouch p {
   padding-top: 18px;
   font-size: 15px;
   color: white;
   font-weight: bold;
 }
 
-main .about-section2-discovemusic_containGrid {
+body .globalMain .main__DiscoverMusic {
+  margin: 0px auto;
+  border: 5px solid greenyellow;
+  height: 500px;
+}
+
+body .globalMain .main__DiscoverMusic__containGrid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  -webkit-column-gap: 5px;
-          column-gap: 5px;
-  row-gap: 5px;
-  background-color: yellow;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
 }
 
-main .about-section2-discovemusic_containGrid__musicList {
-  display: inline-block;
-  padding: 10px;
+body .globalMain .main__DiscoverMusic__containGrid__allDiv {
+  width: 50% 50%;
+  border: red;
+  background-color: red;
 }
 
-main .about-section2-discovemusic_containGrid div {
-  background-color: burlywood;
-  border: solid white;
-}
+/*     
+    .about-section2-discovemusic_containGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 5px;
+        row-gap: 5px;
 
-main .about-section3-latestRelease_grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
+        background-color: yellow;
+        &__musicList{
+            display: inline-block;
+            padding: 10px;
+        }
 
-main .about-section3-latestRelease_grid p, main .about-section3-latestRelease_grid figcaption {
-  text-align: center;
-}
+        div{
+            background-color: burlywood;
+            border: solid white;
+            //width: ;
+        }
 
+    }
+
+    .about-section3-latestRelease_grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        p,figcaption{
+            text-align: center;
+        }
+
+    }
+} */
 .footer {
   background-color: #282828;
   display: -webkit-box;
