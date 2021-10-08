@@ -5,12 +5,39 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    div{
+    &__div{
         border : 2px solid yellow;
         
-        h1 {
-            font-weight: bolder;
-            
+    }
+    .about__h1 {
+        font-weight: bolder;
+        font-size: 20px;
+        padding-bottom: 20px;
+        
+    }
+
+    &__TextSignaturButton{
+
+        text-align: left;
+
+        &__hr{
+            width: 118px;
+        }
+        &__list-reseausociaux, &__list-mailgsm{
+            display: inline-block;
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+
+        &__list-reseausociaux{
+            display: inline-block;
+            padding-right: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__paragraph{
+            padding-bottom: 20px;
         }
     }
 

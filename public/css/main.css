@@ -132,12 +132,39 @@ body .globalMain .main__sectDJ {
       grid-template-columns: repeat(2, 1fr);
 }
 
-body .globalMain .main__sectDJ div {
+body .globalMain .main__sectDJ__div {
   border: 2px solid yellow;
 }
 
-body .globalMain .main__sectDJ div h1 {
+body .globalMain .main__sectDJ .about__h1 {
   font-weight: bolder;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+body .globalMain .main__sectDJ__TextSignaturButton {
+  text-align: left;
+}
+
+body .globalMain .main__sectDJ__TextSignaturButton__hr {
+  width: 118px;
+}
+
+body .globalMain .main__sectDJ__TextSignaturButton__list-reseausociaux, body .globalMain .main__sectDJ__TextSignaturButton__list-mailgsm {
+  display: inline-block;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+body .globalMain .main__sectDJ__TextSignaturButton__list-reseausociaux {
+  display: inline-block;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body .globalMain .main__sectDJ__TextSignaturButton__paragraph {
+  padding-bottom: 20px;
 }
 
 /*     
