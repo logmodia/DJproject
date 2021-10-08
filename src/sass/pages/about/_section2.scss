@@ -1,21 +1,34 @@
-.main__DiscoverMusic{
+.about-Main__DiscoverMusic{
     margin: 0px auto;
     border: 5px solid greenyellow;
-    height: 500px;
     
-
-    .main__containerGrid{
+    &__titleh1{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__containerGrid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        column-gap: 20px;
+        column-gap: 55px;
+        row-gap: 55px;
 
-        border: yellowgreen;
+        padding: 50px;
 
+        .DiscoverMusic__containerGrid__h2{
+            font-size: 20px;
+            padding-bottom: 10px;
+            font-weight: bolder;
+        }
+        .DiscoverMusic__containerGrid__paragraph{
+            font-size: 15px;
+        }
+
+        .containerGrid__article__rect-icon{
+            float: left;
+            width: 20px;
+            height: 30px;
+            padding: 20px;
+        }
     }
 }
-.main__DiscoverMusic__containerGrid__allDiv{
-            
-            
-            background-color: red;
-        }

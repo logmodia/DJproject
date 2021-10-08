@@ -9,16 +9,11 @@
         width: 100%;
         
     }
-    .about__h1 {
-        font-weight: bolder;
-        font-size: 20px;
-        padding-bottom: 20px;
-        
-    }
 
-    &__TextSignaturButton {
+    .globalMain__sectDJ__TextSignaturButton {
 
         text-align: left;
+        color: #444444;
 
         &__hr{
             width: 118px;
@@ -38,8 +33,11 @@
 
         &__paragraph{
             padding-bottom: 20px;
-            color: #444444;
+            
             text-align: justify;
+        }
+        &__paragraph1{
+            font-size: 12px;
         }
         &__FigSignature{
             text-align: right;

@@ -57,13 +57,19 @@ a {
   text-decoration: none;
 }
 
-.globalMain {
+.about-Main {
   margin: 0px auto;
   width: 1441px;
   border: 5px solid blue;
 }
 
-.globalMain .globalMain__sectDJ {
+.about-Main .about__h1 {
+  font-weight: bolder;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.about-Main .globalMain__sectDJ {
   margin: 20px auto;
   width: 65%;
   display: -ms-grid;
@@ -74,49 +80,47 @@ a {
           column-gap: 55px;
 }
 
-.globalMain .globalMain__sectDJ__div {
+.about-Main .globalMain__sectDJ__div {
   width: 100%;
 }
 
-.globalMain .globalMain__sectDJ .about__h1 {
-  font-weight: bolder;
-  font-size: 20px;
-  padding-bottom: 20px;
-}
-
-.globalMain .globalMain__sectDJ__TextSignaturButton {
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton {
   text-align: left;
+  color: #444444;
 }
 
-.globalMain .globalMain__sectDJ__TextSignaturButton__hr {
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__hr {
   width: 118px;
 }
 
-.globalMain .globalMain__sectDJ__TextSignaturButton__list-reseausociaux, .globalMain .globalMain__sectDJ__TextSignaturButton__list-mailgsm {
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__list-reseausociaux, .about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__list-mailgsm {
   display: inline-block;
   padding-right: 20px;
   padding-top: 20px;
 }
 
-.globalMain .globalMain__sectDJ__TextSignaturButton__list-reseausociaux {
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__list-reseausociaux {
   display: inline-block;
   padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.globalMain .globalMain__sectDJ__TextSignaturButton__paragraph {
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__paragraph {
   padding-bottom: 20px;
-  color: #444444;
   text-align: justify;
 }
 
-.globalMain .globalMain__sectDJ__TextSignaturButton__FigSignature {
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__paragraph1 {
+  font-size: 12px;
+}
+
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__FigSignature {
   text-align: right;
   padding: 20px;
 }
 
-.globalMain .globalMain__sectDJ__TextSignaturButton__GetInTouch {
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__GetInTouch {
   width: 130px;
   height: 50px;
   text-align: center;
@@ -124,33 +128,50 @@ a {
   border-radius: 5px;
 }
 
-.globalMain .globalMain__sectDJ__TextSignaturButton__GetInTouch p {
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__GetInTouch p {
   padding-top: 18px;
   font-size: 15px;
   color: white;
   font-weight: bold;
 }
 
-.globalMain .main__DiscoverMusic {
+.about-Main .about-Main__DiscoverMusic {
   margin: 0px auto;
   border: 5px solid greenyellow;
-  height: 500px;
 }
 
-.globalMain .main__DiscoverMusic .main__containerGrid {
+.about-Main .about-Main__DiscoverMusic__titleh1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-Main .about-Main__DiscoverMusic__containerGrid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
-  border: yellowgreen;
+  -webkit-column-gap: 55px;
+          column-gap: 55px;
+  row-gap: 55px;
+  padding: 50px;
 }
 
-.globalMain .main__DiscoverMusic__containerGrid__allDiv {
-  background-color: red;
+.about-Main .about-Main__DiscoverMusic__containerGrid .DiscoverMusic__containerGrid__h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+
+.about-Main .about-Main__DiscoverMusic__containerGrid .DiscoverMusic__containerGrid__paragraph {
+  font-size: 15px;
+}
+
+.about-Main .about-Main__DiscoverMusic__containerGrid .containerGrid__article__rect-icon {
+  float: left;
+  width: 20px;
+  height: 30px;
+  padding: 20px;
 }
 
 /*     
