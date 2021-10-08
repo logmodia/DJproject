@@ -1,11 +1,17 @@
 .about-Main__DiscoverMusic{
-    margin: 0px auto;
-    border: 5px solid greenyellow;
+    margin: 20px auto;
+    padding-top: 60px;
+    background-color: #f5f5f5;
+    background-image: url(/public/img/bg-circle-2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top;
+    height: 30rem;
     
     &__titleh1{
         text-align: center;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 60px;
+        padding-bottom: 0px;
     }
     &__containerGrid{
         display: grid;
@@ -13,7 +19,10 @@
         column-gap: 55px;
         row-gap: 55px;
 
-        padding: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 0px;
 
         .DiscoverMusic__containerGrid__h2{
             font-size: 20px;

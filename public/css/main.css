@@ -70,18 +70,15 @@ a {
 }
 
 .about-Main .globalMain__sectDJ {
-  margin: 20px auto;
-  width: 65%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 55px;
-          column-gap: 55px;
-}
-
-.about-Main .globalMain__sectDJ__div {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 100px;
+          column-gap: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton {
@@ -107,12 +104,16 @@ a {
 }
 
 .about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__paragraph {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   text-align: justify;
 }
 
 .about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__paragraph1 {
-  font-size: 12px;
+  font-size: 18px;
+}
+
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__paragraph2 {
+  font-size: 22px;
 }
 
 .about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__FigSignature {
@@ -135,15 +136,27 @@ a {
   font-weight: bold;
 }
 
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__imgDJ {
+  width: 60%;
+  background-color: hotpink;
+  border: hotpink;
+}
+
 .about-Main .about-Main__DiscoverMusic {
-  margin: 0px auto;
-  border: 5px solid greenyellow;
+  margin: 20px auto;
+  padding-top: 60px;
+  background-color: #f5f5f5;
+  background-image: url(/public/img/bg-circle-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 30rem;
 }
 
 .about-Main .about-Main__DiscoverMusic__titleh1 {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 0px;
 }
 
 .about-Main .about-Main__DiscoverMusic__containerGrid {
@@ -154,7 +167,10 @@ a {
   -webkit-column-gap: 55px;
           column-gap: 55px;
   row-gap: 55px;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 0px;
 }
 
 .about-Main .about-Main__DiscoverMusic__containerGrid .DiscoverMusic__containerGrid__h2 {

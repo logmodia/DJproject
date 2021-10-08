@@ -1,14 +1,15 @@
 .globalMain__sectDJ {
-    margin: 20px auto;
-    width: 65%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 55px;
+    
+    display: flex;
+    //grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    //justify-items:stretch;
 
-    &__div{
-        width: 100%;
-        
-    }
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
 
     .globalMain__sectDJ__TextSignaturButton {
 
@@ -32,12 +33,15 @@
         }
 
         &__paragraph{
-            padding-bottom: 20px;
+            padding-bottom: 30px;
             
             text-align: justify;
         }
         &__paragraph1{
-            font-size: 12px;
+            font-size: 18px;
+        }
+        &__paragraph2{
+            font-size: 22px;
         }
         &__FigSignature{
             text-align: right;
@@ -56,6 +60,12 @@
                 color: white;
                 font-weight: bold;
             }
+        }
+
+        &__imgDJ{
+            width: 60%;
+            background-color: hotpink;
+            border: hotpink;
         }
     }
 
