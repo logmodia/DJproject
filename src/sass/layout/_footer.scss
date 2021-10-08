@@ -53,6 +53,8 @@
     }
 }
 
+
+// TABLETS RULES
 @media all and (min-width: 768px) {
     .footer {
         &__dj-angerone-logo {
@@ -72,6 +74,25 @@
 
         &__social-networks {
             width: 20rem;
+        }
+    }
+}
+
+// DESKTOP
+@media all and (min-width: 1024px) {
+    .footer {
+        padding: 7rem 0 8.1rem 0;
+        &__dj-angerone-logo {
+            padding-bottom: 3.7rem;
+        }
+
+        &__navlinks {
+            padding-bottom: 3.5rem;
+        }
+
+        &__social-networks {
+            padding-bottom: 6.8rem;
+            width: 23rem;
         }
     }
 }

@@ -301,6 +301,22 @@ main .about-section3-latestRelease_grid p, main .about-section3-latestRelease_gr
   }
 }
 
+@media all and (min-width: 1024px) {
+  .footer {
+    padding: 7rem 0 8.1rem 0;
+  }
+  .footer__dj-angerone-logo {
+    padding-bottom: 3.7rem;
+  }
+  .footer__navlinks {
+    padding-bottom: 3.5rem;
+  }
+  .footer__social-networks {
+    padding-bottom: 6.8rem;
+    width: 23rem;
+  }
+}
+
 .index-main {
   display: none;
 }
