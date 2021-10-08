@@ -6,6 +6,9 @@ time, a {
     display: inline-block;
 }
 
-body {
-    font-family: $font;
+html {
+    font-size: 16px;
+    body {
+        font-family: $font;
+    }
 }

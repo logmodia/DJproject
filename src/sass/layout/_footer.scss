@@ -1,0 +1,39 @@
+.footer {
+    background-color: $gray;
+    display: flex;
+    flex-direction: column;
+    &__dj-angerone-logo {
+        margin: 0 auto;
+        width: 10rem;
+    }
+    &__navlinks {
+        margin: 0 auto;
+        &__links-list {
+            &__element {
+                text-align: center;
+                color: $white-text;
+            }
+        }
+    }
+
+    &__social-networks {
+        display: flex;
+        width: 16rem;
+        justify-content: space-between;
+        margin: 0 auto;
+        &__button {
+            &__link {
+                height: 1.5rem;
+                width: 1.5rem;
+                border-radius: 50%;
+                background-color: $grey;
+                display: flex;
+                // ICONS
+                .fab {
+                    margin: auto;
+                    color: $white-text;
+                }
+            }
+        }
+    }
+}
