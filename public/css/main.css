@@ -159,6 +159,10 @@ html body {
   padding-bottom: 1.1rem;
 }
 
+.footer__navlinks__links-list__element__link {
+  color: #fff;
+}
+
 .footer__navlinks__links-list__element__link:visited, .footer__navlinks__links-list__element__link:active {
   color: #fff;
 }
