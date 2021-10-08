@@ -1,21 +1,43 @@
-.main__DiscoverMusic{
-    margin: 0px auto;
-    border: 5px solid greenyellow;
-    height: 500px;
+.about-Main__DiscoverMusic{
+    margin: 20px auto;
+    padding-top: 60px;
+    background-color: #f5f5f5;
+    background-image: url(/public/img/bg-circle-2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top;
+    height: 30rem;
     
-
-    .main__containerGrid{
+    &__titleh1{
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 0px;
+    }
+    &__containerGrid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        //grid-template-rows: repeat(2, 1fr);
-        column-gap: 20px;
+        column-gap: 55px;
+        row-gap: 55px;
 
-        
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 0px;
 
+        .DiscoverMusic__containerGrid__h2{
+            font-size: 20px;
+            padding-bottom: 10px;
+            font-weight: bolder;
+        }
+        .DiscoverMusic__containerGrid__paragraph{
+            font-size: 15px;
+        }
+
+        .containerGrid__article__rect-icon{
+            float: left;
+            width: 20px;
+            height: 30px;
+            padding: 20px;
+        }
     }
 }
-.main__DiscoverMusic__containerGrid__allDiv{
-            width: 50%;
-            border: red;
-            background-color: red;
-        }
