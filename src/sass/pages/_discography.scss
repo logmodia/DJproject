@@ -1,0 +1,54 @@
+body{
+  .discography__album__grid__container{
+    padding: 40px 0 45px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 5px;
+    .discography__album__container{
+      text-align: center;
+      padding: 15px;
+    }
+    .discography__album__cover{
+      width:100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+    .discography__album__heading{
+      font-size: 1.25em;
+      margin: 24px auto 1em;
+    }
+    .discography__album__release-year{
+      color: $grey;
+      font-weight: 200;
+      letter-spacing: 0.06em;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body{
+    .discography__album__grid__container{
+      padding: 55px 25px 60px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+}
+@media (min-width: 1025px) and (max-width: 1270px){
+  body{
+    .discography__album__grid__container{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+}
+@media (min-width: 1270px){
+  body{
+    .discography__album__grid__container{
+      width: 1270px;
+      margin: auto;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+}

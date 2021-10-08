@@ -1,0 +1,32 @@
+body{
+  .gallery{
+      padding: 55px 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(12, 1fr);
+      gap: 30px;
+  }
+  .gallery-element{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body{
+    .gallery{
+      padding: 80px 0;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+}
+@media (min-width: 1025px) {
+  body{
+    .gallery{
+      padding: 150px 0;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+}
