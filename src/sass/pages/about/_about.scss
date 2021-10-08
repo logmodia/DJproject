@@ -1,10 +1,33 @@
-main {
-    .main_divToCenter{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+body {
+    margin: 0px auto;
+    width: 100%;
+    height: 3503px;
 
-    @import "_section1.scss";
+    main {
+        margin: 0px auto;
+        width: 1441px;
+        border: 5px solid blue;
+
+        .main__sectDJ {
+            margin: 20px auto;
+            width: 90%;
+            border: 5px solid greenyellow;
+
+            &__articleContact{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                div{
+                    
+                    border: 5px solid rgb(156, 13, 97);
+                }
+            }
+
+        }
+    }
+}
+
+/*     @import "_section1.scss";
 
     .about-section2-discovemusic_containGrid{
         display: grid;
@@ -35,4 +58,4 @@ main {
             text-align: center;
         }
     }
-}
+} */
