@@ -24,7 +24,6 @@
 
     &__social-networks {
         display: flex;
-        min-width: 18rem;
         width: 18rem;
         justify-content: space-between;
         margin: 0 auto;
@@ -51,6 +50,29 @@
         margin: 0 auto;
         color: lighten($grey, 30%);
         font-size: 0.9rem;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .footer {
+        &__dj-angerone-logo {
+            padding-bottom: 2.3rem;
+        }
+
+        &__navlinks {
+            &__links-list {
+                display: flex;
+                justify-content: space-between;
+                width: 27rem;
+                &__element {
+                    padding-bottom: 0.7rem;
+                }
+            }
+        }
+
+        &__social-networks {
+            width: 20rem;
+        }
     }
 }
 

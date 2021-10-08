@@ -249,7 +249,6 @@ main .about-section3-latestRelease_grid p, main .about-section3-latestRelease_gr
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 18rem;
   width: 18rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -279,6 +278,27 @@ main .about-section3-latestRelease_grid p, main .about-section3-latestRelease_gr
   margin: 0 auto;
   color: #919191;
   font-size: 0.9rem;
+}
+
+@media all and (min-width: 768px) {
+  .footer__dj-angerone-logo {
+    padding-bottom: 2.3rem;
+  }
+  .footer__navlinks__links-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 27rem;
+  }
+  .footer__navlinks__links-list__element {
+    padding-bottom: 0.7rem;
+  }
+  .footer__social-networks {
+    width: 20rem;
+  }
 }
 
 .index-main {
