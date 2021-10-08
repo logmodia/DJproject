@@ -1,5 +1,8 @@
 a {
     text-decoration: none;
+    &:visited, &:active {
+        color: $white-text;
+    }
 }
 
 time, a {

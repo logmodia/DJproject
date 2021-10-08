@@ -2,38 +2,58 @@
     background-color: $gray;
     display: flex;
     flex-direction: column;
+    padding: 4rem 0;
     &__dj-angerone-logo {
         margin: 0 auto;
-        width: 10rem;
+        width: 16rem;
+        padding-bottom: 1.8rem;
     }
     &__navlinks {
         margin: 0 auto;
+        padding-bottom: 1.6rem;
         &__links-list {
             &__element {
                 text-align: center;
+                text-transform: uppercase;
+                font-weight: 500;
                 color: $white-text;
+                padding-bottom: 1.1rem;
             }
         }
     }
 
     &__social-networks {
         display: flex;
-        width: 16rem;
+        min-width: 18rem;
+        width: 18rem;
         justify-content: space-between;
         margin: 0 auto;
+        padding-bottom: 2.8rem;
         &__button {
             &__link {
                 height: 1.5rem;
                 width: 1.5rem;
                 border-radius: 50%;
-                background-color: $grey;
+                background-color: lighten($gray, 5%);
+                padding: 0.7rem;
                 display: flex;
                 // ICONS
                 .fab {
                     margin: auto;
+                    font-size: 1.35rem;
                     color: $white-text;
                 }
             }
         }
     }
+
+    &__attribution {
+        margin: 0 auto;
+        color: lighten($grey, 30%);
+        font-size: 0.9rem;
+    }
+}
+
+.index-main {
+    display: none;
 }

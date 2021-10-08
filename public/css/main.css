@@ -57,6 +57,10 @@ a {
   text-decoration: none;
 }
 
+a:visited, a:active {
+  color: #fff;
+}
+
 time, a {
   display: inline-block;
 }
@@ -219,38 +223,47 @@ main .about-section3-latestRelease_grid p, main .about-section3-latestRelease_gr
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 4rem 0;
 }
 
 .footer__dj-angerone-logo {
   margin: 0 auto;
-  width: 10rem;
+  width: 16rem;
+  padding-bottom: 1.8rem;
 }
 
 .footer__navlinks {
   margin: 0 auto;
+  padding-bottom: 1.6rem;
 }
 
 .footer__navlinks__links-list__element {
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
   color: #fff;
+  padding-bottom: 1.1rem;
 }
 
 .footer__social-networks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 16rem;
+  min-width: 18rem;
+  width: 18rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
+  padding-bottom: 2.8rem;
 }
 
 .footer__social-networks__button__link {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
-  background-color: #444444;
+  background-color: #353535;
+  padding: 0.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,5 +271,16 @@ main .about-section3-latestRelease_grid p, main .about-section3-latestRelease_gr
 
 .footer__social-networks__button__link .fab {
   margin: auto;
+  font-size: 1.35rem;
   color: #fff;
+}
+
+.footer__attribution {
+  margin: 0 auto;
+  color: #919191;
+  font-size: 0.9rem;
+}
+
+.index-main {
+  display: none;
 }
