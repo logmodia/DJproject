@@ -63,7 +63,7 @@ a {
   border: 5px solid blue;
 }
 
-.globalMain .main__sectDJ {
+.globalMain .globalMain__sectDJ {
   margin: 20px auto;
   width: 65%;
   display: -ms-grid;
@@ -74,49 +74,49 @@ a {
           column-gap: 55px;
 }
 
-.globalMain .main__sectDJ__div {
+.globalMain .globalMain__sectDJ__div {
   width: 100%;
 }
 
-.globalMain .main__sectDJ .about__h1 {
+.globalMain .globalMain__sectDJ .about__h1 {
   font-weight: bolder;
   font-size: 20px;
   padding-bottom: 20px;
 }
 
-.globalMain .main__sectDJ__TextSignaturButton {
+.globalMain .globalMain__sectDJ__TextSignaturButton {
   text-align: left;
 }
 
-.globalMain .main__sectDJ__TextSignaturButton__hr {
+.globalMain .globalMain__sectDJ__TextSignaturButton__hr {
   width: 118px;
 }
 
-.globalMain .main__sectDJ__TextSignaturButton__list-reseausociaux, .globalMain .main__sectDJ__TextSignaturButton__list-mailgsm {
+.globalMain .globalMain__sectDJ__TextSignaturButton__list-reseausociaux, .globalMain .globalMain__sectDJ__TextSignaturButton__list-mailgsm {
   display: inline-block;
   padding-right: 20px;
   padding-top: 20px;
 }
 
-.globalMain .main__sectDJ__TextSignaturButton__list-reseausociaux {
+.globalMain .globalMain__sectDJ__TextSignaturButton__list-reseausociaux {
   display: inline-block;
   padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.globalMain .main__sectDJ__TextSignaturButton__paragraph {
+.globalMain .globalMain__sectDJ__TextSignaturButton__paragraph {
   padding-bottom: 20px;
   color: #444444;
   text-align: justify;
 }
 
-.globalMain .main__sectDJ__TextSignaturButton__FigSignature {
+.globalMain .globalMain__sectDJ__TextSignaturButton__FigSignature {
   text-align: right;
   padding: 20px;
 }
 
-.globalMain .main__sectDJ__TextSignaturButton__GetInTouch {
+.globalMain .globalMain__sectDJ__TextSignaturButton__GetInTouch {
   width: 130px;
   height: 50px;
   text-align: center;
@@ -124,7 +124,7 @@ a {
   border-radius: 5px;
 }
 
-.globalMain .main__sectDJ__TextSignaturButton__GetInTouch p {
+.globalMain .globalMain__sectDJ__TextSignaturButton__GetInTouch p {
   padding-top: 18px;
   font-size: 15px;
   color: white;
@@ -142,13 +142,14 @@ a {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
   -webkit-column-gap: 20px;
           column-gap: 20px;
+  border: yellowgreen;
 }
 
 .globalMain .main__DiscoverMusic__containerGrid__allDiv {
-  width: 50%;
-  border: red;
   background-color: red;
 }
 
