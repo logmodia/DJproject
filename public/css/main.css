@@ -67,73 +67,21 @@ body .globalMain {
   margin: 0px auto;
   width: 1441px;
   border: 5px solid blue;
-  /* .about-section1{
-    display: flex;
-    width: 880px;
-
-    &__articleContact{
-        width: 440px; 
-
-        &__list-mailgsm{
-            li{
-                display: inline-block;
-                padding: 5px;
-            }
-        }
-    
-        &__list-reseausociaux{
-            li{
-                display: inline-block;
-                padding: 10px;
-            }
-        }
-
-        &__paragraph1{
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        &__paragraph2{
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        &__imgSignatureDiv{
-            text-align: right;
-            padding: 10px;
-        }
-
-        &__getintaouch{
-            width: 130px;
-            height: 50px;
-            text-align: center;
-            background-color:#8121e0;
-            border-radius: 5px;
-            p{
-                padding-top: 18px;
-                font-size: 15px;
-                color: white;
-                font-weight: bold;
-            }
-        }
-
-    }
-
-} */
 }
 
 body .globalMain .main__sectDJ {
   margin: 20px auto;
-  width: 90%;
-  border: 5px solid greenyellow;
+  width: 65%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 55px;
+          column-gap: 55px;
 }
 
 body .globalMain .main__sectDJ__div {
-  border: 2px solid yellow;
+  width: 100%;
 }
 
 body .globalMain .main__sectDJ .about__h1 {
@@ -165,6 +113,49 @@ body .globalMain .main__sectDJ__TextSignaturButton__list-reseausociaux {
 
 body .globalMain .main__sectDJ__TextSignaturButton__paragraph {
   padding-bottom: 20px;
+  color: #444444;
+  text-align: justify;
+}
+
+body .globalMain .main__sectDJ__TextSignaturButton__FigSignature {
+  text-align: right;
+  padding: 20px;
+}
+
+body .globalMain .main__sectDJ__TextSignaturButton__GetInTouch {
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  background-color: #8121e0;
+  border-radius: 5px;
+}
+
+body .globalMain .main__sectDJ__TextSignaturButton__GetInTouch p {
+  padding-top: 18px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+body .globalMain .main__DiscoverMusic {
+  margin: 0px auto;
+  border: 5px solid greenyellow;
+  height: 500px;
+}
+
+body .globalMain .main__DiscoverMusic__containGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+body .globalMain .main__DiscoverMusic__containGrid__allDiv {
+  width: 50% 50%;
+  border: red;
+  background-color: red;
 }
 
 /*     

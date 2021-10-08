@@ -1,12 +1,12 @@
 .main__sectDJ {
     margin: 20px auto;
-    width: 90%;
-    border: 5px solid greenyellow;
+    width: 65%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 55px;
 
     &__div{
-        border : 2px solid yellow;
+        width: 100%;
         
     }
     .about__h1 {
@@ -38,55 +38,20 @@
 
         &__paragraph{
             padding-bottom: 20px;
+            color: #444444;
+            text-align: justify;
         }
-    }
-
-    
-
-}
-
-/* .about-section1{
-    display: flex;
-    width: 880px;
-
-    &__articleContact{
-        width: 440px; 
-
-        &__list-mailgsm{
-            li{
-                display: inline-block;
-                padding: 5px;
-            }
-        }
-    
-        &__list-reseausociaux{
-            li{
-                display: inline-block;
-                padding: 10px;
-            }
-        }
-
-        &__paragraph1{
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        &__paragraph2{
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        &__imgSignatureDiv{
+        &__FigSignature{
             text-align: right;
-            padding: 10px;
+            padding: 20px;
         }
-
-        &__getintaouch{
+       &__GetInTouch{
             width: 130px;
             height: 50px;
             text-align: center;
             background-color:#8121e0;
             border-radius: 5px;
+
             p{
                 padding-top: 18px;
                 font-size: 15px;
@@ -94,7 +59,8 @@
                 font-weight: bold;
             }
         }
-
     }
 
-} */
+    
+
+}
