@@ -1,21 +1,23 @@
+@import "_headerAbout.scss";
+.about-Main {
+    margin: 0px auto;
+    width: 1441px;
+    color: darkgrey;
 
-    .about-Main {
-        margin: 0px auto;
-        width: 1441px;
-        border: 5px solid blue;
-        color: darkgrey;
-
-        .about__h1 {
-            font-weight: bolder;
-            font-size: 30px;
-            color: black;
-            padding-bottom: 20px;
-            
-        }
-
-        @import "_section1.scss";
-        @import "_section2.scss";
-        @import "_section3.scss";
-
+    .about__h1 {
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+        padding-bottom: 20px;
+        
     }
 
+    @import "_section1.scss";
+    @import "_section2.scss";
+    @import "_section3.scss";
+
+}
+.about-footer-width{
+    margin: 0px auto;
+    width: 1441px;
+}

@@ -16,40 +16,50 @@
 
         <title>About DJ Angereno</title>
     </head>
+
     <body>
-        <header class="header">
-            <nav class="header__top-bar">
-                <div class="header__top-bar__burger-menu">
-                    <div class="header__top-bar__burger-menu__line"></div>
-                    <div class="header__top-bar__burger-menu__line"></div>
-                    <div class="header__top-bar__burger-menu__line"></div>
-                </div>
+        <header class="About-header">
 
-                <a href="../../index.html">
-                    <img
-                        class="header__top-bar__dj-angerone-logo"
-                        src="../img/logo.png"
-                        alt="DJ Angerone logo"
-                    />
-                </a>
-
-                <div class="header__top-bar__more-menu">
-                    <div class="header__top-bar__more-menu__point"></div>
-                    <div class="header__top-bar__more-menu__point"></div>
-                    <div class="header__top-bar__more-menu__point"></div>
-                </div>
-            </nav>
-
-            <h1 class="header__heading">discography</h1>
-
-            <nav class="header__navlinks">
-                <ul class="header__navlinks__links-list">
-                    <li class="header__navlinks__links-list__element">home</li>
-                    <li class="header__navlinks__links-list__element">
-                        discography
+            <div class="About-header__topBar">
+                <div class="About-header__topBar__element">
+                    <li class="About-header__topBar__element__menuAndlogo hidden">
+                        <ion-icon name="menu-sharp" class="menu-humb"></ion-icon>
                     </li>
-                </ul>
-            </nav>
+                    <li class="About-header__topBar__element__menuAndlogo">
+                        <a href="/index.html">
+                            <img src="../img/logo.png" alt="DJ Angerone logo"/>
+                        </a>
+                    </li>
+                </div>
+
+                <nav class="About-header__topBar__element About-header__topBar__element__nav">
+                    <ul class="About-header__topBar__element__nav__list">
+                        <li class="About-header__topBar__element__nav__list__li"><a href="/public/html/about_us.html" class="about-TopnavLink">ABOUT</a></li>
+                        <li class="About-header__topBar__element__nav__list__li"><a href="/public/html/discography.html" class="about-TopnavLink">DISCOGRAPHY</a></li>
+                        <li class="About-header__topBar__element__nav__list__li"><a href="#" class="about-TopnavLink">TOURS</a></li>
+                        <li class="About-header__topBar__element__nav__list__li"><a href="/public/html/gallery.html" class="about-TopnavLink">PHOTOS</a></li>
+                        <li class="About-header__topBar__element__nav__list__li"><a href="#" class="about-TopnavLink"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="About-header__topBar__element__nav__list__li"><a href="#" class="about-TopnavLink"><i class="fab fa-instagram"></i></a></li>
+                        <li class="About-header__topBar__element__nav__list__li"><a href="#" class="about-TopnavLink"><i class="fab fa-twitter"></i></a></li>
+                        <li class="About-header__topBar__element__nav__list__li"><a href="#" class="about-TopnavLink"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </nav>
+                
+                <div class="About-header__topBar__element__menu-humb-right">
+                    <li class="About-header__topBar__element__menuAndlogo">
+                        <ion-icon name="menu-sharp" class="menu-humb"></ion-icon>
+                    </li>
+                </div>
+
+            </div>
+
+            <div class="About-header__headTitleBlock">
+                <h1 class="About-header__headTitleBlock__h1">ABOUT US</h1>
+                <li class="About-header__headTitleBlock__li"><a href="/index.html" class="About-header__headTitleBlock__li__a">HOME</a></li>
+                <li class="About-header__headTitleBlock__li About-header__headTitleBlock__liPoint">.</li>
+                <li class="About-header__headTitleBlock__li About-header__headTitleBlock__li-Gray">ABOUT US</li>
+            </div>
+
         </header>
 
         <main class="about-Main">
@@ -336,11 +346,8 @@
 
         </main>
 
-        <footer class="footer">
-            <img
-                class="footer__dj-angerone-logo"
-                src="public/img/logo.png"
-                alt="DJ Angerone logo"
+        <footer class="footer about-footer-width">
+            <img class="footer__dj-angerone-logo" src="/public/img/logo.png" alt="DJ Angerone logo"
             />
 
             <nav class="footer__navlinks">
@@ -408,6 +415,8 @@
                 © 2021 DJ Angerone. Privacy Policy
             </p>
         </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
     </body>
     
