@@ -244,62 +244,6 @@ html body {
   }
 }
 
-.header__new-single {
-  background-image: url("../img/homapage-banner-img.jpg");
-  background-size: cover;
-  height: 19rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.header__new-single__contents {
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 90%;
-  height: 50%;
-}
-
-.header__new-single__heading, .header__new-single__song-title {
-  color: #fff;
-}
-
-.header__new-single__heading {
-  text-transform: capitalize;
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding-top: 1.75rem;
-}
-
-.header__new-single__song-title {
-  font-size: 2.15rem;
-  font-weight: 700;
-  line-height: 2.6rem;
-  padding-top: 0.25rem;
-}
-
-.header__new-single__audio-player {
-  width: 100%;
-  height: 2rem;
-  background-color: #282828;
-  opacity: 0.9;
-  margin-top: auto;
-}
-
-.about-dj, .latest-releases {
-  display: none;
-}
-
 .About-header {
   margin: 0px auto;
   width: 1441px;
