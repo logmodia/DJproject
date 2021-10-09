@@ -1,0 +1,9 @@
+.next-gig {
+    display: flex;
+    &__contents {
+        margin: auto;
+        background-color: $gray;
+        width: 90%;
+        border-radius: 5px;
+    }
+}
