@@ -61,7 +61,6 @@ a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 a:visited, a:active {
   color: black;
 }
@@ -297,35 +296,21 @@ html body {
   margin-top: auto;
 }
 
-.next-gig {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.next-gig__contents {
-  margin: auto;
-  background-color: #282828;
-  width: 90%;
-  border-radius: 5px;
-}
-
 .about-dj, .latest-releases {
   display: none;
 }
 
-.globalMain {
-=======
 .about-Main {
->>>>>>> rené
   margin: 0px auto;
   width: 1441px;
   border: 5px solid blue;
+  color: darkgrey;
 }
 
 .about-Main .about__h1 {
   font-weight: bolder;
   font-size: 30px;
+  color: black;
   padding-bottom: 20px;
 }
 
@@ -343,7 +328,6 @@ html body {
 
 .about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton {
   text-align: left;
-  color: #444444;
 }
 
 .about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__hr {
@@ -391,15 +375,13 @@ html body {
 
 .about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__GetInTouch p {
   padding-top: 18px;
-  font-size: 15px;
+  font-size: 14px;
   color: white;
   font-weight: bold;
 }
 
 .about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__imgDJ {
-  width: 60%;
-  background-color: hotpink;
-  border: hotpink;
+  width: 100%;
 }
 
 .about-Main .about-Main__DiscoverMusic {
@@ -415,6 +397,7 @@ html body {
 
 .about-Main .about-Main__DiscoverMusic__titleh1 {
   text-align: center;
+  color: black;
   padding-top: 60px;
   padding-bottom: 0px;
 }
@@ -435,6 +418,7 @@ html body {
 
 .about-Main .about-Main__DiscoverMusic__containerGrid .DiscoverMusic__containerGrid__h2 {
   font-size: 20px;
+  color: black;
   padding-bottom: 10px;
   font-weight: bolder;
 }
@@ -448,6 +432,47 @@ html body {
   width: 20px;
   height: 30px;
   padding: 20px;
+}
+
+.about-Main .about-Main__Release__divSectionTitle {
+  margin: 0px auto;
+  width: 60%;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.about-Main .about-Main__Release__divSectionTitle__p {
+  font-size: 18px;
+}
+
+.about-Main .about-Main__Release__containerArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 150px;
+}
+
+.about-Main .about-Main__Release__containerArticle__article {
+  text-align: center;
+}
+
+.about-Main .about-Main__Release__containerArticle__article__h2 {
+  font: 20px;
+  color: black;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.about-Main .about-Main__Release__containerArticle__article__p {
+  font: 12px;
 }
 
 body .gallery {

@@ -14,7 +14,6 @@
     .globalMain__sectDJ__TextSignaturButton {
 
         text-align: left;
-        color: #444444;
 
         &__hr{
             width: 118px;
@@ -56,16 +55,14 @@
 
             p{
                 padding-top: 18px;
-                font-size: 15px;
+                font-size: 14px;
                 color: white;
                 font-weight: bold;
             }
         }
 
         &__imgDJ{
-            width: 60%;
-            background-color: hotpink;
-            border: hotpink;
+            width: 100%;
         }
     }
 
