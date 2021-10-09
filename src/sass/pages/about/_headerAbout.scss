@@ -1,0 +1,86 @@
+.About-header{
+    margin: 0px auto;
+    width: 1441px;
+    height: 500px;
+    color: white;
+    background-image: url(/public/img/banner-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__topBar{
+        margin: 0px auto;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+        &__element__menuAndlogo{
+            display: inline-block;
+            padding-right: 0px;
+            .menu-humb{
+                font-size: 50px;
+                font-weight: larger;
+            }
+        }
+
+        &__element__nav{
+
+            padding-left: 200px;
+
+            &__list{
+    
+    
+                &__li{
+                    display: inline-block;
+                    padding-right: 30px;
+                    font-weight: bold;
+        
+                    .about-TopnavLink{
+                        color: white;
+                        &:visited{
+                            color: white;
+                        }
+                    }
+                }
+    
+            }
+
+        }
+    }
+
+    .About-header__headTitleBlock{
+        padding: 200px;
+        text-align: center;
+        height: 100vh;
+
+        &__h1{
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        &__li{
+            display: inline-block;
+            font-weight: bold;
+            font-size: 12px;
+            
+            &__a{
+                color: white;
+                &:visited{
+                    color: white;
+                }
+            }
+        }
+        
+        &__liPoint{
+            font-size: 50px;
+            font-weight: bolder;
+            color: goldenrod;
+        }
+
+        &__li-Gray{
+            opacity: 0.5;
+        }
+    }
+
+}

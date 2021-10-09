@@ -4,7 +4,7 @@
     //grid-template-columns: repeat(2, 1fr);
     column-gap: 100px;
     //justify-items:stretch;
-
+    height: 430px;
     padding-left: 150px;
     padding-right: 150px;
     padding-top: 100px;
@@ -14,7 +14,6 @@
     .globalMain__sectDJ__TextSignaturButton {
 
         text-align: left;
-        color: #444444;
 
         &__hr{
             width: 118px;
@@ -33,19 +32,18 @@
         }
 
         &__paragraph{
-            padding-bottom: 30px;
+            padding-bottom: 20px;
             
             text-align: justify;
         }
         &__paragraph1{
-            font-size: 18px;
+            font-size: 14px;
         }
         &__paragraph2{
-            font-size: 22px;
+            font-size: 18px;
         }
         &__FigSignature{
             text-align: right;
-            padding: 20px;
         }
        &__GetInTouch{
             width: 130px;
@@ -56,16 +54,14 @@
 
             p{
                 padding-top: 18px;
-                font-size: 15px;
+                font-size: 14px;
                 color: white;
                 font-weight: bold;
             }
         }
 
         &__imgDJ{
-            width: 60%;
-            background-color: hotpink;
-            border: hotpink;
+            width: 100%;
         }
     }
 
