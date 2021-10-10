@@ -292,32 +292,10 @@ html body {
   margin-top: auto;
 }
 
-.about-dj, .latest-releases {
-  display: none;
-}
-
-.About-header {
-  margin: 0px auto;
-  width: 1441px;
-  height: 500px;
-  color: white;
-  background-image: url(/public/img/banner-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.About-header__topBar {
-  margin: 0px auto;
-  padding-top: 20px;
+.next-gig {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .next-gig__dark-pannel {
@@ -446,6 +424,32 @@ html body {
 
 .latest-releases, .join-fanbase, .tour-schedule, .tickets-desk, .partners-sponsors {
   display: none;
+}
+
+.About-header {
+  margin: 0px auto;
+  width: 1441px;
+  height: 500px;
+  color: white;
+  background-image: url(/public/img/banner-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.About-header__topBar {
+  margin: 0px auto;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .About-header__topBar__element__menuAndlogo {
   display: inline-block;
   padding-right: 0px;
