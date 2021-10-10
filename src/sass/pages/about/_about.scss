@@ -1,44 +1,24 @@
+@import "_headerAbout.scss";
 
-    .globalMain {
-        margin: 0px auto;
-        width: 1441px;
-        border: 5px solid blue;
+.about-Main {
+    margin: 0px auto;
+    width: 1441px;
+    color: darkgrey;
 
-        @import "_section1.scss";
-        @import "_section2.scss";
-
-
+    .about__h1 {
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+        padding-bottom: 20px;
+        
     }
 
-/*
-    .about-section2-discovemusic_containGrid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr;
-        column-gap: 5px;
-        row-gap: 5px;
+    @import "_section1.scss";
+    @import "_section2.scss";
+    @import "_section3.scss";
 
-        background-color: yellow;
-        &__musicList{
-            display: inline-block;
-            padding: 10px;
-        }
-
-        div{
-            background-color: burlywood;
-            border: solid white;
-            //width: ;
-        }
-
-    }
-
-    .about-section3-latestRelease_grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-        p,figcaption{
-            text-align: center;
-        }
-
-    }
-} */
+}
+.about-footer-width{
+    margin: 0px auto;
+    width: 1441px;
+}
