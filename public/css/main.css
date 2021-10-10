@@ -474,6 +474,23 @@ html body {
   margin: 0 auto;
 }
 
+.latest-releases__text-content {
+  text-align: center;
+}
+
+.latest-releases__text-content__heading {
+  text-transform: capitalize;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.latest-releases__text-content__info {
+  font-weight: 300;
+  font-size: 0.86rem;
+  line-height: 1.5rem;
+  color: #848484;
+}
+
 .latest-releases__list__release__cover {
   width: 100%;
 }
