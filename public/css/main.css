@@ -354,7 +354,6 @@ html body {
 .next-gig__dark-pannel__contents__button {
   background-color: #8121e0;
   border-radius: 5px;
-  width: 100%;
   height: 3.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -422,7 +421,47 @@ html body {
   z-index: -1;
 }
 
-.latest-releases, .join-fanbase, .tour-schedule, .tickets-desk, .partners-sponsors {
+.latest-releases__view-discography {
+  background-image: url("../img/homepage-latest-releases-background.jpg");
+  background-size: 550%;
+  background-position: -810px -390px;
+  height: 16.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.latest-releases__view-discography__heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #fff;
+  margin: auto auto 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+.latest-releases__view-discography__button {
+  margin: 1.5rem auto auto auto;
+  width: 63%;
+  background-color: #8121e0;
+  border-radius: 5px;
+  height: 3.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.latest-releases__view-discography__button p {
+  margin: auto;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.join-fanbase, .tour-schedule, .tickets-desk, .partners-sponsors {
   display: none;
 }
 
