@@ -244,6 +244,62 @@ html body {
   }
 }
 
+.header__new-single {
+  background-image: url("../img/homapage-banner-img.jpg");
+  background-size: cover;
+  height: 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__new-single__contents {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 50%;
+}
+
+.header__new-single__heading, .header__new-single__song-title {
+  color: #fff;
+}
+
+.header__new-single__heading {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 1.75rem;
+}
+
+.header__new-single__song-title {
+  font-size: 2.15rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  padding-top: 0.25rem;
+}
+
+.header__new-single__audio-player {
+  width: 100%;
+  height: 2rem;
+  background-color: #282828;
+  opacity: 0.9;
+  margin-top: auto;
+}
+
+.about-dj, .latest-releases {
+  display: none;
+}
+
 .About-header {
   margin: 0px auto;
   width: 1441px;
@@ -278,8 +334,14 @@ html body {
   font-weight: larger;
 }
 
+.About-header__topBar__element__menuAndlogo .menu-ellipsis {
+  font-size: 35px;
+  font-weight: bolder;
+  padding-bottom: 7px;
+}
+
 .About-header__topBar__element__nav {
-  padding-left: 200px;
+  padding-left: 300px;
 }
 
 .About-header__topBar__element__nav__list__li {
@@ -362,7 +424,7 @@ html body {
 }
 
 .about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__hr {
-  width: 118px;
+  width: 200px;
 }
 
 .about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__list-reseausociaux, .about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__list-mailgsm {
@@ -508,6 +570,254 @@ html body {
 .about-footer-width {
   margin: 0px auto;
   width: 1441px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .About-header {
+    margin: 0px auto;
+    width: 768px;
+    height: 500px;
+    background-image: url(/public/img/banner-img.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1920px;
+    background-clip: content-box;
+  }
+  .About-header__topBar {
+    background-color: black;
+    padding-top: 10px;
+  }
+  .About-header__topBar__element__nav {
+    padding-left: 400px;
+  }
+  .About-header__topBar__element__nav__list {
+    visibility: hidden;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+  .About-header .menu-humbTopleft, .About-header .menu-ellipsis {
+    position: static !important;
+    visibility: visible;
+    top: 0px !important;
+    left: 0px !important;
+  }
+  .About-header .About-header__headTitleBlock {
+    padding: 200px;
+    text-align: center;
+    height: 100vh;
+  }
+  .About-header .About-header__headTitleBlock__h1 {
+    padding-bottom: 20px;
+  }
+  .about-Main {
+    margin: 0px auto;
+    width: 768px;
+  }
+  .about-Main .globalMain__sectDJ {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .about-Main .globalMain__sectDJ .globalMain__sectDJ__div {
+    padding-bottom: 30px;
+  }
+  .about-Main .about-Main__DiscoverMusic {
+    width: 768px;
+    height: 40rem;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+    row-gap: 55px;
+  }
+  .about-Main .about-Main__Release {
+    width: 768px;
+  }
+  .about-Main .about-Main__Release__containerArticle {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .about-Main .about-Main__Release .img3_SectRelease {
+    padding-top: 40px;
+  }
+  .about-footer-width {
+    margin: 0px auto;
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .About-header {
+    margin: 0px auto;
+    width: 320px;
+    height: 250px;
+    background-image: url(/public/img/banner-img.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1480px;
+    background-clip: content-box;
+  }
+  .About-header__topBar {
+    background-color: black;
+    padding-top: 5px;
+  }
+  .About-header__topBar__element__nav {
+    padding-left: 0px;
+  }
+  .About-header__topBar__element__nav__list {
+    visibility: hidden;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+  .About-header__topBar__element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .About-header__topBar__element .logoTopBar {
+    width: 150px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 40px;
+  }
+  .About-header .menu-humbTopleft, .About-header .menu-ellipsis {
+    position: static !important;
+    visibility: visible;
+    top: 0px !important;
+    left: 0px !important;
+  }
+  .About-header .menu-humbTopRight {
+    visibility: hidden;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+  .About-header .About-header__headTitleBlock {
+    padding: 0px;
+    text-align: center;
+    height: 100vh;
+  }
+  .About-header .About-header__headTitleBlock__h1 {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    font-size: 26px;
+  }
+  .about-Main {
+    margin: 0px auto;
+    width: 320px;
+  }
+  .about-Main .globalMain__sectDJ {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+  }
+  .about-Main .globalMain__sectDJ__TextSignaturButton__FigSignature {
+    padding-bottom: 10px;
+  }
+  .about-Main .about-Main__DiscoverMusic {
+    width: 320px;
+    height: 83rem;
+  }
+  .about-Main .about-Main__DiscoverMusic .about__h1 {
+    font-size: 26px;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    row-gap: 55px;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid__article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid__article .DiscoverMusic__containerGrid__h2 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid__article .DiscoverMusic__containerGrid__paragraph {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid__paragraph {
+    font-size: 15px;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid .containerGrid__article__rect-icon {
+    float: none;
+    width: 20px;
+    height: 30px;
+    padding: 20px;
+  }
+  .about-Main .about-Main__Release {
+    width: 320px;
+  }
+  .about-Main .about-Main__Release .about-Main__Release__divSectionTitle {
+    margin: 0px auto;
+    width: 320px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .about-Main .about-Main__Release .about-Main__Release__divSectionTitle__p {
+    font-size: 14px;
+  }
+  .about-Main .about-Main__Release__containerArticle {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .about-Main .about-Main__Release__divSectionTitle__h1 {
+    font-size: 22px;
+  }
+  .about-Main .about-Main__Release .img_SectRelease {
+    padding-top: 40px;
+  }
+  .about-Main .about-Main__Release .img_SectRelease img {
+    width: 320px;
+    height: 346px;
+  }
+  .about-footer-width {
+    margin: 0px auto;
+    width: 320px;
+  }
 }
 
 body .gallery {

@@ -18,15 +18,21 @@
         &__element__menuAndlogo{
             display: inline-block;
             padding-right: 0px;
+
             .menu-humb{
                 font-size: 50px;
                 font-weight: larger;
+            }
+            .menu-ellipsis{
+                font-size: 35px;
+                font-weight: bolder;
+                padding-bottom: 7px;
             }
         }
 
         &__element__nav{
 
-            padding-left: 200px;
+            padding-left: 300px;
 
             &__list{
     
