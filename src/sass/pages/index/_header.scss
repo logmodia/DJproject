@@ -59,4 +59,14 @@
 }
 
 // DESKTOP
-@media all and (min-width: 1024px) {}
+@media all and (min-width: 1024px) {
+    .header {
+        background-image: url("../img/homapage-banner-img.jpg");
+        background-size: cover;
+        height: 100vh;
+        &__new-single {
+            background: none;
+            height: auto;
+        }
+    }
+}

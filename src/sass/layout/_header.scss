@@ -18,6 +18,12 @@
             width: 10rem;
             margin-left: 0.7rem;
         }
+        &__navlinks {
+            display: none;
+        }
+        &__social-networks {
+            display: none;
+        }
         &__more-menu {
             display: flex;
             flex-direction: column;
@@ -28,6 +34,54 @@
                 background-color: $white-text;
                 width: 0.37rem;
                 height: 0.37rem;
+            }
+        }
+    }
+}
+
+// DESKTOP
+@media all and (min-width: 1024px) {
+    .header {
+        &__top-bar {
+            background: none;
+            padding: 2rem 5% 0 5%;
+            justify-content: space-between;
+            align-items: center;
+            &__burger-menu {
+                display: none;
+            }
+            &__dj-angerone-logo {
+                width: 16rem;
+            }
+            &__navlinks {
+                display: inherit;
+                &__links-list {
+                    display: flex;
+                    &__element {
+                        &__link {
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            color: $white-text;
+                            &:visited, &:active {
+                                color: $white-text;
+                            }
+                        }
+                    }
+                }
+            }
+            &__social-networks {
+                display: flex;
+                &__button {
+                    &__link {
+                        .fab {
+                            color: lighten($grey, 35%);
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+            &__more-menu {
+                display: none;
             }
         }
     }

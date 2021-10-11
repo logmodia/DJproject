@@ -109,6 +109,14 @@ html body {
   margin-left: 0.7rem;
 }
 
+.header__top-bar__navlinks {
+  display: none;
+}
+
+.header__top-bar__social-networks {
+  display: none;
+}
+
 .header__top-bar__more-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,6 +136,53 @@ html body {
   background-color: #fff;
   width: 0.37rem;
   height: 0.37rem;
+}
+
+@media all and (min-width: 1024px) {
+  .header__top-bar {
+    background: none;
+    padding: 2rem 5% 0 5%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__top-bar__burger-menu {
+    display: none;
+  }
+  .header__top-bar__dj-angerone-logo {
+    width: 16rem;
+  }
+  .header__top-bar__navlinks {
+    display: inherit;
+  }
+  .header__top-bar__navlinks__links-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__top-bar__navlinks__links-list__element__link {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+  }
+  .header__top-bar__navlinks__links-list__element__link:visited, .header__top-bar__navlinks__links-list__element__link:active {
+    color: #fff;
+  }
+  .header__top-bar__social-networks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__top-bar__social-networks__button__link .fab {
+    color: #9d9d9d;
+    font-size: 1.3rem;
+  }
+  .header__top-bar__more-menu {
+    display: none;
+  }
 }
 
 .footer {
@@ -307,6 +362,18 @@ html body {
   }
   .header__new-single__contents__audio-player {
     margin-top: 2.3rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .header {
+    background-image: url("../img/homapage-banner-img.jpg");
+    background-size: cover;
+    height: 100vh;
+  }
+  .header__new-single {
+    background: none;
+    height: auto;
   }
 }
 
