@@ -101,4 +101,37 @@
 }
 
 // DESKTOP
-@media all and (min-width: 1024px) {}
+@media all and (min-width: 1024px) {
+    .latest-releases {
+        &__view-discography {
+            height: 28.3rem;
+            background-size: cover;
+            background-position: center;
+            &__heading {
+                font-size: 2.3rem;
+            }
+            &__button {
+                width: 14rem;
+                margin-top: 3.5%;
+            }
+        }
+
+        &__text-content {
+            &__heading {
+                font-size: 2.2rem;
+            }
+            &__info {
+                width: 41rem;
+                margin: 0 auto;
+            }
+        }
+
+        &__list {
+            justify-content: space-between;
+            max-width: 1165.85px;
+            &__release {
+                width: 31.5%;
+            }
+        }
+    }
+}

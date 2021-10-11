@@ -774,6 +774,37 @@ html body {
   }
 }
 
+@media all and (min-width: 1024px) {
+  .latest-releases__view-discography {
+    height: 28.3rem;
+    background-size: cover;
+    background-position: center;
+  }
+  .latest-releases__view-discography__heading {
+    font-size: 2.3rem;
+  }
+  .latest-releases__view-discography__button {
+    width: 14rem;
+    margin-top: 3.5%;
+  }
+  .latest-releases__text-content__heading {
+    font-size: 2.2rem;
+  }
+  .latest-releases__text-content__info {
+    width: 41rem;
+    margin: 0 auto;
+  }
+  .latest-releases__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1165.85px;
+  }
+  .latest-releases__list__release {
+    width: 31.5%;
+  }
+}
+
 .join-fanbase, .tour-schedule, .tickets-desk, .partners-sponsors {
   display: none;
 }
