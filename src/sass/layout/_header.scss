@@ -57,6 +57,8 @@
                 display: inherit;
                 &__links-list {
                     display: flex;
+                    justify-content: space-between;
+                    width: 27rem;
                     &__element {
                         &__link {
                             text-transform: uppercase;
@@ -71,6 +73,8 @@
             }
             &__social-networks {
                 display: flex;
+                justify-content: space-between;
+                width: 10rem;
                 &__button {
                     &__link {
                         .fab {
