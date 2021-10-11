@@ -13,16 +13,18 @@
             width: 85%;
             color: $white-text;
             text-align: center;
-            &__heading {
-                font-size: 1.4rem;
-                font-weight: 600;
-                text-transform: capitalize;
-                padding-bottom: 0.75rem;
-            }
-            &__availability {
-                font-size: 0.85rem;
-                line-height: 1.5rem;
-                padding-bottom: 0.95rem;
+            &__text-content {
+                &__heading {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    padding-bottom: 0.75rem;
+                }
+                &__availability {
+                    font-size: 0.9rem;
+                    line-height: 1.5rem;
+                    padding-bottom: 0.95rem;
+                }
             }
             &__time {
                 display: flex;
@@ -30,6 +32,9 @@
                 padding-bottom: 2rem;
                 &__element {
                     font-weight: 500;
+                    &:last-child {
+                        display: none;
+                    }
                     output {
                         font-size: 2.2rem;
                     }
@@ -42,6 +47,60 @@
             }
             &__button {
                 @include button;
+            }
+        }
+    }
+}
+
+// TABLET
+@media all and (min-width: 768px) {
+    .next-gig {
+        &__dark-pannel {
+            padding: 2.55rem 0;
+            &__contents {
+                width: 90%;
+                &__time {
+                    &__element {
+                        &:last-child {
+                            display: unset;
+                        }
+                        output {
+                            font-size: 3.7rem;
+                        }
+                        p {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// DESKTOP
+@media all and (min-width: 1024px) {
+    .next-gig {
+        &__dark-pannel {
+            &__contents {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &__text-content {
+                    text-align: left;
+                    width: 12rem;
+                    &__heading {
+                        font-size: 2.1rem;
+                    }
+                    &__availability {
+                        padding-bottom: 0;
+                    }
+                }
+                &__time {
+                    padding-bottom: 0;
+                }
+                &__button {
+                    width: 12.5rem;
+                }
             }
         }
     }

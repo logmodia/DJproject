@@ -422,15 +422,15 @@ html body {
   text-align: center;
 }
 
-.next-gig__dark-pannel__contents__heading {
+.next-gig__dark-pannel__contents__text-content__heading {
   font-size: 1.4rem;
   font-weight: 600;
   text-transform: capitalize;
   padding-bottom: 0.75rem;
 }
 
-.next-gig__dark-pannel__contents__availability {
-  font-size: 0.85rem;
+.next-gig__dark-pannel__contents__text-content__availability {
+  font-size: 0.9rem;
   line-height: 1.5rem;
   padding-bottom: 0.95rem;
 }
@@ -446,6 +446,10 @@ html body {
 
 .next-gig__dark-pannel__contents__time__element {
   font-weight: 500;
+}
+
+.next-gig__dark-pannel__contents__time__element:last-child {
+  display: none;
 }
 
 .next-gig__dark-pannel__contents__time__element output {
@@ -472,6 +476,54 @@ html body {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
+}
+
+@media all and (min-width: 768px) {
+  .next-gig__dark-pannel {
+    padding: 2.55rem 0;
+  }
+  .next-gig__dark-pannel__contents {
+    width: 90%;
+  }
+  .next-gig__dark-pannel__contents__time__element:last-child {
+    display: unset;
+  }
+  .next-gig__dark-pannel__contents__time__element output {
+    font-size: 3.7rem;
+  }
+  .next-gig__dark-pannel__contents__time__element p {
+    font-size: 0.8rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .next-gig__dark-pannel__contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .next-gig__dark-pannel__contents__text-content {
+    text-align: left;
+    width: 12rem;
+  }
+  .next-gig__dark-pannel__contents__text-content__heading {
+    font-size: 2.1rem;
+  }
+  .next-gig__dark-pannel__contents__text-content__availability {
+    padding-bottom: 0;
+  }
+  .next-gig__dark-pannel__contents__time {
+    padding-bottom: 0;
+  }
+  .next-gig__dark-pannel__contents__button {
+    width: 12.5rem;
+  }
 }
 
 .about-dj {
