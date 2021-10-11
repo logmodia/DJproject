@@ -2,16 +2,16 @@ body{
   .tour-schedule{
     padding: 55px 15px;
   }
-  .tour-schedule__select-month__shape,
-  .tour-schedule__dates-for-month{
-    border: 1px solid black;
-  }
   .tour-schedule__select-month__shape{
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
     border-bottom: none;
     text-align: center;
     background-color: #000;
+  }
+  .tour-schedule__select-month__shape,
+  .tour-schedule__dates-for-month{
+    border: 1px solid black;
   }
   .tour-schedule__select-month__inner-container{
     padding: 20px 0;
@@ -42,7 +42,7 @@ body{
     border-top: none;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
-    padding: 48px 0 46px;
+    padding: 48px 0;
   }
   .tour-schedule__dates-for-month__grid-container{
     display: grid;
@@ -102,9 +102,6 @@ body{
     .tour-schedule__dates-for-month__available-dates__container{
       padding: 0 30px 0 0;
     }
-    .tour-schedule__dates-for-month{
-      padding: 48px 0;
-    }
     .tour-schedule__dates-for-month__grid-container{
       grid-template-columns: 1fr 5fr;
     }
@@ -137,6 +134,12 @@ body{
     .tour-schedule__select-month__current-item{
       padding-bottom: 45px;
       border-bottom: 5px solid $purple;
+    }
+    .tour-schedule__dates-for-month{
+      border-top: none;
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+      padding: 82px 0 107px;
     }
   }
 }
@@ -194,6 +197,12 @@ body{
     .tour-schedule__select-month__current-item{
       padding-bottom: 45px;
       border-bottom: 5px solid $purple;
+    }
+    .tour-schedule__dates-for-month{
+      border-top: none;
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+      padding: 82px 0 107px;
     }
   }
 }
