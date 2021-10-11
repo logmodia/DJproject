@@ -9,60 +9,74 @@
   </head>
   <body>
     <main class="tour-schedule">
-      <section class="tour-schedule__select-month__menu">
-        <h2 class="hidden">Which month would you like to check ?</h2>
-        <article class="tour-schedule__select-month__item tour-schedule__select-month__current-item">
-          <h3>March</h3>
-        </article>
-        <article class="tour-schedule__select-month__item">
-          <h3>April</h3>
-        </article>
-        <article class="tour-schedule__select-month__item">
-          <h3>May</h3>
-        </article>
-      </section>
-      <section class="tour-schedule__dates-for-month">
-        <h2 class="hidden">dates for the month of ... add with javascript</h2>
-        <div class="tour-schedule__dates-for-month__grid-container">
-          <div class="tour-schedule__dates-for-month__progress-bar-container">
-            <aside class="tour-schedule__dates-for-month__progress-bar">
-
-            </aside>
+      <div class="tour-schedule__content">
+        <section class="tour-schedule__select-month__shape">
+          <h2 class="hidden">Which month would you like to check ?</h2>
+          <div class="tour-schedule__select-month__main-container">
+            <ul class="tour-schedule__select-month__inner-container">
+              <li class="tour-schedule__select-month__item tour-schedule__select-month__current-item">
+                <h3 class="tour-schedule__select-month__heading">March</h3>
+              <li class="tour-schedule__select-month__item" id="test1">
+                <h3 class="tour-schedule__select-month__heading">April</h3>
+              <li class="tour-schedule__select-month__item" id="test2">
+                <h3 class="tour-schedule__select-month__heading">May</h3>
+              </li>
+            </ul>
           </div>
-          <div class="tour-schedule__dates-for-month__available-dates__container">
-            <article class="tour-schedule__dates-for-month__available-dates__item">
-              <h3 class="tour-schedule__dates-for-month__available-dates__item__heading">concert @ place</h3>
-              <p class="tour-schedule__dates-for-month__available-dates__item__date">date</p>
-              <p class="tour-schedule__dates-for-month__available-dates__item__description">description</p>
-              <a class="tour-schedule__dates-for-month__available-dates__item__anchor" href="#">Buy</a>
-            </article>
-            <article class="tour-schedule__dates-for-month__available-dates__item">
-              <h3 class="tour-schedule__dates-for-month__available-dates__item__heading">concert @ place</h3>
-              <p class="tour-schedule__dates-for-month__available-dates__item__date">date</p>
-              <p class="tour-schedule__dates-for-month__available-dates__item__description">description</p>
-              <a class="tour-schedule__dates-for-month__available-dates__item__anchor" href="#">Buy</a>
-            </article>
-            <article class="tour-schedule__dates-for-month__available-dates__item">
-              <h3 class="tour-schedule__dates-for-month__available-dates__item__heading">concert @ place</h3>
-              <p class="tour-schedule__dates-for-month__available-dates__item__date">date</p>
-              <p class="tour-schedule__dates-for-month__available-dates__item__description">description</p>
-              <a class="tour-schedule__dates-for-month__available-dates__item__anchor" href="#">Buy</a>
-            </article>
-            <article class="tour-schedule__dates-for-month__available-dates__item">
-              <h3 class="tour-schedule__dates-for-month__available-dates__item__heading">concert @ place</h3>
-              <p class="tour-schedule__dates-for-month__available-dates__item__date">date</p>
-              <p class="tour-schedule__dates-for-month__available-dates__item__description">description</p>
-              <a class="tour-schedule__dates-for-month__available-dates__item__anchor" href="#">Buy</a>
-            </article>
-            <article class="tour-schedule__dates-for-month__available-dates__item">
-              <h3 class="tour-schedule__dates-for-month__available-dates__item__heading">concert @ place</h3>
-              <p class="tour-schedule__dates-for-month__available-dates__item__date">date</p>
-              <p class="tour-schedule__dates-for-month__available-dates__item__description">description</p>
-              <a class="tour-schedule__dates-for-month__available-dates__item__anchor" href="#">Buy</a>
-            </article>
+        </section>
+        <section class="tour-schedule__dates-for-month">
+          <h2 class="hidden">dates for the month of ... add with javascript</h2>
+          <div class="tour-schedule__dates-for-month__grid-container">
+            <div class="tour-schedule__dates-for-month__progress-bar-container">
+              <aside class="tour-schedule__dates-for-month__progress-bar">
+                <div class="tour-schedule__dates-for-month__progress-bar__date tour-schedule__dates-for-month__progress-bar__next-date">
+                  <div class="tour-schedule__dates-for-month__progress-bar__next-date"></div>
+                </div>
+                <div class="tour-schedule__dates-for-month__progress-bar__date-junction"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar__date"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar__date-junction"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar__date"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar__date-junction"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar__date"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar__date-junction"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar__date"></div>
+              </aside>
+            </div>
+            <div class="tour-schedule__dates-for-month__available-dates__container">
+              <article class="tour-schedule__dates-for-month__available-dates__item">
+                <h3 class="tour-schedule__dates-for-month__available-dates__item__heading">concert @ place</h3>
+                <p class="tour-schedule__dates-for-month__available-dates__item__date">date</p>
+                <p class="tour-schedule__dates-for-month__available-dates__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eum quis deserunt magni odio excepturi libero ipsum, nisi distinctio sed consectetur, error molestiae perspiciatis nostrum laudantium. Harum saepe, hic natus.</p>
+                <a class="tour-schedule__dates-for-month__available-dates__item__anchor" href="#">Buy</a>
+              </article>
+              <article class="tour-schedule__dates-for-month__available-dates__item">
+                <h3 class="tour-schedule__dates-for-month__available-dates__item__heading">concert @ place</h3>
+                <p class="tour-schedule__dates-for-month__available-dates__item__date">date</p>
+                <p class="tour-schedule__dates-for-month__available-dates__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a class="tour-schedule__dates-for-month__available-dates__item__anchor" href="#">Buy</a>
+              </article>
+              <article class="tour-schedule__dates-for-month__available-dates__item">
+                <h3 class="tour-schedule__dates-for-month__available-dates__item__heading">concert @ place</h3>
+                <p class="tour-schedule__dates-for-month__available-dates__item__date">date</p>
+                <p class="tour-schedule__dates-for-month__available-dates__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a class="tour-schedule__dates-for-month__available-dates__item__anchor" href="#">Buy</a>
+              </article>
+              <article class="tour-schedule__dates-for-month__available-dates__item">
+                <h3 class="tour-schedule__dates-for-month__available-dates__item__heading">concert @ place</h3>
+                <p class="tour-schedule__dates-for-month__available-dates__item__date">date</p>
+                <p class="tour-schedule__dates-for-month__available-dates__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a class="tour-schedule__dates-for-month__available-dates__item__anchor" href="#">Buy</a>
+              </article>
+              <article class="tour-schedule__dates-for-month__available-dates__item">
+                <h3 class="tour-schedule__dates-for-month__available-dates__item__heading">concert @ place</h3>
+                <p class="tour-schedule__dates-for-month__available-dates__item__date">date</p>
+                <p class="tour-schedule__dates-for-month__available-dates__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a class="tour-schedule__dates-for-month__available-dates__item__anchor" href="#">Buy</a>
+              </article>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   </body>
 </html>
