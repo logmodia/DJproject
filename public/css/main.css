@@ -294,6 +294,22 @@ html body {
   margin-top: auto;
 }
 
+@media all and (min-width: 768px) {
+  .header__new-single {
+    height: 25.1rem;
+  }
+  .header__new-single__contents {
+    height: 65%;
+  }
+  .header__new-single__contents__song-title {
+    font-size: 4.1rem;
+    padding-top: 1.5rem;
+  }
+  .header__new-single__contents__audio-player {
+    margin-top: 2.3rem;
+  }
+}
+
 .next-gig {
   display: -webkit-box;
   display: -ms-flexbox;
