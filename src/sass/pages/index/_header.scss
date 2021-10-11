@@ -67,6 +67,20 @@
         &__new-single {
             background: none;
             height: auto;
+            &__contents {
+                height: 80vh;
+                &__heading {
+                    margin-top: 50vh;
+                    font-size: 2.3rem;
+                }
+                &__song-title {
+                    margin-top: 3vh;
+                    font-size: 6.9rem;
+                }
+                &__audio-player {
+                    margin-top: auto;
+                }
+            }
         }
     }
 }
