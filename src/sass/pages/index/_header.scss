@@ -25,6 +25,8 @@
                 font-weight: 700;
                 line-height: 2.6rem;
                 padding-top: 0.25rem;
+                color: transparent;
+                -webkit-text-stroke: 2px $white-text;
             }
             &__audio-player {
                 width: 100%;

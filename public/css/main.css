@@ -282,6 +282,8 @@ html body {
   font-weight: 700;
   line-height: 2.6rem;
   padding-top: 0.25rem;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
 }
 
 .header__new-single__contents__audio-player {
