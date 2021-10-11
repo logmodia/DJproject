@@ -618,6 +618,24 @@ html body {
   }
 }
 
+@media all and (min-width: 1024px) {
+  .about-dj {
+    margin: 0 5%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about-dj__figure {
+    width: 38.5%;
+  }
+  .about-dj__text-content__heading {
+    font-size: 2.1rem;
+  }
+  .about-dj__text-content__about__dj-quote {
+    font-size: 1.5rem;
+  }
+}
+
 .latest-releases__view-discography {
   background-image: url("../img/homepage-latest-releases-background.jpg");
   background-size: 550%;
