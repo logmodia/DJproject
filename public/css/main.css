@@ -594,6 +594,30 @@ html body {
   z-index: -1;
 }
 
+@media all and (min-width: 768px) {
+  .about-dj {
+    margin: 0 5%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about-dj__figure, .about-dj__text-content {
+    margin: 0;
+  }
+  .about-dj__figure {
+    width: 38.5%;
+  }
+  .about-dj__figure img {
+    height: unset;
+  }
+  .about-dj__text-content {
+    width: 57%;
+  }
+  .about-dj__text-content__heading {
+    padding-top: 0;
+  }
+}
+
 .latest-releases__view-discography {
   background-image: url("../img/homepage-latest-releases-background.jpg");
   background-size: 550%;
