@@ -15,6 +15,52 @@ body{
     border: 1px solid lighten($grey, 50%);
     padding: 3rem 0;
     background-color: $white-text;
+    &__progress-bar-container {
+      //FLAG
+      &__progress-bar {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        &__rounded-element, &__line {
+          margin: 0 auto;
+        }
+        &__rounded-element {
+          width: 2rem;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+          border: 1px solid lighten($grey, 50%);
+          &--active {
+            position: relative;
+            box-sizing: border-box;
+            &::before {
+              position: absolute;
+              content: "";
+              width: 33.333%;
+              aspect-ratio: 1/1;
+              background-color: $purple;
+              border-radius: 50%;
+              top: 33.333%;
+              left: 33.333%;
+            }
+          }
+        }
+        &__line {
+          width: 1px;
+          height: 10%;
+          background-color: lighten($grey, 50%);
+          &:nth-child(2) {
+            height: 24%;
+          }
+          &:nth-child(4), :nth-child(6) {
+            height: 15%;
+          }
+          &:nth-child(8) {
+            height: 13%;
+          }
+        }
+      }
+    }
   }
   .tour-schedule__select-month__inner-container{
     padding: 1.25rem 0;

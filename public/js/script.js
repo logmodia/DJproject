@@ -1,6 +1,5 @@
 // ---------- CONSTANTS ----------
 const partnersSliderControllers = document.querySelectorAll(".partners-sponsors__contents__interactive-block__slider__controller")
-const 
 
 // ---------- FUNCTIONS ----------
 const slide = e => {
