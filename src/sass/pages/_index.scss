@@ -2,7 +2,9 @@
 @import "index/next-gig";
 @import "index/about-dj";
 @import "index/latest-releases";
+@import "index/join-fanbase";
+@import "index/partners-sponsors";
 
-.join-fanbase, .tour-schedule, .tickets-desk, .partners-sponsors {
+.tour-schedule, .tickets-desk {
     display: none;
 }

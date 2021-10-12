@@ -393,7 +393,7 @@ html body {
   }
   .header__new-single__contents__song-title {
     margin-top: 3vh;
-    font-size: 6.9rem;
+    font-size: 6.89rem;
   }
   .header__new-single__contents__audio-player {
     margin-top: auto;
@@ -620,24 +620,39 @@ html body {
 
 @media all and (min-width: 1024px) {
   .about-dj {
-    margin: 0 5%;
+    margin: 0 auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 90%;
+    max-width: 1165.85px;
   }
   .about-dj__figure {
-    width: 38.5%;
+    width: 41.5%;
+    margin-left: 7%;
+  }
+  .about-dj__text-content {
+    width: 42%;
   }
   .about-dj__text-content__heading {
     font-size: 2.1rem;
+    padding-bottom: 1rem;
   }
   .about-dj__text-content__about__dj-quote {
     font-size: 1.5rem;
+    line-height: 2.3rem;
+    padding: 2rem 1rem;
+  }
+  .about-dj__text-content__about__dj-quote::before {
+    font-size: 14rem;
+    top: -2.35rem;
+    left: 1.3rem;
   }
 }
 
 .latest-releases__view-discography {
-  background-image: url("../img/homepage-latest-releases-background.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/homepage-latest-releases-background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/homepage-latest-releases-background.jpg");
   background-size: 550%;
   background-position: -810px -390px;
   height: 16.1rem;
@@ -729,7 +744,247 @@ html body {
   width: 100%;
 }
 
-.join-fanbase, .tour-schedule, .tickets-desk, .partners-sponsors {
+@media all and (min-width: 768px) {
+  .latest-releases__view-discography {
+    height: 17.1rem;
+    background-size: 250%;
+    background-position: -583px -630px;
+  }
+  .latest-releases__view-discography__button {
+    width: 29%;
+  }
+  .latest-releases__text-content {
+    width: 65%;
+  }
+  .latest-releases__text-content__heading {
+    padding-top: 5rem;
+  }
+  .latest-releases__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 2.5rem;
+  }
+  .latest-releases__list__release {
+    width: 46.5%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .latest-releases__view-discography {
+    height: 28.3rem;
+    background-size: cover;
+    background-position: center;
+  }
+  .latest-releases__view-discography__heading {
+    font-size: 2.3rem;
+  }
+  .latest-releases__view-discography__button {
+    width: 14rem;
+    margin-top: 3.5%;
+  }
+  .latest-releases__text-content__heading {
+    font-size: 2.2rem;
+  }
+  .latest-releases__text-content__info {
+    width: 41rem;
+    margin: 0 auto;
+  }
+  .latest-releases__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1165.85px;
+  }
+  .latest-releases__list__release {
+    width: 31.5%;
+  }
+}
+
+.join-fanbase {
+  background-color: #282828;
+  background-image: url("../img/bg-circle-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.join-fanbase__figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 3rem 0;
+  max-width: 463px;
+}
+
+.join-fanbase__figure__img {
+  border-radius: 7px;
+}
+
+.join-fanbase__figure__img:nth-child(1) {
+  margin: 0 17% 2.4rem auto;
+  margin-left: auto;
+  margin-right: 17%;
+}
+
+.join-fanbase__figure__img:nth-child(2) {
+  margin: 0 auto;
+}
+
+.join-fanbase__figure__img:nth-child(3) {
+  width: 10rem;
+  height: 10rem;
+  margin-left: 7.5%;
+}
+
+.join-fanbase__figure__img:nth-child(4) {
+  margin: 0 auto 1.1rem auto;
+  width: 18.5rem;
+}
+
+.join-fanbase__figure__img:nth-child(5) {
+  margin: 0 auto;
+  position: relative;
+  left: 6%;
+}
+
+.join-fanbase__figure__img:nth-child(6) {
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.join-fanbase__article {
+  color: #fff;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.join-fanbase__article__text-content__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.join-fanbase__article__text-content__info {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  padding-bottom: 2.5rem;
+}
+
+.join-fanbase__article__why-join-list {
+  padding-bottom: 1.1rem;
+}
+
+.join-fanbase__article__why-join-list__why-join {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+.join-fanbase__article__why-join-list__why-join .fas {
+  color: #8121e0;
+  font-size: 2.5rem;
+  padding-bottom: 1.3rem;
+}
+
+.join-fanbase__article__why-join-list__why-join__heading {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-bottom: 0.8rem;
+}
+
+.join-fanbase__article__why-join-list__why-join__info {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+.partners-sponsors {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/homepage-sponsors-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/homepage-sponsors-background.jpg");
+  background-position: -780px -345px;
+}
+
+.partners-sponsors__contents {
+  margin: 0 auto;
+  padding: 3.7rem 0;
+  width: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 19.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.partners-sponsors__contents__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+  text-align: center;
+}
+
+.partners-sponsors__contents__interactive-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: auto;
+}
+
+.partners-sponsors__contents__interactive-block__partners-list {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.partners-sponsors__contents__interactive-block__partners-list__partner {
+  margin-bottom: 3.2rem;
+}
+
+.partners-sponsors__contents__interactive-block__partners-list__partner:nth-child(2), .partners-sponsors__contents__interactive-block__partners-list__partner:nth-child(3), .partners-sponsors__contents__interactive-block__partners-list__partner:nth-child(4) {
+  display: none;
+}
+
+.partners-sponsors__contents__interactive-block__slider {
+  margin: 0 auto;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.partners-sponsors__contents__interactive-block__slider__controller {
+  width: .75rem;
+  height: .75rem;
+  border-radius: 50%;
+  background-color: gray;
+  opacity: 0.6;
+}
+
+.partners-sponsors__contents__interactive-block__slider__controller--active {
+  background-color: #8121e0;
+  opacity: 1;
+}
+
+.tour-schedule, .tickets-desk {
   display: none;
 }
 
