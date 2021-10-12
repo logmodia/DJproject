@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,9 +53,28 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 a {
-  display: inline-block;
   text-decoration: none;
+}
+
+a:visited, a:active {
+  color: black;
+}
+
+time, a {
+  display: inline-block;
+}
+
+html {
+  font-size: 16px;
+}
+
+html body {
+  font-family: "Poppins", sans-serif;
 }
 
 .header__top-bar {
@@ -106,4 +126,374 @@ a {
   background-color: #fff;
   width: 0.37rem;
   height: 0.37rem;
+}
+
+.footer {
+  background-color: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem 0;
+}
+
+.footer__dj-angerone-logo {
+  margin: 0 auto;
+  width: 16rem;
+  padding-bottom: 1.8rem;
+}
+
+.footer__navlinks {
+  margin: 0 auto;
+  padding-bottom: 1.6rem;
+}
+
+.footer__navlinks__links-list__element {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 1.1rem;
+}
+
+.footer__navlinks__links-list__element__link {
+  color: #fff;
+}
+
+.footer__navlinks__links-list__element__link:visited, .footer__navlinks__links-list__element__link:active {
+  color: #fff;
+}
+
+.footer__social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 18rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 2.8rem;
+}
+
+.footer__social-networks__button__link {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #353535;
+  padding: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social-networks__button__link .fab {
+  margin: auto;
+  font-size: 1.35rem;
+  color: #fff;
+}
+
+.footer__attribution {
+  margin: 0 auto;
+  color: #919191;
+  font-size: 0.9rem;
+}
+
+@media all and (min-width: 768px) {
+  .footer__dj-angerone-logo {
+    padding-bottom: 2.3rem;
+  }
+  .footer__navlinks__links-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 27rem;
+  }
+  .footer__navlinks__links-list__element {
+    padding-bottom: 0.7rem;
+  }
+  .footer__social-networks {
+    width: 20rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .footer {
+    padding: 7rem 0 8.1rem 0;
+  }
+  .footer__dj-angerone-logo {
+    padding-bottom: 3.7rem;
+  }
+  .footer__navlinks {
+    padding-bottom: 3.5rem;
+  }
+  .footer__social-networks {
+    padding-bottom: 6.8rem;
+    width: 23rem;
+  }
+}
+
+.header__new-single {
+  background-image: url("../img/homapage-banner-img.jpg");
+  background-size: cover;
+  height: 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__new-single__contents {
+  margin: auto;
+  width: 17rem;
+}
+
+.header__new-single__heading, .header__new-single__song-title {
+  color: #fff;
+}
+
+.header__new-single__audio-player {
+  width: 100%;
+}
+
+.index-main {
+  display: none;
+}
+
+.globalMain {
+  margin: 0px auto;
+  width: 1441px;
+  border: 5px solid blue;
+}
+
+.globalMain .main__sectDJ {
+  margin: 20px auto;
+  width: 65%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 55px;
+          column-gap: 55px;
+}
+
+.globalMain .main__sectDJ__div {
+  width: 100%;
+}
+
+.globalMain .main__sectDJ .about__h1 {
+  font-weight: bolder;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.globalMain .main__sectDJ__TextSignaturButton {
+  text-align: left;
+}
+
+.globalMain .main__sectDJ__TextSignaturButton__hr {
+  width: 118px;
+}
+
+.globalMain .main__sectDJ__TextSignaturButton__list-reseausociaux, .globalMain .main__sectDJ__TextSignaturButton__list-mailgsm {
+  display: inline-block;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.globalMain .main__sectDJ__TextSignaturButton__list-reseausociaux {
+  display: inline-block;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.globalMain .main__sectDJ__TextSignaturButton__paragraph {
+  padding-bottom: 20px;
+  color: #444444;
+  text-align: justify;
+}
+
+.globalMain .main__sectDJ__TextSignaturButton__FigSignature {
+  text-align: right;
+  padding: 20px;
+}
+
+.globalMain .main__sectDJ__TextSignaturButton__GetInTouch {
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  background-color: #8121e0;
+  border-radius: 5px;
+}
+
+.globalMain .main__sectDJ__TextSignaturButton__GetInTouch p {
+  padding-top: 18px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.globalMain .main__DiscoverMusic {
+  margin: 0px auto;
+  border: 5px solid greenyellow;
+  height: 500px;
+}
+
+.globalMain .main__DiscoverMusic .main__containerGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.globalMain .main__DiscoverMusic__containerGrid__allDiv {
+  width: 50%;
+  border: red;
+  background-color: red;
+}
+
+/*
+    .about-section2-discovemusic_containGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 5px;
+        row-gap: 5px;
+
+        background-color: yellow;
+        &__musicList{
+            display: inline-block;
+            padding: 10px;
+        }
+
+        div{
+            background-color: burlywood;
+            border: solid white;
+            //width: ;
+        }
+
+    }
+
+    .about-section3-latestRelease_grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        p,figcaption{
+            text-align: center;
+        }
+
+    }
+} */
+body .gallery {
+  padding: 55px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  gap: 30px;
+}
+
+body .gallery-element {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .gallery {
+    padding: 80px 0;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  body .gallery {
+    padding: 150px 0;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+body .discography__album__grid__container {
+  padding: 40px 0 45px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  row-gap: 5px;
+}
+
+body .discography__album__grid__container .discography__album__container {
+  text-align: center;
+  padding: 15px;
+}
+
+body .discography__album__grid__container .discography__album__cover {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .discography__album__grid__container .discography__album__heading {
+  font-size: 1.25em;
+  margin: 24px auto 1em;
+}
+
+body .discography__album__grid__container .discography__album__release-year {
+  color: #444444;
+  font-weight: 200;
+  letter-spacing: 0.06em;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .discography__album__grid__container {
+    padding: 55px 25px 60px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1270px) {
+  body .discography__album__grid__container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1270px) {
+  body .discography__album__grid__container {
+    width: 1270px;
+    margin: auto;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
 }

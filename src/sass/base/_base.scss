@@ -1,11 +1,25 @@
-body{
+html{
   font-size: 16px;
 }
 a {
-  display: inline-block;
-  text-decoration: none;
+    text-decoration: none;
+    &:visited, &:active {
+        color: black;
+    }
 }
 
 time, a {
     display: inline-block;
+}
+
+html {
+    font-size: 16px;
+    body {
+        font-family: $font;
+    }
+}
+.hidden{
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }

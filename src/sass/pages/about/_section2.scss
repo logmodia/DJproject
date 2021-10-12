@@ -1,0 +1,21 @@
+.main__DiscoverMusic{
+    margin: 0px auto;
+    border: 5px solid greenyellow;
+    height: 500px;
+    
+
+    .main__containerGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        //grid-template-rows: repeat(2, 1fr);
+        column-gap: 20px;
+
+        
+
+    }
+}
+.main__DiscoverMusic__containerGrid__allDiv{
+            width: 50%;
+            border: red;
+            background-color: red;
+        }

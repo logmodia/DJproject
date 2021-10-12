@@ -1,0 +1,104 @@
+.footer {
+    background-color: $gray;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+    &__dj-angerone-logo {
+        margin: 0 auto;
+        width: 16rem;
+        padding-bottom: 1.8rem;
+    }
+    &__navlinks {
+        margin: 0 auto;
+        padding-bottom: 1.6rem;
+        &__links-list {
+            &__element {
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 500;
+                color: $white-text;
+                padding-bottom: 1.1rem;
+                &__link {
+                    color: $white-text;
+                    &:visited, &:active {
+                        color: $white-text;
+                    }
+                }
+            }
+        }
+    }
+
+    &__social-networks {
+        display: flex;
+        width: 18rem;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-bottom: 2.8rem;
+        &__button {
+            &__link {
+                height: 1.5rem;
+                width: 1.5rem;
+                border-radius: 50%;
+                background-color: lighten($gray, 5%);
+                padding: 0.7rem;
+                display: flex;
+                // ICONS
+                .fab {
+                    margin: auto;
+                    font-size: 1.35rem;
+                    color: $white-text;
+                }
+            }
+        }
+    }
+
+    &__attribution {
+        margin: 0 auto;
+        color: lighten($grey, 30%);
+        font-size: 0.9rem;
+    }
+}
+
+
+// TABLETS
+@media all and (min-width: 768px) {
+    .footer {
+        &__dj-angerone-logo {
+            padding-bottom: 2.3rem;
+        }
+
+        &__navlinks {
+            &__links-list {
+                display: flex;
+                justify-content: space-between;
+                width: 27rem;
+                &__element {
+                    padding-bottom: 0.7rem;
+                }
+            }
+        }
+
+        &__social-networks {
+            width: 20rem;
+        }
+    }
+}
+
+// DESKTOP
+@media all and (min-width: 1024px) {
+    .footer {
+        padding: 7rem 0 8.1rem 0;
+        &__dj-angerone-logo {
+            padding-bottom: 3.7rem;
+        }
+
+        &__navlinks {
+            padding-bottom: 3.5rem;
+        }
+
+        &__social-networks {
+            padding-bottom: 6.8rem;
+            width: 23rem;
+        }
+    }
+}
