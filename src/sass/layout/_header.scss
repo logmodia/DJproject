@@ -1,3 +1,73 @@
+    .headerBG-for-otherPages{
+        background-image: url(../img/banner-img.jpg) !important;
+        background-repeat: no-repeat;
+        background-size: 1480px !important;
+        background-position: top !important;
+        height: 200px !important;
+    
+        .header__headTitleBlock{
+            padding: 40px;
+            text-align: center;
+            margin: 0px auto;
+            
+            
+            &__h1{
+                
+                margin: 0px auto;
+                font-size: 1rem;
+                font-weight: bolder;
+                color: white;
+                padding-top: 0px;
+                padding-bottom: 40px;
+            }
+    
+            &__div{
+                margin: 0px auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: fit-content;
+                
+                &__elem{
+                    font-weight: bold;
+                    
+                    &__a{
+                        font-size: 0.8rem !important;
+                        padding-right: 10px;
+                        color: white;
+                        &:visited{
+                            color: white;
+                        }
+                    }
+                }
+    
+                &__elemPoint{
+                    width : 5px;
+                    height: 5px;
+                    aspect-ratio: 1/1;
+                    border-radius: 5px;
+                    //font-size: 30px;
+                    font-weight: bolder;
+                    color: goldenrod;
+                    background-color: goldenrod;
+                    
+                }
+    
+                &__elem-Gray{
+                    opacity: 0.5;
+                    color: white !important;
+                    padding-left: 10px;
+                    font-size: 0.8rem;
+                }
+            }
+    
+    
+    
+        }
+        
+    }
+
+
 .header {
     // TOP-BAR
     &__top-bar {
@@ -37,10 +107,149 @@
             }
         }
     }
+
+    
+}
+
+// TABLET
+@media all and (min-width: 768px) {
+    .headerBG-for-otherPages{
+        background-image: url(../img/banner-img.jpg) !important;
+        background-repeat: no-repeat;
+        background-size: 1550px !important;
+        background-position: top !important;
+        height: 400px !important;
+    
+        .header__headTitleBlock{
+            padding: 60px;
+            text-align: center;
+            
+    
+            &__h1{
+                font-size: 1.5rem;
+                font-weight: bolder;
+                color: white;
+                padding-top: 110px;
+                padding-bottom: 40px;
+            }
+    
+            &__div{
+                margin: 0px auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: fit-content;
+                
+                &__elem{
+                    font-weight: bold;
+                    
+                    &__a{
+                        font-size: 0.8rem !important;
+                        padding-right: 10px;
+                        color: white;
+                        &:visited{
+                            color: white;
+                        }
+                    }
+                }
+    
+                &__elemPoint{
+                    width : 5px;
+                    height: 5px;
+                    aspect-ratio: 1/1;
+                    border-radius: 5px;
+                    //font-size: 30px;
+                    font-weight: bolder;
+                    color: goldenrod;
+                    background-color: goldenrod;
+                    
+                }
+    
+                &__elem-Gray{
+                    opacity: 0.5;
+                    color: white !important;
+                    padding-left: 10px;
+                    font-size: 0.8rem;
+                }
+            }
+    
+    
+    
+        }
+        
+    }
 }
 
 // DESKTOP
 @media all and (min-width: 1024px) {
+
+    .headerBG-for-otherPages{
+        background-image: url(../img/banner-img.jpg) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px !important;
+    
+        .header__headTitleBlock{
+            padding: 140px;
+            text-align: center;
+            
+    
+            &__h1{
+                font-size: 2.5rem;
+                font-weight: bolder;
+                color: white;
+                padding-top: 58px;
+                padding-bottom: 40px;
+            }
+    
+            &__div{
+                margin: 0px auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: fit-content;
+                
+                &__elem{
+                    font-weight: bold;
+                    
+                    &__a{
+                        font-size: 0.8rem !important;
+                        padding-right: 10px;
+                        color: white;
+                        &:visited{
+                            color: white;
+                        }
+                    }
+                }
+    
+                &__elemPoint{
+                    width : 5px;
+                    height: 5px;
+                    aspect-ratio: 1/1;
+                    border-radius: 5px;
+                    //font-size: 30px;
+                    font-weight: bolder;
+                    color: goldenrod;
+                    background-color: goldenrod;
+                    
+                }
+    
+                &__elem-Gray{
+                    opacity: 0.5;
+                    color: white !important;
+                    padding-left: 10px;
+                    font-size: 0.8rem;
+                }
+            }
+    
+    
+    
+        }
+        
+    }
+    
+
     .header {
         &__top-bar {
             background: none;

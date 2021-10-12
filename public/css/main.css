@@ -79,6 +79,76 @@ html body {
   left: -9999px !important;
 }
 
+.headerBG-for-otherPages {
+  background-image: url(../img/banner-img.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: 1480px !important;
+  background-position: top !important;
+  height: 200px !important;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock {
+  padding: 40px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__h1 {
+  margin: 0px auto;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: white;
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__div {
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__div__elem {
+  font-weight: bold;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__div__elem__a {
+  font-size: 0.8rem !important;
+  padding-right: 10px;
+  color: white;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__div__elem__a:visited {
+  color: white;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__div__elemPoint {
+  width: 5px;
+  height: 5px;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  font-weight: bolder;
+  color: goldenrod;
+  background-color: goldenrod;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__div__elem-Gray {
+  opacity: 0.5;
+  color: white !important;
+  padding-left: 10px;
+  font-size: 0.8rem;
+}
+
 .header__top-bar {
   background-color: #282828;
   display: -webkit-box;
@@ -138,7 +208,128 @@ html body {
   height: 0.37rem;
 }
 
+@media all and (min-width: 768px) {
+  .headerBG-for-otherPages {
+    background-image: url(../img/banner-img.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: 1550px !important;
+    background-position: top !important;
+    height: 400px !important;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock {
+    padding: 60px;
+    text-align: center;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    padding-top: 110px;
+    padding-bottom: 40px;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div {
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem {
+    font-weight: bold;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem__a {
+    font-size: 0.8rem !important;
+    padding-right: 10px;
+    color: white;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem__a:visited {
+    color: white;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elemPoint {
+    width: 5px;
+    height: 5px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: goldenrod;
+    background-color: goldenrod;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem-Gray {
+    opacity: 0.5;
+    color: white !important;
+    padding-left: 10px;
+    font-size: 0.8rem;
+  }
+}
+
 @media all and (min-width: 1024px) {
+  .headerBG-for-otherPages {
+    background-image: url(../img/banner-img.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px !important;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock {
+    padding: 140px;
+    text-align: center;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div {
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem {
+    font-weight: bold;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem__a {
+    font-size: 0.8rem !important;
+    padding-right: 10px;
+    color: white;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem__a:visited {
+    color: white;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elemPoint {
+    width: 5px;
+    height: 5px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: goldenrod;
+    background-color: goldenrod;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem-Gray {
+    opacity: 0.5;
+    color: white !important;
+    padding-left: 10px;
+    font-size: 0.8rem;
+  }
   .header__top-bar {
     background: none;
     padding: 2rem 5% 0 5%;
@@ -993,7 +1184,7 @@ html body {
   width: 1441px;
   height: 500px;
   color: white;
-  background-image: url(/public/img/banner-img.jpg);
+  background-image: url(../img/banner-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1053,14 +1244,14 @@ html body {
 }
 
 .About-header .About-header__headTitleBlock__h1 {
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: bolder;
 }
 
 .About-header .About-header__headTitleBlock__li {
   display: inline-block;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .About-header .About-header__headTitleBlock__li__a {
@@ -1072,9 +1263,10 @@ html body {
 }
 
 .About-header .About-header__headTitleBlock__liPoint {
-  font-size: 50px;
+  font-size: 1.5rem;
   font-weight: bolder;
   color: goldenrod;
+  padding: 1rem;
 }
 
 .About-header .About-header__headTitleBlock__li-Gray {
@@ -1265,7 +1457,7 @@ html body {
     margin: 0px auto;
     width: 768px;
     height: 500px;
-    background-image: url(/public/img/banner-img.jpg);
+    background-image: url(../img/banner-img.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 1920px;
