@@ -1,0 +1,79 @@
+.join-fanbase {
+    background-color: $gray;
+    background-image: url("../img/bg-circle-1.png");
+    background-size: cover;
+    background-position: center;
+    &__figure {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3rem 0;
+        &__img {
+            border-radius: 7px;
+            &:nth-child(1) {
+                margin: 0 17% 2.4rem auto;
+                margin-left: auto;
+                margin-right: 17%;
+            }
+            &:nth-child(2) {
+                margin: 0 auto;
+            }
+            &:nth-child(3) {
+                width: 10rem;
+                height: 10rem;
+                margin-left: 7.5%;
+            }
+            &:nth-child(4) {
+                margin: 0 auto 1.1rem auto;
+                width: 18.5rem;
+            }
+            &:nth-child(5) {
+                margin: 0 auto;
+                position: relative;
+                left: 6%;
+            }
+            &:nth-child(6) {
+                margin-left: auto;
+                margin-right: 5%;
+            }
+        }
+    }
+    &__article {
+        color: $white-text;
+        width: 90%;
+        margin: 0 auto;
+        &__text-content {
+            &__heading {
+                font-size: 1.5rem;
+                font-weight: 700;
+                padding-bottom: 1rem;
+            }
+            &__info {
+                font-size: 0.9rem;
+                line-height: 1.4rem;
+                padding-bottom: 2.5rem;
+            }
+        }
+
+        &__why-join-list {
+            &__why-join {
+                text-align: center;
+                padding-bottom: 2.5rem;
+                .fas {
+                    color: $purple;
+                    font-size: 2.5rem;
+                    padding-bottom: 1.3rem;
+                }
+                &__heading {
+                    text-transform: capitalize;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    padding-bottom: 0.8rem;
+                }
+                &__info {
+                    font-size: 0.9rem;
+                    line-height: 1.4rem;
+                }
+            }
+        }
+    }
+}
