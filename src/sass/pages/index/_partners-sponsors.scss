@@ -1,10 +1,14 @@
 .partners-sponsors {
-    background-image: url("../img/homepage-sponsors-background.jpg");
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/homepage-sponsors-background.jpg");
+    background-position: -780px -345px;
     &__contents {
         margin: 0 auto;
         padding: 3.7rem 0;
         width: 90%;
+        box-sizing: border-box;
+        height: 19.5rem;
+        display: flex;
+        flex-direction: column;
         &__heading {
             font-size: 1.5rem;
             font-weight: 700;
@@ -13,18 +17,34 @@
             text-align: center;
         }
         &__interactive-block {
+            display: flex;
+            flex-direction: column;
+            margin-top: auto;
             &__partners-list {
+                margin: 0 auto;
                 display: flex;
-                flex-wrap: wrap;
+                &__partner {
+                    margin-bottom: 3.2rem;
+                    &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                        display: none;
+                    }
+                }
             }
             &__slider {
+                margin: 0 auto;
+                width: 45%;
                 display: flex;
+                justify-content: space-between;
                 &__controller {
                     width: .75rem;
                     height: .75rem;
                     border-radius: 50%;
                     background-color: darken($white-text, 50%);
-                    opacity: 0.45;
+                    opacity: 0.6;
+                    &--active {
+                        background-color: $purple;
+                        opacity: 1;
+                    }
                 }
             }
         }

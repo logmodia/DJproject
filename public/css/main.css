@@ -877,6 +877,10 @@ html body {
   padding-bottom: 2.5rem;
 }
 
+.join-fanbase__article__why-join-list {
+  padding-bottom: 1.1rem;
+}
+
 .join-fanbase__article__why-join-list__why-join {
   text-align: center;
   padding-bottom: 2.5rem;
@@ -901,14 +905,25 @@ html body {
 }
 
 .partners-sponsors {
-  background-image: url("../img/homepage-sponsors-background.jpg");
-  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/homepage-sponsors-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/homepage-sponsors-background.jpg");
+  background-position: -780px -345px;
 }
 
 .partners-sponsors__contents {
   margin: 0 auto;
   padding: 3.7rem 0;
   width: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 19.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .partners-sponsors__contents__heading {
@@ -919,18 +934,41 @@ html body {
   text-align: center;
 }
 
-.partners-sponsors__contents__interactive-block__partners-list {
+.partners-sponsors__contents__interactive-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: auto;
+}
+
+.partners-sponsors__contents__interactive-block__partners-list {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.partners-sponsors__contents__interactive-block__partners-list__partner {
+  margin-bottom: 3.2rem;
+}
+
+.partners-sponsors__contents__interactive-block__partners-list__partner:nth-child(2), .partners-sponsors__contents__interactive-block__partners-list__partner:nth-child(3), .partners-sponsors__contents__interactive-block__partners-list__partner:nth-child(4) {
+  display: none;
 }
 
 .partners-sponsors__contents__interactive-block__slider {
+  margin: 0 auto;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .partners-sponsors__contents__interactive-block__slider__controller {
@@ -938,7 +976,12 @@ html body {
   height: .75rem;
   border-radius: 50%;
   background-color: gray;
-  opacity: 0.45;
+  opacity: 0.6;
+}
+
+.partners-sponsors__contents__interactive-block__slider__controller--active {
+  background-color: #8121e0;
+  opacity: 1;
 }
 
 .tour-schedule, .tickets-desk {
