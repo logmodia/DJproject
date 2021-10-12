@@ -820,6 +820,7 @@ html body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 3rem 0;
+  max-width: 463px;
 }
 
 .join-fanbase__figure__img {
@@ -899,7 +900,48 @@ html body {
   line-height: 1.4rem;
 }
 
-.tour-schedule, .tickets-desk, .partners-sponsors {
+.partners-sponsors {
+  background-image: url("../img/homepage-sponsors-background.jpg");
+  background-size: cover;
+}
+
+.partners-sponsors__contents {
+  margin: 0 auto;
+  padding: 3.7rem 0;
+  width: 90%;
+}
+
+.partners-sponsors__contents__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+  text-align: center;
+}
+
+.partners-sponsors__contents__interactive-block__partners-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.partners-sponsors__contents__interactive-block__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.partners-sponsors__contents__interactive-block__slider__controller {
+  width: .75rem;
+  height: .75rem;
+  border-radius: 50%;
+  background-color: gray;
+  opacity: 0.45;
+}
+
+.tour-schedule, .tickets-desk {
   display: none;
 }
 

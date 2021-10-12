@@ -7,6 +7,7 @@
         display: flex;
         flex-wrap: wrap;
         padding: 3rem 0;
+        max-width: 463px;
         &__img {
             border-radius: 7px;
             &:nth-child(1) {
@@ -37,6 +38,7 @@
             }
         }
     }
+
     &__article {
         color: $white-text;
         width: 90%;
