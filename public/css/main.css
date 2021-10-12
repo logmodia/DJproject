@@ -1357,7 +1357,7 @@ html body {
     margin: 0px auto;
     width: 1441px;
 } */
-@media only screen and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .About-header {
     margin: 0px auto;
     width: 768px;
@@ -1444,66 +1444,7 @@ html body {
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .About-header {
-    margin: 0px auto;
-    width: 320px;
-    height: 250px;
-    background-image: url(/public/img/banner-img.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 1480px;
-    background-clip: content-box;
-  }
-  .About-header__topBar {
-    background-color: black;
-    padding-top: 5px;
-  }
-  .About-header__topBar__element__nav {
-    padding-left: 0px;
-  }
-  .About-header__topBar__element__nav__list {
-    visibility: hidden;
-    position: absolute !important;
-    top: -9999px !important;
-    left: -9999px !important;
-  }
-  .About-header__topBar__element {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .About-header__topBar__element .logoTopBar {
-    width: 150px;
-    height: 30px;
-    padding-left: 10px;
-    padding-right: 40px;
-  }
-  .About-header .menu-humbTopleft, .About-header .menu-ellipsis {
-    position: static !important;
-    visibility: visible;
-    top: 0px !important;
-    left: 0px !important;
-  }
-  .About-header .menu-humbTopRight {
-    visibility: hidden;
-    position: absolute !important;
-    top: -9999px !important;
-    left: -9999px !important;
-  }
-  .About-header .About-header__headTitleBlock {
-    padding: 0px;
-    text-align: center;
-    height: 100vh;
-  }
-  .About-header .About-header__headTitleBlock__h1 {
-    padding-top: 50px;
-    padding-bottom: 0px;
-    font-size: 26px;
-  }
+@media all and (max-width: 600px) {
   .about-Main {
     margin: 0px auto;
     width: 320px;
@@ -1599,10 +1540,10 @@ html body {
     width: 320px;
     height: 346px;
   }
-  .about-footer-width {
-    margin: 0px auto;
-    width: 320px;
-  }
+  /* .about-footer-width{
+        margin: 0px auto;
+        width: 320px;
+    } */
 }
 
 body .gallery {
