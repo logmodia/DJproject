@@ -1680,7 +1680,11 @@ body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line
   height: 24%;
 }
 
-body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line:nth-child(4), body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line :nth-child(6) {
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line:nth-child(4) {
+  height: 15%;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line:nth-child(6) {
   height: 15%;
 }
 
