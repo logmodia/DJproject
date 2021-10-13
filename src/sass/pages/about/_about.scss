@@ -2,7 +2,9 @@
     margin: 0px auto;
     width: 1441px;
     color: darkgrey;
-
+    header{
+        position: fixed;
+    }
     .about__h1 {
         font-weight: bolder;
         font-size: 30px;
