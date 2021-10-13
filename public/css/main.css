@@ -92,6 +92,7 @@ html body {
   padding: 40px;
   text-align: center;
   margin: 0px auto;
+  text-transform: uppercase;
 }
 
 .headerBG-for-otherPages .header__headTitleBlock__h1 {
@@ -148,6 +149,12 @@ html body {
   color: white !important;
   padding-left: 10px;
   font-size: 0.8rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 90vw;
 }
 
 .header__top-bar {
@@ -210,6 +217,11 @@ html body {
 }
 
 @media all and (min-width: 768px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 96vw;
+  }
   .headerBG-for-otherPages {
     background-image: url(../img/banner-img.jpg) !important;
     background-repeat: no-repeat;
@@ -220,6 +232,7 @@ html body {
   .headerBG-for-otherPages .header__headTitleBlock {
     padding: 60px;
     text-align: center;
+    text-transform: uppercase;
   }
   .headerBG-for-otherPages .header__headTitleBlock__h1 {
     font-size: 1.5rem;
@@ -282,6 +295,7 @@ html body {
   .headerBG-for-otherPages .header__headTitleBlock {
     padding: 140px;
     text-align: center;
+    text-transform: uppercase;
   }
   .headerBG-for-otherPages .header__headTitleBlock__h1 {
     font-size: 2.5rem;
@@ -1428,6 +1442,10 @@ html body {
   color: darkgrey;
 }
 
+.about-Main header {
+  position: fixed;
+}
+
 .about-Main .about__h1 {
   font-weight: bolder;
   font-size: 30px;
@@ -1920,7 +1938,7 @@ body .tour-schedule__dates-for-month__progress-bar-container__progress-bar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 1rem;
+  padding-top: 1.25rem;
 }
 
 body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element, body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line {
