@@ -2,7 +2,6 @@
 const partnersSliderControllers = [...document.querySelectorAll(".partners-sponsors__contents__interactive-block__slider__controller")];
 const partners = [...document.querySelectorAll(".partners-sponsors__contents__interactive-block__partners-list__partner")];
 const playButton = document.querySelector(".fa-play");
-const currentTime = document.querySelector(".header__new-single__contents__audio-player__timer__current-time");
 
 // ---------- FUNCTIONS ----------
 //PARTNERS SLIDER
@@ -37,11 +36,9 @@ const playEvent = e => {
     if (e.target.classList.contains("fa-play")) {
         e.target.classList.add("fa-pause");
         e.target.classList.remove("fa-play");
-        keepPlayin = true;
     } else {
         e.target.classList.add("fa-play");
         e.target.classList.remove("fa-pause");
-        keepPlayin = false;
     }
 }
 
