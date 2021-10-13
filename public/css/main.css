@@ -571,7 +571,7 @@ html body {
   position: relative;
 }
 
-.header__new-single__contents__audio-player__progress-bar::before {
+.header__new-single__contents__audio-player__progress-bar__bar {
   position: absolute;
   content: "";
   width: 50%;

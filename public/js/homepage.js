@@ -37,14 +37,13 @@ const playEvent = e => {
     if (e.target.classList.contains("fa-play")) {
         e.target.classList.add("fa-pause");
         e.target.classList.remove("fa-play");
+        keepPlayin = true;
     } else {
         e.target.classList.add("fa-play");
         e.target.classList.remove("fa-pause");
+        keepPlayin = false;
     }
 }
-
-//AUDIO PROGRESS BAR
-
 
 // ---------- EVENT LISTENERS ----------
 //PARTNERS SLIDER
