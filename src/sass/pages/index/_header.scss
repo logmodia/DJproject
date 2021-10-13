@@ -79,6 +79,9 @@
                 }
                 &__audio-player {
                     margin-top: 2.3rem;
+                    &__progress-bar {
+                        width: 70%;
+                    }
                 }
             }
         }
@@ -107,6 +110,9 @@
                 }
                 &__audio-player {
                     margin-top: auto;
+                    &__progress-bar {
+                        width: 78%;
+                    }
                 }
             }
         }

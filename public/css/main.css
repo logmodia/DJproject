@@ -600,6 +600,9 @@ html body {
   .header__new-single__contents__audio-player {
     margin-top: 2.3rem;
   }
+  .header__new-single__contents__audio-player__progress-bar {
+    width: 70%;
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -626,6 +629,9 @@ html body {
   }
   .header__new-single__contents__audio-player {
     margin-top: auto;
+  }
+  .header__new-single__contents__audio-player__progress-bar {
+    width: 78%;
   }
 }
 
