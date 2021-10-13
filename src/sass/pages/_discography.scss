@@ -27,6 +27,7 @@ body{
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body{
+    
     .discography__album__grid__container{
       padding: 55px 25px 60px;
       grid-template-columns: repeat(2, 1fr);

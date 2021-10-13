@@ -1,0 +1,202 @@
+@media all and (max-width: 1024px) {
+
+    .About-header{
+        margin: 0px auto;
+        width: 768px;
+        height: 500px;
+        background-image: url(../img/banner-img.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 1920px;
+        background-clip: content-box;
+        
+        &__topBar{
+            background-color: black;
+            padding-top: 10px;
+
+            &__element__nav{
+                padding-left: 400px;
+                
+                &__list{
+                    visibility: hidden;
+                    position: absolute !important;
+                    top: -9999px !important;
+                    left: -9999px !important;
+                    
+                }
+            }
+            
+        }
+        .menu-humbTopleft,.menu-ellipsis{
+            position: static !important;
+            visibility: visible;
+            top: 0px !important;
+            left: 0px !important;
+        }
+        
+        .About-header__headTitleBlock{
+            padding: 200px;
+            text-align: center;
+            height: 100vh;
+
+            &__h1{
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .about-Main {
+        margin: 0px auto;
+        width: 768px;
+        
+        .globalMain__sectDJ {
+            flex-direction: column;
+            height: fit-content;
+
+            .globalMain__sectDJ__div{
+                padding-bottom: 30px;
+            }
+        }
+
+        .about-Main__DiscoverMusic{
+            width: 768px;
+            height: 40rem;
+
+            .about-Main__DiscoverMusic__containerGrid{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                column-gap: 5px;
+                row-gap: 55px;
+            }
+
+        }
+
+        .about-Main__Release{
+            width: 768px;
+            &__containerArticle{
+                flex-wrap: wrap;
+                padding-left: 0px;
+                padding-right: 0px;
+
+            }
+
+            .img3_SectRelease{
+                padding-top: 40px;
+            }
+        }
+    
+    }
+
+    .about-footer-width{
+        margin: 0px auto;
+        width: 768px;
+    }
+}
+@media all and (max-width: 600px) {
+
+    .about-Main {
+        margin: 0px auto;
+        width: 320px;
+        
+        .globalMain__sectDJ {
+            flex-direction: column;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 50px;
+
+            &__TextSignaturButton{
+                &__FigSignature{
+                   padding-bottom: 10px;
+                }
+            }
+
+        }
+
+        .about-Main__DiscoverMusic{
+            width: 320px;
+            height: 83rem;
+
+            .about__h1{
+                font-size: 26px;
+            }
+
+            .about-Main__DiscoverMusic__containerGrid{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                //column-gap: 5px;
+                row-gap: 55px;
+
+                &__article{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+
+                    .DiscoverMusic__containerGrid__h2{
+                        order: -1;
+                    }
+                    .DiscoverMusic__containerGrid__paragraph{
+                        order: -1;
+                    }
+                }
+
+                &__paragraph{
+                    font-size: 15px;
+                }
+
+                .containerGrid__article__rect-icon{
+                    //display: inline-block;
+                    float: none;
+                    width: 20px;
+                    height: 30px;
+                    padding: 20px;
+                }
+            }
+
+        }
+
+        .about-Main__Release{
+            width: 320px;
+            
+            .about-Main__Release__divSectionTitle{
+                margin: 0px auto;
+                width: 320px;
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 0px;
+                padding-right: 0px;
+        
+                &__p{
+                    font-size: 14px;
+                }
+            }
+
+            &__containerArticle{
+                flex-wrap: wrap;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            &__divSectionTitle__h1{
+                font-size: 22px;
+            }
+            
+            .img_SectRelease{
+                padding-top: 40px;
+                img{
+                    width: 320px;
+                    height: 346px;
+                }
+            }
+        }
+        
+    }
+
+    /* .about-footer-width{
+        margin: 0px auto;
+        width: 320px;
+    } */
+}

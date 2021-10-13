@@ -7,13 +7,81 @@
         flex-direction: column;
         &__contents {
             margin: auto;
-            width: 17rem;
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 50%;
+            &__heading, &__song-title {
+                color: $white-text;
+            }
+            &__heading {
+                text-transform: capitalize;
+                font-size: 1.5rem;
+                font-weight: 700;
+                padding-top: 1.75rem;
+            }
+            &__song-title {
+                font-size: 2.15rem;
+                font-weight: 700;
+                line-height: 2.6rem;
+                padding-top: 0.25rem;
+                color: transparent;
+                -webkit-text-stroke: 2px $white-text;
+            }
+            &__audio-player {
+                width: 100%;
+                height: 2rem;
+                background-color: $gray;
+                opacity: 0.9;
+                margin-top: auto;
+            }
         }
-        &__heading, &__song-title {
-            color: $white-text;
+    }
+}
+
+// TABLET
+@media all and (min-width: 768px) {
+    .header {
+        &__new-single {
+            height: 25.1rem;
+            &__contents {
+                height: 65%;
+                &__song-title {
+                    font-size: 4.1rem;
+                    padding-top: 1.5rem;
+                }
+                &__audio-player {
+                    margin-top: 2.3rem;
+                }
+            }
         }
-        &__audio-player {
-            width: 100%;
+    }
+}
+
+// DESKTOP
+@media all and (min-width: 1024px) {
+    .header {
+        background-image: url("../img/homapage-banner-img.jpg");
+        background-size: cover;
+        height: 100vh;
+        &__new-single {
+            background: none;
+            height: auto;
+            &__contents {
+                height: 80vh;
+                max-width: 1165.85px;
+                &__heading {
+                    margin-top: 50vh;
+                    font-size: 2.3rem;
+                }
+                &__song-title {
+                    margin-top: 3vh;
+                    font-size: 6.89rem;
+                }
+                &__audio-player {
+                    margin-top: auto;
+                }
+            }
         }
     }
 }

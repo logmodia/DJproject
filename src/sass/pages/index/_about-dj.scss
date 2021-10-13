@@ -1,0 +1,103 @@
+.about-dj {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3.5rem 0;
+    &__figure, &__text-content {
+        margin: auto;
+        width: 90%;
+    }
+    &__figure {
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 7px;
+        }
+    }
+    &__text-content {
+        &__heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 2.1rem 0 1rem 0;
+        }
+        &__about {
+            font-size: 0.9rem;
+            font-weight: 200;
+            line-height: 1.5rem;
+            &__dj-quote {
+                display: inline-block;
+                padding: 1rem;
+                font-size: 1.25rem;
+                position: relative;
+                line-height: 1.75rem;
+                &::before {
+                    position: absolute;
+                    content: '"';
+                    color: $purple;
+                    opacity: 0.3;
+                    font-size: 7rem;
+                    font-weight: 300;
+                    top: -1.55rem;
+                    left: 0.47rem;
+                    transform: rotate(180deg) skewX(160deg);
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+// TABLET
+@media all and (min-width: 768px) {
+    .about-dj {
+        margin: 0 5%;
+        justify-content: space-between;
+        &__figure, &__text-content {
+            margin: 0;
+        }
+        &__figure {
+            width: 38.5%;
+            img {
+                height: unset;
+            }
+        }
+        &__text-content {
+            width: 57%;
+            &__heading {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+// DESKTOP
+@media all and (min-width: 1024px) {
+    .about-dj {
+        margin: 0 auto;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 1165.85px;
+        &__figure {
+            width: 41.5%;
+            margin-left: 7%;
+        }
+        &__text-content {
+            width: 42%;
+            &__heading {
+                font-size: 2.1rem;
+                padding-bottom: 1rem;
+            }
+            &__about {
+                &__dj-quote {
+                    font-size: 1.5rem;
+                    line-height: 2.3rem;
+                    padding: 2rem 1rem;
+                    &::before {
+                        font-size: 14rem;
+                        top: -2.35rem;
+                        left: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}

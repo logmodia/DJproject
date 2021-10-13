@@ -16,7 +16,6 @@
                 text-align: center;
                 text-transform: uppercase;
                 font-weight: 500;
-                color: $white-text;
                 padding-bottom: 1.1rem;
                 &__link {
                     color: $white-text;
@@ -60,7 +59,7 @@
 }
 
 
-// TABLETS
+// TABLET
 @media all and (min-width: 768px) {
     .footer {
         &__dj-angerone-logo {

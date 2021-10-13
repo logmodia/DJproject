@@ -1,5 +1,10 @@
 @import "index/header";
+@import "index/next-gig";
+@import "index/about-dj";
+@import "index/latest-releases";
+@import "index/join-fanbase";
+@import "index/partners-sponsors";
 
-.index-main {
+.tour-schedule--1, .tickets-desk {
     display: none;
 }

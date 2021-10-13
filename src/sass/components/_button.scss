@@ -1,0 +1,12 @@
+@mixin button {
+    background-color: $purple;
+    border-radius: 5px;
+    height: 3.7rem;
+    display: flex;
+    p {
+        margin: auto;
+        font-weight: 700;
+        color: $white-text;
+        text-transform: uppercase;
+    }
+}

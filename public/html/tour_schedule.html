@@ -4,11 +4,81 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../.././src/sass/main.min.css" type="text/css" rel="stylesheet" />
+    <link href="../css/main.min.css" type="text/css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/278099ab94.js" crossorigin="anonymous"></script>
     <title>Tour Schedule</title>
   </head>
   <body>
+
+    <header class="header headerBG-for-otherPages">
+            <nav class="header__top-bar">
+                <div class="header__top-bar__burger-menu">
+                    <div class="header__top-bar__burger-menu__line"></div>
+                    <div class="header__top-bar__burger-menu__line"></div>
+                    <div class="header__top-bar__burger-menu__line"></div>
+                </div>
+
+                <img class="header__top-bar__dj-angerone-logo" src="../img/logo.png" alt="DJ Angerone logo"/>
+
+                <nav class="header__top-bar__navlinks">
+                    <ul class="header__top-bar__navlinks__links-list">
+                        <li class="header__top-bar__navlinks__links-list__element">
+                            <a class="header__top-bar__navlinks__links-list__element__link" href="../html/about_us.html">about</a>
+                        </li>
+                        <li class="header__top-bar__navlinks__links-list__element">
+                            <a class="header__top-bar__navlinks__links-list__element__link" href="../html/discography.html">discography</a>
+                        </li>
+                        <li class="header__top-bar__navlinks__links-list__element">
+                            <a class="header__top-bar__navlinks__links-list__element__link" href="../html/tour_schedule.html">tours</a>
+                        </li>
+                        <li class="header__top-bar__navlinks__links-list__element">
+                            <a class="header__top-bar__navlinks__links-list__element__link" href="../html/gallery.html">photos</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="header__top-bar__social-networks">
+                    <li class="header__top-bar__social-networks__button">
+                        <a class="header__top-bar__social-networks__button__link" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="header__top-bar__social-networks__button">
+                        <a class="header__top-bar__social-networks__button__link" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="header__top-bar__social-networks__button">
+                        <a class="header__top-bar__social-networks__button__link" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="header__top-bar__social-networks__button">
+                        <a class="header__top-bar__social-networks__button__link" href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="header__top-bar__more-menu">
+                    <div class="header__top-bar__more-menu__point"></div>
+                    <div class="header__top-bar__more-menu__point"></div>
+                    <div class="header__top-bar__more-menu__point"></div>
+                </div>
+            </nav>
+
+            <div class="header__headTitleBlock">
+                <h1 class="header__headTitleBlock__h1">TOUR SCHEDULE</h1>
+                <div class="header__headTitleBlock__div">
+                    <div class="header__headTitleBlock__div__elem "><a href="/index.html" class="header__headTitleBlock__div__elem__a">HOME</a></div>
+                    <div class="header__headTitleBlock__div__elem header__headTitleBlock__div__elemPoint"></div>
+                    <div class="header__headTitleBlock__div__elem header__headTitleBlock__div__elem-Gray">TOUR SCHEDULE</div>
+                    
+                </div>
+            </div>
+
+        </header>
+
     <main class="tour-schedule">
       <div class="tour-schedule__content">
         <section class="tour-schedule__select-month__shape">
@@ -28,9 +98,19 @@
         <section class="tour-schedule__dates-for-month">
           <h2 class="hidden">dates for the month of ... add with javascript</h2>
           <div class="tour-schedule__dates-for-month__grid-container">
+            <!--FLAG-->
             <div class="tour-schedule__dates-for-month__progress-bar-container">
-              <aside class="tour-schedule__dates-for-month__progress-bar">
-
+              <aside class="tour-schedule__dates-for-month__progress-bar-container__progress-bar">
+                <div class="tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element
+                            tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element--active"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar-container__progress-bar__line"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar-container__progress-bar__line"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar-container__progress-bar__line"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar-container__progress-bar__line"></div>
+                <div class="tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element"></div>
               </aside>
             </div>
             <div class="tour-schedule__dates-for-month__available-dates__container">
