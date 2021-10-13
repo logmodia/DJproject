@@ -8,12 +8,11 @@
         flex-wrap: wrap;
         padding: 3rem 0;
         max-width: 463px;
+        margin: 0 auto;
         &__img {
             border-radius: 7px;
             &:nth-child(1) {
                 margin: 0 17% 2.4rem auto;
-                margin-left: auto;
-                margin-right: 17%;
             }
             &:nth-child(2) {
                 margin: 0 auto;
@@ -80,3 +79,41 @@
         }
     }
 }
+
+// TABLET
+@media all and (min-width: 768px) {
+    .join-fanbase {
+        &__figure {
+            max-width: 575px;
+            justify-content: center;
+            align-items: center;
+            &__img {
+                &:nth-child(1) {
+                    margin: 0;
+                }
+                &:nth-child(2) {
+                    margin: 0 0 0 1.5rem;
+                }
+                &:nth-child(3) {
+                    width: 10rem;
+                    height: 10rem;
+                    margin: 0;
+                }
+                &:nth-child(4) {
+                    margin: 0.5rem 0 1rem auto;
+                    width: initial;
+                }
+                &:nth-child(5) {
+                    margin: 0;
+                    position: static;
+                }
+                &:nth-child(6) {
+                    margin: 0 0 0 2rem;
+                }
+            }
+        }
+    }
+}
+
+// DESKTOP
+@media all and (min-width: 1024px) {}

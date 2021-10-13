@@ -821,6 +821,7 @@ html body {
       flex-wrap: wrap;
   padding: 3rem 0;
   max-width: 463px;
+  margin: 0 auto;
 }
 
 .join-fanbase__figure__img {
@@ -829,8 +830,6 @@ html body {
 
 .join-fanbase__figure__img:nth-child(1) {
   margin: 0 17% 2.4rem auto;
-  margin-left: auto;
-  margin-right: 17%;
 }
 
 .join-fanbase__figure__img:nth-child(2) {
@@ -904,6 +903,40 @@ html body {
   line-height: 1.4rem;
 }
 
+@media all and (min-width: 768px) {
+  .join-fanbase__figure {
+    max-width: 575px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .join-fanbase__figure__img:nth-child(1) {
+    margin: 0;
+  }
+  .join-fanbase__figure__img:nth-child(2) {
+    margin: 0 0 0 1.5rem;
+  }
+  .join-fanbase__figure__img:nth-child(3) {
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+  }
+  .join-fanbase__figure__img:nth-child(4) {
+    margin: 0.5rem 0 1rem auto;
+    width: initial;
+  }
+  .join-fanbase__figure__img:nth-child(5) {
+    margin: 0;
+    position: static;
+  }
+  .join-fanbase__figure__img:nth-child(6) {
+    margin: 0 0 0 2rem;
+  }
+}
+
 .partners-sponsors {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/homepage-sponsors-background.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/homepage-sponsors-background.jpg");
@@ -956,7 +989,7 @@ html body {
   margin-bottom: 3.2rem;
 }
 
-.partners-sponsors__contents__interactive-block__partners-list__partner:nth-child(2), .partners-sponsors__contents__interactive-block__partners-list__partner:nth-child(3), .partners-sponsors__contents__interactive-block__partners-list__partner:nth-child(4) {
+.partners-sponsors__contents__interactive-block__partners-list__partner--hidden {
   display: none;
 }
 
@@ -984,7 +1017,81 @@ html body {
   opacity: 1;
 }
 
-.tour-schedule--1, .tickets-desk {
+.tickets-desk {
+  padding-bottom: 2.7rem;
+}
+
+.tickets-desk__heading {
+  font-size: 1.45rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 3.3rem 0;
+}
+
+.tickets-desk__tickets-list {
+  text-align: center;
+}
+
+.tickets-desk__tickets-list__ticket:nth-child(2), .tickets-desk__tickets-list__ticket:nth-child(3) {
+  display: none;
+}
+
+.tickets-desk__tickets-list__ticket__heading {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.tickets-desk__tickets-list__ticket__price {
+  padding: 1.2rem 0;
+}
+
+.tickets-desk__tickets-list__ticket__price__dollar {
+  font-size: 1.4rem;
+  font-weight: 500;
+  position: relative;
+  bottom: 1.05rem;
+  right: 0.2rem;
+}
+
+.tickets-desk__tickets-list__ticket__price strong {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #444444;
+}
+
+.tickets-desk__tickets-list__ticket__details {
+  padding-bottom: 0.5rem;
+}
+
+.tickets-desk__tickets-list__ticket__details__detail {
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #444444;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+
+.tickets-desk__tickets-list__ticket__buy-button {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #282828;
+  border-radius: 5px;
+  width: 39%;
+  height: 3.6rem;
+}
+
+.tickets-desk__tickets-list__ticket__buy-button p {
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.tour-schedule-home {
   display: none;
 }
 

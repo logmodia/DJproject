@@ -1,0 +1,62 @@
+.tickets-desk {
+    padding-bottom: 2.7rem;
+    &__heading {
+        font-size: 1.45rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        text-align: center;
+        padding: 3.3rem 0;
+    }
+    &__tickets-list {
+        text-align: center;
+        &__ticket {
+            &:nth-child(2), &:nth-child(3) {
+                display: none;
+            }
+            &__heading {
+                text-transform: uppercase;
+                font-size: 1.1rem;
+                font-weight: 300;
+                letter-spacing: 0.1rem;
+            }
+            &__price {
+                padding: 1.2rem 0;
+                &__dollar {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    position: relative;
+                    bottom: 1.05rem;
+                    right: 0.2rem;
+                }
+                strong {
+                    font-size: 3.5rem;
+                    font-weight: 400;
+                    color: $grey;
+                }
+            }
+            &__details {
+                padding-bottom: 0.5rem;
+                &__detail {
+                    font-weight: 300;
+                    text-transform: capitalize;
+                    color: $grey;
+                    font-size: 0.9rem;
+                    padding-bottom: 1rem;
+                }
+            }
+            &__buy-button {
+                margin: 0 auto;
+                display: flex;
+                border: 1px solid $gray;
+                border-radius: 5px;
+                width: 39%;
+                height: 3.6rem;
+                p {
+                    margin: auto;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
