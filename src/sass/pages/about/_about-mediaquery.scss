@@ -1,10 +1,10 @@
-@media only screen and (max-width: 1024px) {
+@media all and (max-width: 1024px) {
 
     .About-header{
         margin: 0px auto;
         width: 768px;
         height: 500px;
-        background-image: url(/public/img/banner-img.jpg);
+        background-image: url(../img/banner-img.jpg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: 1920px;
@@ -93,73 +93,7 @@
         width: 768px;
     }
 }
-@media only screen and (max-width: 400px) {
-
-    .About-header{
-        margin: 0px auto;
-        width: 320px;
-        height: 250px;
-        background-image: url(/public/img/banner-img.jpg);
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: 1480px;
-        background-clip: content-box;
-        
-        &__topBar{
-            background-color: black;
-            padding-top: 5px;
-
-            &__element__nav{
-                padding-left: 0px;
-                
-                &__list{
-                    visibility: hidden;
-                    position: absolute !important;
-                    top: -9999px !important;
-                    left: -9999px !important;
-                    
-                }
-            }
-
-            &__element{
-                display: flex;
-                align-items: center;
-                .logoTopBar{
-                    width: 150px;
-                    height: 30px;
-                    padding-left: 10px;
-                    padding-right: 40px;
-                }
-            }
-
-            
-        }
-        .menu-humbTopleft,.menu-ellipsis{
-            position: static !important;
-            visibility: visible;
-            top: 0px !important;
-            left: 0px !important;
-        }
-        
-        .menu-humbTopRight{
-            visibility: hidden;
-            position: absolute !important;
-            top: -9999px !important;
-            left: -9999px !important;
-            
-        }
-        .About-header__headTitleBlock{
-            padding: 0px;
-            text-align: center;
-            height: 100vh;
-
-            &__h1{
-                padding-top: 50px;
-                padding-bottom: 0px;
-                font-size: 26px;
-            }
-        }
-    }
+@media all and (max-width: 600px) {
 
     .about-Main {
         margin: 0px auto;
@@ -261,8 +195,8 @@
         
     }
 
-    .about-footer-width{
+    /* .about-footer-width{
         margin: 0px auto;
         width: 320px;
-    }
+    } */
 }

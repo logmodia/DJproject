@@ -3,7 +3,7 @@
     width: 1441px;
     height: 500px;
     color: white;
-    background-image: url(/public/img/banner-img.jpg);
+    background-image: url(../img/banner-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -61,14 +61,14 @@
         height: 100vh;
 
         &__h1{
-            font-size: 40px;
+            font-size: 3rem;
             font-weight: bolder;
         }
 
         &__li{
             display: inline-block;
             font-weight: bold;
-            font-size: 12px;
+            font-size: 1.2rem;
             
             &__a{
                 color: white;
@@ -79,9 +79,10 @@
         }
         
         &__liPoint{
-            font-size: 50px;
+            font-size: 1.5rem;
             font-weight: bolder;
             color: goldenrod;
+            padding: 1rem;
         }
 
         &__li-Gray{

@@ -12,52 +12,78 @@
             crossorigin="anonymous"
         />
 
-        <link rel="stylesheet" href="/public/css/main.min.css" />
+        <link rel="stylesheet" href="../css/main.min.css" />
 
         <title>About DJ Angereno</title>
     </head>
 
     <body>
-        <header class="About-header">
-
-            <div class="About-header__topBar">
-                <div class="About-header__topBar__element">
-                    <li class="About-header__topBar__element__menuAndlogo menu-humbTopleft hidden">
-                        <ion-icon name="menu-sharp" class="menu-humb"></ion-icon>
-                    </li>
-                    <li class="About-header__topBar__element__menuAndlogo">
-                        <a href="/index.html">
-                            <img src="../img/logo.png" alt="DJ Angerone logo" class="logoTopBar"/>
-                        </a>
-                    </li>
+        
+        <header class="header headerBG-for-otherPages">
+            <nav class="header__top-bar">
+                <div class="header__top-bar__burger-menu">
+                    <div class="header__top-bar__burger-menu__line"></div>
+                    <div class="header__top-bar__burger-menu__line"></div>
+                    <div class="header__top-bar__burger-menu__line"></div>
                 </div>
 
-                <nav class="About-header__topBar__element About-header__topBar__element__nav">
-                    <ul class="About-header__topBar__element__nav__list">
-                        <li class="About-header__topBar__element__nav__list__li"><a href="/public/html/about_us.html" class="about-TopnavLink">ABOUT</a></li>
-                        <li class="About-header__topBar__element__nav__list__li"><a href="/public/html/discography.html" class="about-TopnavLink">DISCOGRAPHY</a></li>
-                        <li class="About-header__topBar__element__nav__list__li"><a href="#" class="about-TopnavLink">TOURS</a></li>
-                        <li class="About-header__topBar__element__nav__list__li"><a href="/public/html/gallery.html" class="about-TopnavLink">PHOTOS</a></li>
-                        <li class="About-header__topBar__element__nav__list__li"><a href="#" class="about-TopnavLink"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="About-header__topBar__element__nav__list__li"><a href="#" class="about-TopnavLink"><i class="fab fa-instagram"></i></a></li>
-                        <li class="About-header__topBar__element__nav__list__li"><a href="#" class="about-TopnavLink"><i class="fab fa-twitter"></i></a></li>
-                        <li class="About-header__topBar__element__nav__list__li"><a href="#" class="about-TopnavLink"><i class="fab fa-youtube"></i></a></li>
+                <img class="header__top-bar__dj-angerone-logo" src="../img/logo.png" alt="DJ Angerone logo"/>
+
+                <nav class="header__top-bar__navlinks">
+                    <ul class="header__top-bar__navlinks__links-list">
+                        <li class="header__top-bar__navlinks__links-list__element">
+                            <a class="header__top-bar__navlinks__links-list__element__link" href="../html/about_us.html">about</a>
+                        </li>
+                        <li class="header__top-bar__navlinks__links-list__element">
+                            <a class="header__top-bar__navlinks__links-list__element__link" href="../html/discography.html">discography</a>
+                        </li>
+                        <li class="header__top-bar__navlinks__links-list__element">
+                            <a class="header__top-bar__navlinks__links-list__element__link" href="../html/tour_schedule.html">tours</a>
+                        </li>
+                        <li class="header__top-bar__navlinks__links-list__element">
+                            <a class="header__top-bar__navlinks__links-list__element__link" href="../html/gallery.html">photos</a>
+                        </li>
                     </ul>
                 </nav>
-                
-                <div class="About-header__topBar__element__menu-humb-right">
-                    <li class="About-header__topBar__element__menuAndlogo">
-                        <ion-icon name="ellipsis-vertical-sharp" class="menu-ellipsis hidden"></ion-icon>
+
+                <ul class="header__top-bar__social-networks">
+                    <li class="header__top-bar__social-networks__button">
+                        <a class="header__top-bar__social-networks__button__link" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
                     </li>
+                    <li class="header__top-bar__social-networks__button">
+                        <a class="header__top-bar__social-networks__button__link" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="header__top-bar__social-networks__button">
+                        <a class="header__top-bar__social-networks__button__link" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="header__top-bar__social-networks__button">
+                        <a class="header__top-bar__social-networks__button__link" href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="header__top-bar__more-menu">
+                    <div class="header__top-bar__more-menu__point"></div>
+                    <div class="header__top-bar__more-menu__point"></div>
+                    <div class="header__top-bar__more-menu__point"></div>
                 </div>
+            </nav>
 
-            </div>
-
-            <div class="About-header__headTitleBlock">
-                <h1 class="About-header__headTitleBlock__h1">ABOUT US</h1>
-                <li class="About-header__headTitleBlock__li"><a href="/index.html" class="About-header__headTitleBlock__li__a">HOME</a></li>
-                <li class="About-header__headTitleBlock__li About-header__headTitleBlock__liPoint">.</li>
-                <li class="About-header__headTitleBlock__li About-header__headTitleBlock__li-Gray">ABOUT US</li>
+            <div class="header__headTitleBlock">
+                <h1 class="header__headTitleBlock__h1">ABOUT US</h1>
+                <div class="header__headTitleBlock__div">
+                    <div class="header__headTitleBlock__div__elem "><a href="/index.html" class="header__headTitleBlock__div__elem__a">HOME</a></div>
+                    <div class="header__headTitleBlock__div__elem header__headTitleBlock__div__elemPoint"></div>
+                    <div class="header__headTitleBlock__div__elem header__headTitleBlock__div__elem-Gray">ABOUT US</div>
+                    
+                </div>
             </div>
 
         </header>
@@ -74,34 +100,21 @@
 
                     <ul>
                         <li class="globalMain__sectDJ__TextSignaturButton__list-mailgsm">
-                            <img src="/public/img/phone-icon.svg" width="20" height="10"/>1-800-123-1234
+                            <img src="../img/phone-icon.svg" alt="Phone icon" width="20" height="10"/>1-800-123-1234
                         </li>
                         <li class="globalMain__sectDJ__TextSignaturButton__list-mailgsm">
-                            <img
-                                src="/public/img/envelope-icon.svg"
-                                width="20"
-                                height="10"
-                            />info@demolink.org
+                            <img  src="../img/envelope-icon.svg" alt="Enveloppe icon" width="20" height="10"/>info@demolink.org
                         </li>
                     </ul>
 
                     <ul>
-                        <li
-                            class="
-                                globalMain__sectDJ__TextSignaturButton__list-reseausociaux
-                            "
-                        >
+                        <li class="globalMain__sectDJ__TextSignaturButton__list-reseausociaux">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                         </li>
-                        <li
-                            class="
-                                globalMain__sectDJ__TextSignaturButton__list-reseausociaux
-                            "
-                        >
+                        <li class="globalMain__sectDJ__TextSignaturButton__list-reseausociaux">
                             <a href="#"><i class="fab fa-instagram"></i></a>
                         </li>
-                        <li class="globalMain__sectDJ__TextSignaturButton__list-reseausociaux"
-                        >
+                        <li class="globalMain__sectDJ__TextSignaturButton__list-reseausociaux">
                             <a href="#"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li class="globalMain__sectDJ__TextSignaturButton__list-reseausociaux">
@@ -126,7 +139,7 @@
                     </p>
 
                     <figure class="globalMain__sectDJ__TextSignaturButton__FigSignature">
-                        <img src="/public/img/about-us-signature.png" alt="Signature"/>
+                        <img src="../img/about-us-signature.png" alt="Signature"/>
                     </figure>
                     <a href="#">
                         <div class="globalMain__sectDJ__TextSignaturButton__GetInTouch">
@@ -134,7 +147,7 @@
                         </div>
                     </a>
                 </div>
-                <img src="/public/img/about-us-dj-img.jpg" class="globalMain__sectDJ__TextSignaturButton__imgDJ" alt="Photo DJ Angerone"/>
+                <img src="../img/about-us-dj-img.jpg" class="globalMain__sectDJ__TextSignaturButton__imgDJ" alt="Photo DJ Angerone"/>
             </section>
 
             <section class="about-Main__DiscoverMusic">
@@ -145,7 +158,7 @@
                 <div class="about-Main__DiscoverMusic__containerGrid">
                     <article class="about-Main__DiscoverMusic__containerGrid__article about-Main__DiscoverMusic__containerGrid__articleRect">
                         
-                        <img class="containerGrid__article__rect-icon" src="/public/img/rect_ico.png" alt="Rectangle icon"/>
+                        <img class="containerGrid__article__rect-icon" src="../img/rect_ico.png" alt="Rectangle icon"/>
                         <h2 class="DiscoverMusic__containerGrid__h2">
                             Concerts
                         </h2>
@@ -157,7 +170,7 @@
                     </article>
 
                     <article class="about-Main__DiscoverMusic__containerGrid__article ">
-                        <img class="containerGrid__article__rect-icon" src="/public/img/rect_ico.png" alt="Rectangle"/>
+                        <img class="containerGrid__article__rect-icon" src="../img/rect_ico.png" alt="Rectangle"/>
 
                         <h2 class="DiscoverMusic__containerGrid__h2">
                             Festivals
@@ -169,7 +182,7 @@
                     </article>
 
                     <article class="about-Main__DiscoverMusic__containerGrid__article">
-                        <img class="containerGrid__article__rect-icon"src="/public/img/rect_ico.png" alt="Rectangle"/>
+                        <img class="containerGrid__article__rect-icon" src="../img/rect_ico.png" alt="Rectangle"/>
 
                         <h2 class="DiscoverMusic__containerGrid__h2">
                             DJ Sets
@@ -181,7 +194,7 @@
                     </article>
 
                     <article class="about-Main__DiscoverMusic__containerGrid__article">
-                        <img class="containerGrid__article__rect-icon" src="/public/img/rect_ico.png" alt="Rectangle"/>
+                        <img class="containerGrid__article__rect-icon" src="../img/rect_ico.png" alt="Rectangle"/>
 
                         <h2 class="DiscoverMusic__containerGrid__h2">Mixes</h2>
                         <p class="DiscoverMusic__containerGrid__paragraph">
@@ -190,16 +203,8 @@
                         </p>
                     </article>
 
-                    <article
-                        class="
-                            about-Main__DiscoverMusic__containerGrid__article
-                        "
-                    >
-                        <img
-                            class="containerGrid__article__rect-icon"
-                            src="/public/img/rect_ico.png"
-                            alt="Rectangle"
-                        />
+                    <article class="about-Main__DiscoverMusic__containerGrid__article">
+                        <img class="containerGrid__article__rect-icon" src="../img/rect_ico.png" alt="Rectangle"/>
 
                         <h2 class="DiscoverMusic__containerGrid__h2">
                             Podcasts
@@ -210,16 +215,8 @@
                         </p>
                     </article>
 
-                    <article
-                        class="
-                            about-Main__DiscoverMusic__containerGrid__article
-                        "
-                    >
-                        <img
-                            class="containerGrid__article__rect-icon"
-                            src="/public/img/rect_ico.png"
-                            alt="Rectangle"
-                        />
+                    <article class="about-Main__DiscoverMusic__containerGrid__article">
+                        <img class="containerGrid__article__rect-icon" src="../img/rect_ico.png" alt="Rectangle"/>
 
                         <h2 class="DiscoverMusic__containerGrid__h2">
                             Remixes
@@ -245,7 +242,7 @@
                 <div class="about-Main__Release__containerArticle">
                     <article class="about-Main__Release__containerArticle__article">
                         <figure class="img_SectRelease img1_SectRelease">
-                            <img src="/public/img/dicography-album-cover-1.jpg" alt="Image dicography album cover 1 " />
+                            <img src="../img/dicography-album-cover-1.jpg" alt="Image dicography album cover 1 " />
                         </figure>
                         <figcaption>
                             <h2 class="about-Main__Release__containerArticle__article__h2">Intense</h2>
@@ -255,7 +252,7 @@
 
                     <article class="about-Main__Release__containerArticle__article">
                         <figure class="img_SectRelease">
-                            <img src="/public/img/dicography-album-cover-2.jpg" alt="Image dicography album cover 2"/>
+                            <img src="../img/dicography-album-cover-2.jpg" alt="Image dicography album cover 2"/>
                         </figure>
                         <figcaption>
                             <h2 class="about-Main__Release__containerArticle__article__h2">My Space</h2>
@@ -265,7 +262,7 @@
 
                     <article class="about-Main__Release__containerArticle__article">
                         <figure class="img_SectRelease img3_SectRelease">
-                            <img src="/public/img/dicography-album-cover-3.jpg" alt="Imge dicographyv album cover 3"/>
+                            <img src="../img/dicography-album-cover-3.jpg" alt="Imge dicographyv album cover 3"/>
                         </figure>
                         <figcaption>
                             <h2 class="about-Main__Release__containerArticle__article__h2">Trance Year Mix</h2>
@@ -279,8 +276,7 @@
         </main>
 
         <footer class="footer about-footer-width">
-            <img class="footer__dj-angerone-logo" src="/public/img/logo.png" alt="DJ Angerone logo"
-            />
+            <img class="footer__dj-angerone-logo" src="../img/logo.png" alt="DJ Angerone logo"/>
 
             <nav class="footer__navlinks">
                 <ul class="footer__navlinks__links-list">

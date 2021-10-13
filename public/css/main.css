@@ -1,0 +1,2055 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited, a:active {
+  color: black;
+}
+
+time, a {
+  display: inline-block;
+}
+
+html {
+  font-size: 16px;
+}
+
+html body {
+  font-family: "Poppins", sans-serif;
+}
+
+.hidden {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.headerBG-for-otherPages {
+  background-image: url(../img/banner-img.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: 1480px !important;
+  background-position: top !important;
+  height: 200px !important;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock {
+  padding: 40px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__h1 {
+  margin: 0px auto;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: white;
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__div {
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__div__elem {
+  font-weight: bold;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__div__elem__a {
+  font-size: 0.8rem !important;
+  padding-right: 10px;
+  color: white;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__div__elem__a:visited {
+  color: white;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__div__elemPoint {
+  width: 5px;
+  height: 5px;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  font-weight: bolder;
+  color: goldenrod;
+  background-color: goldenrod;
+}
+
+.headerBG-for-otherPages .header__headTitleBlock__div__elem-Gray {
+  opacity: 0.5;
+  color: white !important;
+  padding-left: 10px;
+  font-size: 0.8rem;
+}
+
+.header__top-bar {
+  background-color: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.7rem 1.5rem 0.7rem 0.7rem;
+}
+
+.header__top-bar__burger-menu {
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__top-bar__burger-menu__line {
+  background-color: #fff;
+  height: 2px;
+  margin: auto 0;
+}
+
+.header__top-bar__dj-angerone-logo {
+  width: 10rem;
+  margin-left: 0.7rem;
+}
+
+.header__top-bar__navlinks {
+  display: none;
+}
+
+.header__top-bar__social-networks {
+  display: none;
+}
+
+.header__top-bar__more-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: auto;
+}
+
+.header__top-bar__more-menu__point {
+  border-radius: 50%;
+  background-color: #fff;
+  width: 0.37rem;
+  height: 0.37rem;
+}
+
+@media all and (min-width: 768px) {
+  .headerBG-for-otherPages {
+    background-image: url(../img/banner-img.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: 1550px !important;
+    background-position: top !important;
+    height: 400px !important;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock {
+    padding: 60px;
+    text-align: center;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    padding-top: 110px;
+    padding-bottom: 40px;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div {
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem {
+    font-weight: bold;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem__a {
+    font-size: 0.8rem !important;
+    padding-right: 10px;
+    color: white;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem__a:visited {
+    color: white;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elemPoint {
+    width: 5px;
+    height: 5px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: goldenrod;
+    background-color: goldenrod;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem-Gray {
+    opacity: 0.5;
+    color: white !important;
+    padding-left: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .headerBG-for-otherPages {
+    background-image: url(../img/banner-img.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px !important;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock {
+    padding: 140px;
+    text-align: center;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div {
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem {
+    font-weight: bold;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem__a {
+    font-size: 0.8rem !important;
+    padding-right: 10px;
+    color: white;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem__a:visited {
+    color: white;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elemPoint {
+    width: 5px;
+    height: 5px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: goldenrod;
+    background-color: goldenrod;
+  }
+  .headerBG-for-otherPages .header__headTitleBlock__div__elem-Gray {
+    opacity: 0.5;
+    color: white !important;
+    padding-left: 10px;
+    font-size: 0.8rem;
+  }
+  .header__top-bar {
+    background: none;
+    padding: 2rem 5% 0 5%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__top-bar__burger-menu {
+    display: none;
+  }
+  .header__top-bar__dj-angerone-logo {
+    width: 16rem;
+  }
+  .header__top-bar__navlinks {
+    display: inherit;
+  }
+  .header__top-bar__navlinks__links-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 27rem;
+  }
+  .header__top-bar__navlinks__links-list__element__link {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+  }
+  .header__top-bar__navlinks__links-list__element__link:visited, .header__top-bar__navlinks__links-list__element__link:active {
+    color: #fff;
+  }
+  .header__top-bar__social-networks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 10rem;
+  }
+  .header__top-bar__social-networks__button__link .fab {
+    color: #9d9d9d;
+    font-size: 1.3rem;
+  }
+  .header__top-bar__more-menu {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem 0;
+}
+
+.footer__dj-angerone-logo {
+  margin: 0 auto;
+  width: 16rem;
+  padding-bottom: 1.8rem;
+}
+
+.footer__navlinks {
+  margin: 0 auto;
+  padding-bottom: 1.6rem;
+}
+
+.footer__navlinks__links-list__element {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-bottom: 1.1rem;
+}
+
+.footer__navlinks__links-list__element__link {
+  color: #fff;
+}
+
+.footer__navlinks__links-list__element__link:visited, .footer__navlinks__links-list__element__link:active {
+  color: #fff;
+}
+
+.footer__social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 18rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 2.8rem;
+}
+
+.footer__social-networks__button__link {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #353535;
+  padding: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social-networks__button__link .fab {
+  margin: auto;
+  font-size: 1.35rem;
+  color: #fff;
+}
+
+.footer__attribution {
+  margin: 0 auto;
+  color: #919191;
+  font-size: 0.9rem;
+}
+
+@media all and (min-width: 768px) {
+  .footer__dj-angerone-logo {
+    padding-bottom: 2.3rem;
+  }
+  .footer__navlinks__links-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 27rem;
+  }
+  .footer__navlinks__links-list__element {
+    padding-bottom: 0.7rem;
+  }
+  .footer__social-networks {
+    width: 20rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .footer {
+    padding: 7rem 0 8.1rem 0;
+  }
+  .footer__dj-angerone-logo {
+    padding-bottom: 3.7rem;
+  }
+  .footer__navlinks {
+    padding-bottom: 3.5rem;
+  }
+  .footer__social-networks {
+    padding-bottom: 6.8rem;
+    width: 23rem;
+  }
+}
+
+.header__new-single {
+  background-image: url("../img/homapage-banner-img.jpg");
+  background-size: cover;
+  height: 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__new-single__contents {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 50%;
+}
+
+.header__new-single__contents__heading, .header__new-single__contents__song-title {
+  color: #fff;
+}
+
+.header__new-single__contents__heading {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 1.75rem;
+}
+
+.header__new-single__contents__song-title {
+  font-size: 2.15rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  padding-top: 0.25rem;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.header__new-single__contents__audio-player {
+  width: 100%;
+  height: 2rem;
+  background-color: #282828;
+  opacity: 0.9;
+  margin-top: auto;
+}
+
+@media all and (min-width: 768px) {
+  .header__new-single {
+    height: 25.1rem;
+  }
+  .header__new-single__contents {
+    height: 65%;
+  }
+  .header__new-single__contents__song-title {
+    font-size: 4.1rem;
+    padding-top: 1.5rem;
+  }
+  .header__new-single__contents__audio-player {
+    margin-top: 2.3rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .header {
+    background-image: url("../img/homapage-banner-img.jpg");
+    background-size: cover;
+    height: 100vh;
+  }
+  .header__new-single {
+    background: none;
+    height: auto;
+  }
+  .header__new-single__contents {
+    height: 80vh;
+    max-width: 1165.85px;
+  }
+  .header__new-single__contents__heading {
+    margin-top: 50vh;
+    font-size: 2.3rem;
+  }
+  .header__new-single__contents__song-title {
+    margin-top: 3vh;
+    font-size: 6.89rem;
+  }
+  .header__new-single__contents__audio-player {
+    margin-top: auto;
+  }
+}
+
+.next-gig {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.next-gig__dark-pannel {
+  margin: auto;
+  background-color: #282828;
+  width: 90%;
+  border-radius: 5px;
+  position: relative;
+  top: -2.2rem;
+  padding: 2rem 0;
+}
+
+.next-gig__dark-pannel__contents {
+  margin: auto;
+  width: 85%;
+  color: #fff;
+  text-align: center;
+}
+
+.next-gig__dark-pannel__contents__text-content__heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-bottom: 0.75rem;
+}
+
+.next-gig__dark-pannel__contents__text-content__availability {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  padding-bottom: 0.95rem;
+}
+
+.next-gig__dark-pannel__contents__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 2rem;
+}
+
+.next-gig__dark-pannel__contents__time__element {
+  font-weight: 500;
+}
+
+.next-gig__dark-pannel__contents__time__element:last-child {
+  display: none;
+}
+
+.next-gig__dark-pannel__contents__time__element output {
+  font-size: 2.2rem;
+}
+
+.next-gig__dark-pannel__contents__time__element p {
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  padding-top: 0.5rem;
+}
+
+.next-gig__dark-pannel__contents__button {
+  background-color: #8121e0;
+  border-radius: 5px;
+  height: 3.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.next-gig__dark-pannel__contents__button p {
+  margin: auto;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 768px) {
+  .next-gig__dark-pannel {
+    padding: 2.55rem 0;
+  }
+  .next-gig__dark-pannel__contents {
+    width: 90%;
+  }
+  .next-gig__dark-pannel__contents__time__element:last-child {
+    display: unset;
+  }
+  .next-gig__dark-pannel__contents__time__element output {
+    font-size: 3.7rem;
+  }
+  .next-gig__dark-pannel__contents__time__element p {
+    font-size: 0.8rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .next-gig__dark-pannel {
+    max-width: 1165.85px;
+  }
+  .next-gig__dark-pannel__contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .next-gig__dark-pannel__contents__text-content {
+    text-align: left;
+    width: 12rem;
+  }
+  .next-gig__dark-pannel__contents__text-content__heading {
+    font-size: 2.1rem;
+  }
+  .next-gig__dark-pannel__contents__text-content__availability {
+    padding-bottom: 0;
+  }
+  .next-gig__dark-pannel__contents__time {
+    padding-bottom: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 47%;
+  }
+  .next-gig__dark-pannel__contents__time__element output {
+    font-size: 4.5rem;
+  }
+  .next-gig__dark-pannel__contents__time__element p {
+    font-size: 0.9rem;
+  }
+  .next-gig__dark-pannel__contents__button {
+    width: 12.5rem;
+  }
+}
+
+.about-dj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 3.5rem 0;
+}
+
+.about-dj__figure, .about-dj__text-content {
+  margin: auto;
+  width: 90%;
+}
+
+.about-dj__figure img {
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.about-dj__text-content__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 2.1rem 0 1rem 0;
+}
+
+.about-dj__text-content__about {
+  font-size: 0.9rem;
+  font-weight: 200;
+  line-height: 1.5rem;
+}
+
+.about-dj__text-content__about__dj-quote {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.25rem;
+  position: relative;
+  line-height: 1.75rem;
+}
+
+.about-dj__text-content__about__dj-quote::before {
+  position: absolute;
+  content: '"';
+  color: #8121e0;
+  opacity: 0.3;
+  font-size: 7rem;
+  font-weight: 300;
+  top: -1.55rem;
+  left: 0.47rem;
+  -webkit-transform: rotate(180deg) skewX(160deg);
+          transform: rotate(180deg) skewX(160deg);
+  z-index: -1;
+}
+
+@media all and (min-width: 768px) {
+  .about-dj {
+    margin: 0 5%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about-dj__figure, .about-dj__text-content {
+    margin: 0;
+  }
+  .about-dj__figure {
+    width: 38.5%;
+  }
+  .about-dj__figure img {
+    height: unset;
+  }
+  .about-dj__text-content {
+    width: 57%;
+  }
+  .about-dj__text-content__heading {
+    padding-top: 0;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .about-dj {
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90%;
+    max-width: 1165.85px;
+  }
+  .about-dj__figure {
+    width: 41.5%;
+    margin-left: 7%;
+  }
+  .about-dj__text-content {
+    width: 42%;
+  }
+  .about-dj__text-content__heading {
+    font-size: 2.1rem;
+    padding-bottom: 1rem;
+  }
+  .about-dj__text-content__about__dj-quote {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    padding: 2rem 1rem;
+  }
+  .about-dj__text-content__about__dj-quote::before {
+    font-size: 14rem;
+    top: -2.35rem;
+    left: 1.3rem;
+  }
+}
+
+.latest-releases__view-discography {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/homepage-latest-releases-background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/homepage-latest-releases-background.jpg");
+  background-size: 550%;
+  background-position: -810px -390px;
+  height: 16.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.latest-releases__view-discography__heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #fff;
+  margin: auto auto 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+.latest-releases__view-discography__button {
+  margin: 1.5rem auto auto auto;
+  width: 63%;
+  background-color: #8121e0;
+  border-radius: 5px;
+  height: 3.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.latest-releases__view-discography__button p {
+  margin: auto;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.latest-releases__text-content, .latest-releases__list {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.latest-releases__text-content {
+  text-align: center;
+}
+
+.latest-releases__text-content__heading {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 3.7rem 0 0.85rem 0;
+}
+
+.latest-releases__text-content__info {
+  font-weight: 300;
+  font-size: 0.86rem;
+  line-height: 1.5rem;
+  color: #848484;
+}
+
+.latest-releases__list {
+  padding: 2.15rem 0 1rem 0;
+}
+
+.latest-releases__list__release {
+  padding-bottom: 2.75rem;
+}
+
+.latest-releases__list__release__title, .latest-releases__list__release__year {
+  text-align: center;
+}
+
+.latest-releases__list__release__title {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  padding: 1rem 0 0.8rem 0;
+}
+
+.latest-releases__list__release__year {
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+
+.latest-releases__list__release__cover {
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .latest-releases__view-discography {
+    height: 17.1rem;
+    background-size: 250%;
+    background-position: -583px -630px;
+  }
+  .latest-releases__view-discography__button {
+    width: 29%;
+  }
+  .latest-releases__text-content {
+    width: 65%;
+  }
+  .latest-releases__text-content__heading {
+    padding-top: 5rem;
+  }
+  .latest-releases__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 2.5rem;
+  }
+  .latest-releases__list__release {
+    width: 46.5%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .latest-releases__view-discography {
+    height: 28.3rem;
+    background-size: cover;
+    background-position: center;
+  }
+  .latest-releases__view-discography__heading {
+    font-size: 2.3rem;
+  }
+  .latest-releases__view-discography__button {
+    width: 14rem;
+    margin-top: 3.5%;
+  }
+  .latest-releases__text-content__heading {
+    font-size: 2.2rem;
+  }
+  .latest-releases__text-content__info {
+    width: 41rem;
+    margin: 0 auto;
+  }
+  .latest-releases__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1165.85px;
+  }
+  .latest-releases__list__release {
+    width: 31.5%;
+  }
+}
+
+.join-fanbase {
+  background-color: #282828;
+  background-image: url("../img/bg-circle-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.join-fanbase__figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 3rem 0;
+  max-width: 463px;
+  margin: 0 auto;
+}
+
+.join-fanbase__figure__img {
+  border-radius: 7px;
+}
+
+.join-fanbase__figure__img:nth-child(1) {
+  margin: 0 17% 2.4rem auto;
+}
+
+.join-fanbase__figure__img:nth-child(2) {
+  margin: 0 auto;
+}
+
+.join-fanbase__figure__img:nth-child(3) {
+  width: 10rem;
+  height: 10rem;
+  margin-left: 7.5%;
+}
+
+.join-fanbase__figure__img:nth-child(4) {
+  margin: 0 auto 1.1rem auto;
+  width: 18.5rem;
+}
+
+.join-fanbase__figure__img:nth-child(5) {
+  margin: 0 auto;
+  position: relative;
+  left: 6%;
+}
+
+.join-fanbase__figure__img:nth-child(6) {
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.join-fanbase__article {
+  color: #fff;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.join-fanbase__article__text-content__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.join-fanbase__article__text-content__info {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  padding-bottom: 2.5rem;
+}
+
+.join-fanbase__article__why-join-list {
+  padding-bottom: 1.1rem;
+}
+
+.join-fanbase__article__why-join-list__why-join {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+.join-fanbase__article__why-join-list__why-join .fas {
+  color: #8121e0;
+  font-size: 2.5rem;
+  padding-bottom: 1.3rem;
+}
+
+.join-fanbase__article__why-join-list__why-join__heading {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-bottom: 0.8rem;
+}
+
+.join-fanbase__article__why-join-list__why-join__info {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+@media all and (min-width: 768px) {
+  .join-fanbase__figure {
+    max-width: 575px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .join-fanbase__figure__img:nth-child(1) {
+    margin: 0;
+  }
+  .join-fanbase__figure__img:nth-child(2) {
+    margin: 0 0 0 1.5rem;
+  }
+  .join-fanbase__figure__img:nth-child(3) {
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+  }
+  .join-fanbase__figure__img:nth-child(4) {
+    margin: 0.5rem 0 1rem auto;
+    width: initial;
+  }
+  .join-fanbase__figure__img:nth-child(5) {
+    margin: 0;
+    position: static;
+  }
+  .join-fanbase__figure__img:nth-child(6) {
+    margin: 0 0 0 2rem;
+  }
+}
+
+.partners-sponsors {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/homepage-sponsors-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/homepage-sponsors-background.jpg");
+  background-position: -780px -345px;
+}
+
+.partners-sponsors__contents {
+  margin: 0 auto;
+  padding: 3.7rem 0;
+  width: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 19.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.partners-sponsors__contents__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+  text-align: center;
+}
+
+.partners-sponsors__contents__interactive-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: auto;
+}
+
+.partners-sponsors__contents__interactive-block__partners-list {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.partners-sponsors__contents__interactive-block__partners-list__partner {
+  margin-bottom: 3.2rem;
+}
+
+.partners-sponsors__contents__interactive-block__partners-list__partner--hidden {
+  display: none;
+}
+
+.partners-sponsors__contents__interactive-block__slider {
+  margin: 0 auto;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.partners-sponsors__contents__interactive-block__slider__controller {
+  width: .75rem;
+  height: .75rem;
+  border-radius: 50%;
+  background-color: gray;
+  opacity: 0.6;
+}
+
+.partners-sponsors__contents__interactive-block__slider__controller--active {
+  background-color: #8121e0;
+  opacity: 1;
+}
+
+.tickets-desk {
+  padding-bottom: 2.7rem;
+}
+
+.tickets-desk__heading {
+  font-size: 1.45rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 3.3rem 0;
+}
+
+.tickets-desk__tickets-list {
+  text-align: center;
+}
+
+.tickets-desk__tickets-list__ticket:nth-child(2), .tickets-desk__tickets-list__ticket:nth-child(3) {
+  display: none;
+}
+
+.tickets-desk__tickets-list__ticket__heading {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.tickets-desk__tickets-list__ticket__price {
+  padding: 1.2rem 0;
+}
+
+.tickets-desk__tickets-list__ticket__price__dollar {
+  font-size: 1.4rem;
+  font-weight: 500;
+  position: relative;
+  bottom: 1.05rem;
+  right: 0.2rem;
+}
+
+.tickets-desk__tickets-list__ticket__price strong {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #444444;
+}
+
+.tickets-desk__tickets-list__ticket__details {
+  padding-bottom: 0.5rem;
+}
+
+.tickets-desk__tickets-list__ticket__details__detail {
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #444444;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+
+.tickets-desk__tickets-list__ticket__buy-button {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #282828;
+  border-radius: 5px;
+  width: 39%;
+  height: 3.6rem;
+}
+
+.tickets-desk__tickets-list__ticket__buy-button p {
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.tour-schedule-home {
+  display: none;
+}
+
+.about-Main {
+  margin: 0px auto;
+  width: 1441px;
+  color: darkgrey;
+}
+
+.about-Main .about__h1 {
+  font-weight: bolder;
+  font-size: 30px;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.about-Main .globalMain__sectDJ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 100px;
+          column-gap: 100px;
+  height: 430px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton {
+  text-align: left;
+}
+
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__hr {
+  width: 200px;
+}
+
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__list-reseausociaux, .about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__list-mailgsm {
+  display: inline-block;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__list-reseausociaux {
+  display: inline-block;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__paragraph {
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__paragraph1 {
+  font-size: 14px;
+}
+
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__paragraph2 {
+  font-size: 18px;
+}
+
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__FigSignature {
+  text-align: right;
+}
+
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__GetInTouch {
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  background-color: #8121e0;
+  border-radius: 5px;
+}
+
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__GetInTouch p {
+  padding-top: 18px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.about-Main .globalMain__sectDJ .globalMain__sectDJ__TextSignaturButton__imgDJ {
+  width: 100%;
+}
+
+.about-Main .about-Main__DiscoverMusic {
+  margin: 20px auto;
+  padding-top: 60px;
+  background-color: #f5f5f5;
+  background-image: url(/public/img/bg-circle-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+
+.about-Main .about-Main__DiscoverMusic__titleh1 {
+  text-align: center;
+  color: black;
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
+.about-Main .about-Main__DiscoverMusic__containerGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 55px;
+          column-gap: 55px;
+  row-gap: 55px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+.about-Main .about-Main__DiscoverMusic__containerGrid .DiscoverMusic__containerGrid__h2 {
+  font-size: 20px;
+  color: black;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+
+.about-Main .about-Main__DiscoverMusic__containerGrid .DiscoverMusic__containerGrid__paragraph {
+  font-size: 15px;
+}
+
+.about-Main .about-Main__DiscoverMusic__containerGrid .containerGrid__article__rect-icon {
+  float: left;
+  width: 20px;
+  height: 30px;
+  padding: 20px;
+}
+
+.about-Main .about-Main__Release__divSectionTitle {
+  margin: 0px auto;
+  width: 60%;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.about-Main .about-Main__Release__divSectionTitle__p {
+  font-size: 18px;
+}
+
+.about-Main .about-Main__Release__containerArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 150px;
+}
+
+.about-Main .about-Main__Release__containerArticle__article {
+  text-align: center;
+}
+
+.about-Main .about-Main__Release__containerArticle__article__h2 {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.about-Main .about-Main__Release__containerArticle__article__p {
+  font: 12px;
+}
+
+/* .about-footer-width{
+    margin: 0px auto;
+    width: 1441px;
+} */
+@media all and (max-width: 1024px) {
+  .About-header {
+    margin: 0px auto;
+    width: 768px;
+    height: 500px;
+    background-image: url(../img/banner-img.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1920px;
+    background-clip: content-box;
+  }
+  .About-header__topBar {
+    background-color: black;
+    padding-top: 10px;
+  }
+  .About-header__topBar__element__nav {
+    padding-left: 400px;
+  }
+  .About-header__topBar__element__nav__list {
+    visibility: hidden;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+  .About-header .menu-humbTopleft, .About-header .menu-ellipsis {
+    position: static !important;
+    visibility: visible;
+    top: 0px !important;
+    left: 0px !important;
+  }
+  .About-header .About-header__headTitleBlock {
+    padding: 200px;
+    text-align: center;
+    height: 100vh;
+  }
+  .About-header .About-header__headTitleBlock__h1 {
+    padding-bottom: 20px;
+  }
+  .about-Main {
+    margin: 0px auto;
+    width: 768px;
+  }
+  .about-Main .globalMain__sectDJ {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .about-Main .globalMain__sectDJ .globalMain__sectDJ__div {
+    padding-bottom: 30px;
+  }
+  .about-Main .about-Main__DiscoverMusic {
+    width: 768px;
+    height: 40rem;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+    row-gap: 55px;
+  }
+  .about-Main .about-Main__Release {
+    width: 768px;
+  }
+  .about-Main .about-Main__Release__containerArticle {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .about-Main .about-Main__Release .img3_SectRelease {
+    padding-top: 40px;
+  }
+  .about-footer-width {
+    margin: 0px auto;
+    width: 768px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .about-Main {
+    margin: 0px auto;
+    width: 320px;
+  }
+  .about-Main .globalMain__sectDJ {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+  }
+  .about-Main .globalMain__sectDJ__TextSignaturButton__FigSignature {
+    padding-bottom: 10px;
+  }
+  .about-Main .about-Main__DiscoverMusic {
+    width: 320px;
+    height: 83rem;
+  }
+  .about-Main .about-Main__DiscoverMusic .about__h1 {
+    font-size: 26px;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    row-gap: 55px;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid__article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid__article .DiscoverMusic__containerGrid__h2 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid__article .DiscoverMusic__containerGrid__paragraph {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid__paragraph {
+    font-size: 15px;
+  }
+  .about-Main .about-Main__DiscoverMusic .about-Main__DiscoverMusic__containerGrid .containerGrid__article__rect-icon {
+    float: none;
+    width: 20px;
+    height: 30px;
+    padding: 20px;
+  }
+  .about-Main .about-Main__Release {
+    width: 320px;
+  }
+  .about-Main .about-Main__Release .about-Main__Release__divSectionTitle {
+    margin: 0px auto;
+    width: 320px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .about-Main .about-Main__Release .about-Main__Release__divSectionTitle__p {
+    font-size: 14px;
+  }
+  .about-Main .about-Main__Release__containerArticle {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .about-Main .about-Main__Release__divSectionTitle__h1 {
+    font-size: 22px;
+  }
+  .about-Main .about-Main__Release .img_SectRelease {
+    padding-top: 40px;
+  }
+  .about-Main .about-Main__Release .img_SectRelease img {
+    width: 320px;
+    height: 346px;
+  }
+  /* .about-footer-width{
+        margin: 0px auto;
+        width: 320px;
+    } */
+}
+
+body .gallery {
+  padding: 55px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  gap: 30px;
+}
+
+body .gallery-element {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .gallery {
+    padding: 80px 0;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  body .gallery {
+    padding: 150px 0;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+body .discography__album__grid__container {
+  padding: 40px 0 45px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  row-gap: 5px;
+}
+
+body .discography__album__grid__container .discography__album__container {
+  text-align: center;
+  padding: 15px;
+}
+
+body .discography__album__grid__container .discography__album__cover {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .discography__album__grid__container .discography__album__heading {
+  font-size: 1.25em;
+  margin: 24px auto 1em;
+}
+
+body .discography__album__grid__container .discography__album__release-year {
+  color: #444444;
+  font-weight: 200;
+  letter-spacing: 0.06em;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .discography__album__grid__container {
+    padding: 55px 25px 60px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1270px) {
+  body .discography__album__grid__container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1270px) {
+  body .discography__album__grid__container {
+    width: 1270px;
+    margin: auto;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+body .tour-schedule {
+  padding: 3.4375rem .9375rem;
+  background-color: #edeff4;
+}
+
+body .tour-schedule__select-month__shape {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border: 1px solid black;
+  border-bottom: none;
+  text-align: center;
+  background-color: #000;
+}
+
+body .tour-schedule__dates-for-month {
+  border: 1px solid #c4c4c4;
+  padding: 3rem 0;
+  background-color: #fff;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1rem;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element, body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line {
+  margin: 0 auto;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element {
+  width: 2rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid #c4c4c4;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element--active {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element--active::before {
+  position: absolute;
+  content: "";
+  width: 33.333%;
+  aspect-ratio: 1/1;
+  background-color: #8121e0;
+  border-radius: 50%;
+  top: 33.333%;
+  left: 33.333%;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line {
+  width: 1px;
+  height: 10%;
+  background-color: #c4c4c4;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line:nth-child(2) {
+  height: 24%;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line:nth-child(4) {
+  height: 15%;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line:nth-child(6) {
+  height: 15%;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line:nth-child(8) {
+  height: 13%;
+}
+
+body .tour-schedule__select-month__inner-container {
+  padding: 1.25rem 0;
+  position: relative;
+}
+
+body .tour-schedule__select-month__item {
+  margin: 2.5rem 0;
+  font-size: 0.625rem;
+  padding: 1.25rem 0;
+  width: 81.818181%;
+  margin: auto;
+  color: #6a6a6a;
+}
+
+body .tour-schedule__select-month__current-item {
+  color: #fff;
+  padding-bottom: 1.125rem;
+  border-bottom: 2px solid #8121e0;
+}
+
+body .tour-schedule__select-month__item + .tour-schedule__select-month__item {
+  margin-top: 0.625rem;
+}
+
+body .tour-schedule__select-month__heading {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+}
+
+body .tour-schedule__dates-for-month__grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+}
+
+body .tour-schedule__dates-for-month__available-dates__container {
+  padding: 0 1.25rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .tour-schedule__dates-for-month__available-dates__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .tour-schedule__dates-for-month__available-dates__item__heading {
+  margin: 1.25rem 0;
+  line-height: 1.6em;
+}
+
+body .tour-schedule__dates-for-month__available-dates__item__date {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  font-weight: 300;
+  color: #777777;
+}
+
+body .tour-schedule__dates-for-month__available-dates__item + .tour-schedule__dates-for-month__available-dates__item {
+  margin-top: 2.8125rem;
+}
+
+body .tour-schedule__dates-for-month__available-dates__item__description {
+  font-weight: 300;
+  color: #444444;
+  font-size: 0.875em;
+  line-height: 2em;
+  margin-bottom: 1.125rem;
+}
+
+body .tour-schedule__dates-for-month__available-dates__item__anchor {
+  padding: 0.25em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .tour-schedule {
+    padding: 5rem 2.5rem;
+  }
+  body .tour-schedule__select-month__main-container {
+    width: 47.82609%;
+    margin: auto;
+  }
+  body .tour-schedule__select-month__inner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+  }
+  body .tour-schedule__select-month__item + .tour-schedule__select-month__item {
+    margin-top: 0;
+  }
+  body .tour-schedule__select-month__item {
+    display: inline-block;
+    font-size: 1em;
+    padding: 3.125rem 0;
+    width: auto;
+  }
+  body .tour-schedule__select-month__current-item {
+    padding-bottom: 2.8125rem;
+    border-bottom: 5px solid #8121e0;
+  }
+  body .tour-schedule__dates-for-month__available-dates__container {
+    padding: 0 1.875rem 0 0;
+  }
+  body .tour-schedule__dates-for-month__grid-container {
+    -ms-grid-columns: 1fr 5fr;
+        grid-template-columns: 1fr 5fr;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1300px) {
+  body .tour-schedule {
+    padding: 7.1875rem 1.875rem;
+  }
+  body .tour-schedule__select-month__main-container {
+    width: 28.22926%;
+    margin: auto;
+  }
+  body .tour-schedule__select-month__inner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+  }
+  body .tour-schedule__select-month__item + .tour-schedule__select-month__item {
+    margin-top: 0;
+  }
+  body .tour-schedule__select-month__item {
+    display: inline-block;
+    font-size: 1em;
+    padding: 3.125rem 0;
+    width: auto;
+  }
+  body .tour-schedule__select-month__current-item {
+    padding-bottom: 2.8125rem;
+    border-bottom: 5px solid #8121e0;
+  }
+  body .tour-schedule__dates-for-month {
+    border-top: none;
+    padding: 5.125rem 0 6.75rem;
+  }
+  body .tour-schedule__dates-for-month__available-dates__item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 17fr 3fr;
+        grid-template-columns: 17fr 3fr;
+  }
+}
+
+@media (min-width: 1300px) {
+  body .tour-schedule {
+    padding: 7.1875rem 0;
+  }
+  body .tour-schedule__content {
+    width: 1240px;
+    margin: auto;
+  }
+  body .tour-schedule__select-month__main-container {
+    width: 28.22926%;
+    margin: auto;
+  }
+  body .tour-schedule__select-month__inner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+  }
+  body .tour-schedule__select-month__item + .tour-schedule__select-month__item {
+    margin-top: 0;
+  }
+  body .tour-schedule__select-month__item {
+    display: inline-block;
+    font-size: 1em;
+    padding: 3.125rem 0;
+    width: auto;
+  }
+  body .tour-schedule__select-month__current-item {
+    padding-bottom: 2.8125rem;
+    border-bottom: 5px solid #8121e0;
+  }
+  body .tour-schedule__dates-for-month {
+    border-top: none;
+    padding: 5.125rem 0 6.75rem;
+  }
+  body .tour-schedule__dates-for-month__available-dates__item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 17fr 3fr;
+        grid-template-columns: 17fr 3fr;
+  }
+}
