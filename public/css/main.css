@@ -1175,7 +1175,7 @@ html body {
   opacity: 1;
 }
 
-.tour-schedule, .tickets-desk {
+.tour-schedule--1, .tickets-desk {
   display: none;
 }
 
@@ -1666,6 +1666,68 @@ body .tour-schedule__dates-for-month {
   border: 1px solid #c4c4c4;
   padding: 3rem 0;
   background-color: #fff;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1rem;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element, body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line {
+  margin: 0 auto;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element {
+  width: 2rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid #c4c4c4;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element--active {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__rounded-element--active::before {
+  position: absolute;
+  content: "";
+  width: 33.333%;
+  aspect-ratio: 1/1;
+  background-color: #8121e0;
+  border-radius: 50%;
+  top: 33.333%;
+  left: 33.333%;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line {
+  width: 1px;
+  height: 10%;
+  background-color: #c4c4c4;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line:nth-child(2) {
+  height: 24%;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line:nth-child(4) {
+  height: 15%;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line:nth-child(6) {
+  height: 15%;
+}
+
+body .tour-schedule__dates-for-month__progress-bar-container__progress-bar__line:nth-child(8) {
+  height: 13%;
 }
 
 body .tour-schedule__select-month__inner-container {
