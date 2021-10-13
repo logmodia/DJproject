@@ -817,6 +817,7 @@ html body {
             justify-content: space-between;
     width: 90%;
     max-width: 1165.85px;
+    padding-bottom: 9rem;
   }
   .about-dj__figure {
     width: 41.5%;
@@ -979,6 +980,10 @@ html body {
     width: 14rem;
     margin-top: 3.5%;
   }
+  .latest-releases__text-content {
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
+  }
   .latest-releases__text-content__heading {
     font-size: 2.2rem;
   }
@@ -991,6 +996,7 @@ html body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     max-width: 1165.85px;
+    padding-bottom: 9rem;
   }
   .latest-releases__list__release {
     width: 31.5%;
@@ -1126,6 +1132,91 @@ html body {
   .join-fanbase__figure__img:nth-child(6) {
     margin: 0 0 0 2rem;
   }
+  .join-fanbase__article__why-join-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .join-fanbase__article__why-join-list__why-join {
+    width: 47%;
+    height: 10%;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .join-fanbase__article__why-join-list__why-join .fas {
+    padding-bottom: 0;
+    width: 47%;
+    max-width: 80px;
+    margin-top: 5%;
+  }
+  .join-fanbase__article__why-join-list__why-join__heading {
+    line-height: 1.8rem;
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .join-fanbase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 9.5rem 0;
+  }
+  .join-fanbase__figure {
+    margin: 0;
+    width: 40%;
+    min-width: 400px;
+    padding: 0;
+  }
+  .join-fanbase__figure__img:nth-child(2) {
+    margin-left: 0;
+  }
+  .join-fanbase__figure__img:nth-child(4) {
+    margin-top: 0;
+    margin-left: 2rem;
+    margin-bottom: 0;
+  }
+  .join-fanbase__figure__img:nth-child(6) {
+    margin-left: .5rem;
+  }
+  .join-fanbase__article {
+    width: 40%;
+    min-width: 551.6px;
+    max-width: 695.2px;
+    margin: auto 0;
+  }
+  .join-fanbase__article__text-content {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .join-fanbase__article__text-content__heading {
+    font-size: 2.3rem;
+  }
+  .join-fanbase__article__why-join-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .join-fanbase__article__why-join-list__why-join {
+    width: 60%;
+  }
+  .join-fanbase__article__why-join-list__why-join__heading {
+    font-size: 1.5rem;
+  }
 }
 
 .partners-sponsors {
@@ -1196,6 +1287,7 @@ html body {
 }
 
 .partners-sponsors__contents__interactive-block__slider__controller {
+  cursor: pointer;
   width: .75rem;
   height: .75rem;
   border-radius: 50%;

@@ -117,6 +117,8 @@
         }
 
         &__text-content {
+            padding-top: 4.5rem;
+            padding-bottom: 3rem;
             &__heading {
                 font-size: 2.2rem;
             }
@@ -129,6 +131,7 @@
         &__list {
             justify-content: space-between;
             max-width: 1165.85px;
+            padding-bottom: 9rem;
             &__release {
                 width: 31.5%;
             }
